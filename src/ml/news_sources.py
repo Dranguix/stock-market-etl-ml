@@ -7,7 +7,6 @@ Each fetcher returns list[dict] with keys:
 """
 from __future__ import annotations
 
-import fcntl
 import json
 import logging
 import os
@@ -19,6 +18,11 @@ from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any, Optional
+
+try:
+    import fcntl
+except ImportError:  # Windows: sin flock, el lock queda a cargo de _gdelt_wait_turn
+    fcntl = None
 
 import requests
 import yfinance as yf
@@ -495,7 +499,8 @@ def gdelt_request_lock():
     """Un solo request GDELT a la vez (evita 429 por procesos paralelos)."""
     GDELT_LOCK_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(GDELT_LOCK_PATH, "w") as lock_file:
-        fcntl.flock(lock_file, fcntl.LOCK_EX)
+        if fcntl is not None:
+            fcntl.flock(lock_file, fcntl.LOCK_EX)
         _gdelt_wait_turn()
         try:
             yield

@@ -18,7 +18,7 @@ class Book:
         if payload is not None:
             self.data = payload
         elif path is not None and path.exists():
-            self.data = json.loads(path.read_text())
+            self.data = json.loads(path.read_text(encoding="utf-8"))
         else:
             self.data = {
                 "cash_usd": BUDGET_USD,
@@ -119,4 +119,4 @@ class Book:
         if self.path is None:
             return
         self.path.parent.mkdir(parents=True, exist_ok=True)
-        self.path.write_text(json.dumps(self.data, ensure_ascii=False, indent=2))
+        self.path.write_text(json.dumps(self.data, ensure_ascii=False, indent=2), encoding="utf-8")

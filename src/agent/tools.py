@@ -31,7 +31,7 @@ def _signal(slug: str) -> dict:
     path = SIGNALS / f"{slug}.json"
     if not path.exists():
         return {}
-    return json.loads(path.read_text())
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _last_close(symbol: str) -> float | None:
