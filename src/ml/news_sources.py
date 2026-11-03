@@ -21,7 +21,7 @@ from typing import Any, Optional
 
 try:
     import fcntl
-except ImportError:  # Windows: sin flock, el lock queda a cargo de _gdelt_wait_turn
+except ImportError:  # Windows: sin flock no hay exclusión mutua entre procesos
     fcntl = None
 
 import requests

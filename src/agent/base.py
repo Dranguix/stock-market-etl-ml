@@ -27,3 +27,11 @@ class ObservationAgent(Agent):
 
     def tool_schema(self) -> dict:
         raise NotImplementedError
+
+    def comprables(self, resultado: dict) -> list[str]:
+        """Tickers que este resultado autoriza a comprar. Por defecto, ninguno."""
+        return []
+
+    def evitados(self, resultado: dict) -> list[str]:
+        """Tickers que este resultado prohíbe comprar. Por defecto, ninguno."""
+        return []

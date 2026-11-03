@@ -2,16 +2,20 @@
 """Simulacro del agente de trading: ciclo completo con datos reales, sin gastar créditos.
 
 Un Claude de guion sustituye a la API. Intenta romper las reglas a propósito
-y al final propone un reparto válido con los dos primeros del ranking.
+y al final propone un reparto con los dos primeros del ranking. Si la señal es
+vieja, el guard lo rechaza y el guion se queda en efectivo.
 El libro vive en memoria: no escribe data/agent.
 
     python -X utf8 scripts/simulacro_trading_agent.py
+    python -X utf8 scripts/simulacro_trading_agent.py --hoy 2026-06-29  # como si la señal fuera reciente
 """
 from __future__ import annotations
 
+import argparse
 import json
 import os
 import sys
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,7 +23,7 @@ sys.path.insert(0, str(ROOT))
 
 from src.agent import investor
 from src.agent.book import Book
-from src.agent.trading import AgenteTrading
+from src.agent.trading import AgenteTrading, consultar
 
 
 def _call(i: int, name: str, args: dict) -> dict:
@@ -67,15 +71,19 @@ class ClaudeDeGuion:
         if p == 3 and top:
             return [_call(p, "ver_woe", {"ticker": top[0]})]
         if p == 4 and evitar:
-            return [_call(p, "proponer_asignacion", {"allocations": [{"ticker": evitar[0], "usd": 20}], "motivo": "nombre de la lista evitar"})]
-        if p == 5 and len(top) >= 3:
+            return [_call(p, "ver_woe", {"ticker": evitar[0]})]
+        if p == 5 and evitar:
+            return [_call(p, "proponer_asignacion", {"allocations": [{"ticker": evitar[0], "usd": 20}], "cash_usd": 30, "motivo": "nombre de la lista evitar"})]
+        if p == 6 and len(top) >= 3:
             return [_call(p, "proponer_asignacion", {"allocations": [{"ticker": t, "usd": 25} for t in top[:3]], "motivo": "me paso de 50"})]
-        if p == 6 and len(top) >= 2:
+        if p == 7 and len(top) >= 2:
             return [_call(p, "proponer_asignacion", {
                 "allocations": [{"ticker": top[0], "usd": 20}, {"ticker": top[1], "usd": 15}],
                 "cash_usd": 15,
                 "motivo": f"{top[0]} y {top[1]} son 1 y 2 en ver_ranking bmv 4s; ver_woe de {top[0]}.",
             })]
+        if p == 8:
+            return [_call(p, "proponer_asignacion", {"allocations": [], "cash_usd": 50, "motivo": "señal vieja: efectivo"})]
         return []
 
 
@@ -91,24 +99,28 @@ def _linea(row: dict, aceptada: bool) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--hoy", type=date.fromisoformat, help="Fecha que usa el guard, en ISO. Por defecto, hoy")
+    args = parser.parse_args()
+
     claude = ClaudeDeGuion()
     investor.chat_with_tools = claude  # el ciclo de AgenteInversor ya no sale a la API
     os.environ.setdefault("ANTHROPIC_API_KEY", "simulacro")
 
     book = Book(payload={"cash_usd": 50, "budget_usd": 50, "positions": {}, "fills": []})
-    agent = AgenteTrading(book)
-    result = agent.act(apply=True)
+    agent = AgenteTrading(book, hoy=args.hoy)
+    result = consultar("Reparte el libro y termina con proponer_asignacion.", agent)
+    aplicado = agent.aplicar(result["asignacion"]) if result["asignacion"] else None
 
     print("Consultas del Claude de guion:")
     for row in claude.enviados:
         print(_linea(row, result["ok"]))
     print()
     print(json.dumps({
-        "ok": result["ok"],
-        "turnos": result["turnos"],
-        "asignacion": result["asignacion"],
-        "tickers_vistos": result["tickers_vistos"],
-        "libro_final": (result.get("aplicado") or {}).get("libro"),
+        **result,
+        "tickers_vistos": sorted(agent.policy.vistos),
+        "tickers_evitados": sorted(agent.policy.evitados),
+        "libro_final": (aplicado or {}).get("libro"),
     }, ensure_ascii=False, indent=2))
 
 

@@ -3,6 +3,7 @@
 
     python scripts/run_trading_agent.py --ejemplo
     python scripts/run_trading_agent.py            # llama a Claude si hay ANTHROPIC_API_KEY
+    python scripts/run_trading_agent.py --pregunta "¿Qué dice el ranking de bmv?"
     python scripts/run_trading_agent.py --aplicar  # además escribe el libro
 """
 from __future__ import annotations
@@ -20,19 +21,17 @@ from dotenv import load_dotenv
 load_dotenv(ROOT / ".env")
 
 from src.agent.book import Book
-from src.agent.trading import AgenteTrading
-
-BOOK_PATH = ROOT / "data" / "agent" / "trading_book.json"
+from src.agent.trading import BOOK_PATH, PREGUNTA_REPARTO, AgenteTrading, consultar
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--ejemplo", action="store_true", help="Imprime la pregunta y dos tool calls, sin llamar a Claude")
-    parser.add_argument("--aplicar", action="store_true", help=f"Si el guard acepta, escribe {BOOK_PATH.relative_to(ROOT)}")
+    parser.add_argument("--pregunta", default=PREGUNTA_REPARTO, help="Lo que se le pregunta al agente")
+    parser.add_argument("--aplicar", action="store_true", help=f"Si hay asignación válida, escribe {BOOK_PATH.relative_to(ROOT)}")
     args = parser.parse_args()
 
-    book = Book(BOOK_PATH)
-    agent = AgenteTrading(book)
+    agent = AgenteTrading(Book(BOOK_PATH))
 
     if args.ejemplo:
         pregunta = agent.observe()
@@ -47,16 +46,14 @@ def main() -> None:
             "consulta_bloqueada": bloqueado,
             "resultado_bloqueada": agent.dispatch(bloqueado["name"], bloqueado["input"]),
             "tickers_vistos": sorted(agent.policy.vistos),
+            "tickers_evitados": sorted(agent.policy.evitados),
         }, ensure_ascii=False, indent=2))
         return
 
-    result = agent.act(apply=args.aplicar)
-    if not result.get("ok") and result.get("pregunta"):
-        print(result["error"])
-        print(json.dumps({"user": result["pregunta"]["user"]}, ensure_ascii=False, indent=2))
-        return
-    slim = {k: result.get(k) for k in ("ok", "modelo", "asignacion", "aplicado", "turnos", "agentes_features_ml", "tickers_vistos")}
-    print(json.dumps(slim, ensure_ascii=False, indent=2))
+    result = consultar(args.pregunta, agent)
+    if args.aplicar and result["asignacion"]:
+        result["aplicado"] = agent.aplicar(result["asignacion"])
+    print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
 if __name__ == "__main__":

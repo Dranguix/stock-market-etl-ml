@@ -150,6 +150,12 @@ class AgenteRanking(ObservationAgent):
             "horizonte": {"type": "string", "enum": ["1s", "2s", "3s", "4s"], "description": "1s es una semana, 4s es un mes"},
         }, required=["universo"])
 
+    def comprables(self, resultado: dict) -> list[str]:
+        return [p["ticker"] for p in resultado.get("top") or []]
+
+    def evitados(self, resultado: dict) -> list[str]:
+        return list(resultado.get("evitar") or [])
+
 
 class AgenteClima(ObservationAgent):
     name = "ver_clima"
