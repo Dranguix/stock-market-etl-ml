@@ -58,14 +58,14 @@ def bin_of(value: float, bins: list[dict]) -> dict | None:
 def load_woe() -> dict:
     if not WOE_PATH.exists():
         return {}
-    return json.loads(WOE_PATH.read_text())
+    return json.loads(WOE_PATH.read_text(encoding="utf-8"))
 
 
 @lru_cache(maxsize=1)
 def load_lr() -> dict | None:
     if not LR_PATH.exists():
         return None
-    return json.loads(LR_PATH.read_text())
+    return json.loads(LR_PATH.read_text(encoding="utf-8"))
 
 
 def _read_ohlcv(symbol: str) -> pd.DataFrame | None:

@@ -13,12 +13,16 @@ Uso:
 from __future__ import annotations
 
 import argparse
-import fcntl
 import json
 import os
 import sys
 from datetime import datetime
 from pathlib import Path
+
+try:
+    import fcntl
+except ImportError:  # Windows: sin flock no hay exclusión mutua entre procesos
+    fcntl = None
 
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
@@ -37,14 +41,17 @@ BUILD_LOCK = ROOT / "data" / "news" / "history" / ".build.lock"
 def _acquire_build_lock() -> object:
     BUILD_LOCK.parent.mkdir(parents=True, exist_ok=True)
     lock_file = open(BUILD_LOCK, "w")
-    try:
-        fcntl.flock(lock_file, fcntl.LOCK_EX | fcntl.LOCK_NB)
-    except BlockingIOError:
-        print(
-            "\n❌ Otro build_news_history ya está corriendo.\n"
-            "   Espera a que termine o elimina data/news/history/.build.lock\n"
-        )
-        sys.exit(1)
+    if fcntl is None:
+        print("⚠️  Sin flock en este sistema: nada impide correr dos builds a la vez.")
+    else:
+        try:
+            fcntl.flock(lock_file, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            print(
+                "\n❌ Otro build_news_history ya está corriendo.\n"
+                "   Espera a que termine o elimina data/news/history/.build.lock\n"
+            )
+            sys.exit(1)
     lock_file.write(str(os.getpid()))
     lock_file.flush()
     return lock_file
@@ -118,7 +125,8 @@ def main() -> None:
         stats = history_stats()
         print(f"\n✅ Stats: {json.dumps(stats, indent=2)}\n")
     finally:
-        fcntl.flock(lock, fcntl.LOCK_UN)
+        if fcntl is not None:
+            fcntl.flock(lock, fcntl.LOCK_UN)
         lock.close()
         BUILD_LOCK.unlink(missing_ok=True)
 

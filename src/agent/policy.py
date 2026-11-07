@@ -14,6 +14,7 @@ TOL = 0.05
 
 class PoliticaInversor:
     name = "inversor_50"
+    respeta_stop = True
 
     def system_prompt(self) -> str:
         return f"""Eres el agente inversor de un libro de paper trading.
@@ -107,13 +108,14 @@ La salida es el precio del stop, no una opinión. Si la probabilidad es floja, p
                 continue
             stop = book.positions[row["ticker"]].get("stop_usd")
             price = (prices_usd or {}).get(row["ticker"])
-            if stop and price and price <= float(stop):
+            if self.respeta_stop and stop and price and price <= float(stop):
                 continue
             held.append(row["ticker"])
         if held:
+            salvo = ", salvo que haya tocado el stop" if self.respeta_stop else ""
             return {
                 "ok": False,
-                "error": f"{', '.join(held)} lleva menos de {MIN_HOLD_DAYS} días. Déjalo como está, salvo que haya tocado el stop.",
+                "error": f"{', '.join(held)} lleva menos de {MIN_HOLD_DAYS} días. Déjalo como está{salvo}.",
             }
 
         return {

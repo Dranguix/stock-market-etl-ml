@@ -31,7 +31,7 @@ def _signal(slug: str) -> dict:
     path = SIGNALS / f"{slug}.json"
     if not path.exists():
         return {}
-    return json.loads(path.read_text())
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _last_close(symbol: str) -> float | None:
@@ -149,6 +149,12 @@ class AgenteRanking(ObservationAgent):
             "universo": {"type": "string", "enum": list(SLUGS), "description": "bmv, usa, etfs, cripto o fibras"},
             "horizonte": {"type": "string", "enum": ["1s", "2s", "3s", "4s"], "description": "1s es una semana, 4s es un mes"},
         }, required=["universo"])
+
+    def comprables(self, resultado: dict) -> list[str]:
+        return [p["ticker"] for p in resultado.get("top") or []]
+
+    def evitados(self, resultado: dict) -> list[str]:
+        return list(resultado.get("evitar") or [])
 
 
 class AgenteClima(ObservationAgent):
