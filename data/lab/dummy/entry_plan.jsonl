@@ -1,0 +1,16 @@
+{"id": 1, "decision_id": 1, "ticker": "SPY", "usd": 25.0, "horizon": "20d", "stop_usd": null, "p_sube": null, "enter_on": "2026-08-03"}
+{"id": 2, "decision_id": 1, "ticker": "NAFTRAC", "usd": 12.5, "horizon": "20d", "stop_usd": null, "p_sube": null, "enter_on": "2026-08-03"}
+{"id": 3, "decision_id": 1, "ticker": "ALSEA", "usd": 6.25, "horizon": "20d", "stop_usd": 2.2668, "p_sube": null, "enter_on": "2026-08-03"}
+{"id": 4, "decision_id": 1, "ticker": "FUNO11", "usd": 6.25, "horizon": "20d", "stop_usd": 1.4825, "p_sube": null, "enter_on": "2026-08-03"}
+{"id": 5, "decision_id": 2, "ticker": "SPY", "usd": 25.0, "horizon": "20d", "stop_usd": null, "p_sube": null, "enter_on": "2026-09-01"}
+{"id": 6, "decision_id": 2, "ticker": "NAFTRAC", "usd": 6.25, "horizon": "20d", "stop_usd": null, "p_sube": null, "enter_on": "2026-09-01"}
+{"id": 7, "decision_id": 2, "ticker": "ALSEA", "usd": 6.25, "horizon": "20d", "stop_usd": 2.2363, "p_sube": null, "enter_on": "2026-09-01"}
+{"id": 8, "decision_id": 2, "ticker": "FUNO11", "usd": 6.25, "horizon": "20d", "stop_usd": 1.5982, "p_sube": null, "enter_on": "2026-09-01"}
+{"id": 9, "decision_id": 3, "ticker": "SPY", "usd": 25.0, "horizon": "20d", "stop_usd": null, "p_sube": null, "enter_on": "2026-10-01"}
+{"id": 10, "decision_id": 3, "ticker": "NAFTRAC", "usd": 12.5, "horizon": "20d", "stop_usd": null, "p_sube": null, "enter_on": "2026-10-01"}
+{"id": 11, "decision_id": 3, "ticker": "ALSEA", "usd": 6.25, "horizon": "20d", "stop_usd": 2.0394, "p_sube": null, "enter_on": "2026-10-01"}
+{"id": 12, "decision_id": 3, "ticker": "FIBRAPL", "usd": 6.25, "horizon": "20d", "stop_usd": 4.5557, "p_sube": null, "enter_on": "2026-10-01"}
+{"id": 13, "decision_id": 4, "ticker": "SPY", "usd": 25.0, "horizon": "20d", "stop_usd": null, "p_sube": null, "enter_on": "2026-11-02"}
+{"id": 14, "decision_id": 4, "ticker": "NAFTRAC", "usd": 12.5, "horizon": "20d", "stop_usd": null, "p_sube": null, "enter_on": "2026-11-02"}
+{"id": 15, "decision_id": 4, "ticker": "ALSEA", "usd": 6.25, "horizon": "20d", "stop_usd": 2.2491, "p_sube": null, "enter_on": "2026-11-02"}
+{"id": 16, "decision_id": 4, "ticker": "FIBRAPL", "usd": 6.25, "horizon": "20d", "stop_usd": 4.4841, "p_sube": null, "enter_on": "2026-11-02"}
