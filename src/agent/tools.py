@@ -28,6 +28,57 @@ def find_ticker(ticker: str) -> tuple[str, dict, str] | None:
 
 
 def _signal(slug: str) -> dict:
+    """Lee la señal más reciente del historial diario; cae al archivo estático si no hay historial.
+
+    El historial (data/signals/history/YYYY-MM-DD.json) tiene el esquema
+    {date, bets:[{ticker,conviction,direction,horizon_days}], top10_ranking:[{rank,ticker,conviction}]}.
+    Lo normalizamos al esquema estático usado por AgenteRanking y AgenteClima:
+    {fecha, top:[{puesto,ticker,score,razones,precio_actual}], evitar:[], consensus:[], mercado:{}}.
+    """
+    history_dir = SIGNALS / "history"
+    if history_dir.exists():
+        dated = sorted(history_dir.glob("????-??-??.json"))
+        if dated:
+            try:
+                raw = json.loads(dated[-1].read_text(encoding="utf-8"))
+                fecha = raw.get("date") or dated[-1].stem
+                top10 = raw.get("top10_ranking") or []
+                bets = raw.get("bets") or []
+                bets_long = {b.get("ticker") for b in bets if b.get("direction") == "LONG"}
+                top = [
+                    {
+                        "puesto": r.get("rank", i + 1),
+                        "ticker": r.get("ticker", ""),
+                        "score": r.get("conviction", 0.0),
+                        "razones": ["historial_diario"],
+                        "precio_actual": None,
+                    }
+                    for i, r in enumerate(top10)
+                ]
+                # consensus: cada ticker que aparece como LONG en bets
+                consensus = [
+                    {"ticker": t, "n_horizontes": 1}
+                    for b in bets if b.get("direction") == "LONG"
+                    for t in [b.get("ticker")] if t
+                ]
+                return {
+                    "fecha": fecha,
+                    "top": top,
+                    "evitar": [],
+                    "consensus": consensus,
+                    "mercado": {},
+                    "by_horizon": {
+                        "4s": {
+                            "top5": top[:5],
+                            "evitar": [],
+                        }
+                    },
+                    "_fuente": f"historial_diario:{dated[-1].name}",
+                }
+            except Exception:
+                pass  # cae al archivo estático
+
+    # Fallback: archivo estático por slug
     path = SIGNALS / f"{slug}.json"
     if not path.exists():
         return {}

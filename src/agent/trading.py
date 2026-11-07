@@ -17,7 +17,7 @@ en el schema, el que llegue se descarta y no hay excepción a los días mínimos
 from __future__ import annotations
 
 import json
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -32,8 +32,86 @@ from src.agent.tools import asignacion_schema
 
 ROOT = Path(__file__).resolve().parents[2]
 BOOK_PATH = ROOT / "data" / "agent" / "trading_book.json"
+_DUMMY_DIR = ROOT / "data" / "lab" / "dummy"
 
 SUBDOMINIO = "trading"
+
+
+def _next_id(path: Path) -> int:
+    """Devuelve el próximo ID disponible leyendo la última línea del JSONL."""
+    if not path.exists():
+        return 1
+    last_id = 0
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            last_id = max(last_id, int(json.loads(line).get("id", 0)))
+        except (json.JSONDecodeError, TypeError, ValueError):
+            pass
+    return last_id + 1
+
+
+def _append_to_lab_dummy(validada: dict, resultado: dict) -> None:
+    """Escribe una decisión y sus entry_plans en los archivos dummy (JSONL).
+
+    Nunca lanza excepciones: se llama dentro de un try/except en aplicar().
+    Solo escribe si LAB_FUENTE != 'postgres' (es decir, en modo dummy/offline).
+    """
+    import os
+    if (os.environ.get("LAB_FUENTE") or "").strip().lower() == "postgres":
+        return  # No tocar el dummy cuando hay Postgres configurado
+
+    _DUMMY_DIR.mkdir(parents=True, exist_ok=True)
+    dec_path = _DUMMY_DIR / "decision.jsonl"
+    plan_path = _DUMMY_DIR / "entry_plan.jsonl"
+
+    from datetime import datetime, timezone
+    ahora = datetime.now(timezone.utc).isoformat()
+    hoy = date.today().isoformat()
+
+    # --- decision ---
+    dec_id = _next_id(dec_path)
+    allocations = validada.get("allocations") or []
+    cash = validada.get("cash_usd")
+    if cash is None:
+        total_inv = sum(float(a.get("usd", 0)) for a in allocations)
+        cash = max(0.0, BUDGET_USD - total_inv)
+    decision_row = {
+        "id": dec_id,
+        "decided_at": ahora,
+        "session_date": hoy,
+        "model": "trading_agent_local",
+        "cash_usd": float(cash),
+        "motivo": str(validada.get("motivo") or ""),
+        "raw": {
+            "allocations": allocations,
+            "book_snapshot": resultado.get("book"),
+        },
+    }
+    with dec_path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(decision_row, ensure_ascii=False) + "\n")
+
+    # --- entry_plan (una fila por ticker con usd > 0) ---
+    plan_id = _next_id(plan_path)
+    for alloc in allocations:
+        usd = float(alloc.get("usd", 0))
+        if usd <= 0:
+            continue
+        plan_row = {
+            "id": plan_id,
+            "decision_id": dec_id,
+            "ticker": str(alloc.get("ticker", "")),
+            "usd": usd,
+            "horizon": str(alloc.get("horizon") or ""),
+            "stop_usd": alloc.get("stop_usd"),
+            "p_sube": alloc.get("p_sube"),
+            "enter_on": hoy,
+        }
+        with plan_path.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(plan_row, ensure_ascii=False) + "\n")
+        plan_id += 1
 MAX_DIAS_SENAL = 3  # días hábiles lun-vie, sin calendario de asuetos BMV
 PREGUNTA_REPARTO = "Reparte el libro y termina con proponer_asignacion."
 
@@ -169,15 +247,25 @@ class AgenteTrading(AgenteInversor):
         return super().act(observation, apply=False)
 
     def aplicar(self, asignacion: dict) -> dict:
-        """Acción explícita: vuelve a pasar el guard de esta corrida y escribe el libro."""
+        """Acción explícita: vuelve a pasar el guard de esta corrida y escribe el libro.
+
+        Después de aplicar exitosamente, registra la decisión en data/lab/dummy/
+        (solo en modo offline/dummy, nunca consume tokens ni conecta a Postgres).
+        """
         prices = _prices_for(asignacion)
         validada = self.policy.guard(asignacion, self.book, prices)
         if not validada.get("ok"):
             return validada
         try:
-            return {"ok": True, **self.book.apply(validada, prices)}
+            resultado = {"ok": True, **self.book.apply(validada, prices)}
         except ValueError as exc:
             return {"ok": False, "error": str(exc)}
+        # Registrar en lab dummy (nunca falla el flujo principal)
+        try:
+            _append_to_lab_dummy(validada, resultado)
+        except Exception:
+            pass
+        return resultado
 
 
 def consultar(pregunta: str, agente: AgenteTrading | None = None) -> dict:

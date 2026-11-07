@@ -30,12 +30,79 @@ if str(ROOT) not in sys.path:
 PORTFOLIO_COV_PATH = ROOT / "data" / "eval" / "forecast_demo" / "portfolio_optimo_cov.json"
 AGENT_SCORECARD_PATH = ROOT / "data" / "eval" / "agent_scorecard.md"
 TRIAL_LOG_PATH = ROOT / "data" / "eval" / "trial_log.jsonl"
+SIGNALS_DIR = ROOT / "data" / "signals"
+SIGNALS_HISTORY_DIR = SIGNALS_DIR / "history"
+HORIZONS_PATH = SIGNALS_DIR / "horizons.json"
 
 SYSTEM_PROMPT = """Eres el agente de dominio de Features/ML. No expongas
 "el modelo" como si fuera uno solo: expón el registro completo de
 experimentos, incluyendo los que no aportaron (WoE, LSTM, Ising, etc.), con
 su veredicto real medido. Distingue siempre entre lo que opera en
 producción (SuperModel) y lo que es investigación abierta o descartada."""
+
+
+def _resumen_scorecard() -> str:
+    if not AGENT_SCORECARD_PATH.exists():
+        return f"Scorecard no generado todavía en {AGENT_SCORECARD_PATH}."
+    return AGENT_SCORECARD_PATH.read_text(encoding="utf-8").strip()
+
+
+def _resumen_trials() -> str:
+    if not TRIAL_LOG_PATH.exists():
+        return f"No se encontró bitácora en {TRIAL_LOG_PATH}."
+    lineas = [l for l in TRIAL_LOG_PATH.read_text(encoding="utf-8").strip().splitlines() if l.strip()]
+    if not lineas:
+        return "La bitácora de ensayos está vacía."
+    partes = [f"--- Bitácora de ensayos (trial_log.jsonl): {len(lineas)} corridas registradas ---"]
+    for linea in lineas[-5:]:
+        try:
+            rec = json.loads(linea)
+        except json.JSONDecodeError:
+            continue
+        ts = str(rec.get("ts", "?"))[:19]
+        fam = rec.get("family", "?")
+        h = rec.get("hash", "?")
+        res = rec.get("result", {})
+        usd = (res.get("usd") or {}).get("libro") or {}
+        ret = usd.get("retorno_pct")
+        sharpe = usd.get("sharpe")
+        ret_str = f" ret={ret:+.2f}%" if ret is not None else ""
+        sh_str = f" sharpe={sharpe:.2f}" if sharpe is not None else ""
+        partes.append(f"- [{ts}] {fam} (hash {h}){ret_str}{sh_str}")
+    return "\n".join(partes)
+
+
+def _resumen_senales() -> str:
+    partes = ["--- Inventario de Señales en Producción e Investigación (data/signals/) ---"]
+    if SIGNALS_HISTORY_DIR.exists():
+        archivos = sorted([p for p in SIGNALS_HISTORY_DIR.glob("????-??-??.json")])
+        if archivos:
+            primero = archivos[0].name.replace(".json", "")
+            ultimo = archivos[-1].name.replace(".json", "")
+            partes.append(
+                f"- Historial diario en producción (SuperModel): {len(archivos)} snapshots desde {primero} hasta {ultimo}."
+            )
+            try:
+                reciente = json.loads(archivos[-1].read_text(encoding="utf-8"))
+                bets = reciente.get("bets") or []
+                bets_str = ", ".join(f"{b.get('ticker')} (conv {b.get('conviction', 0):.2f})" for b in bets) or "sin apuestas"
+                top = [r.get("ticker") for r in (reciente.get("top10_ranking") or [])[:5] if r.get("ticker")]
+                partes.append(f"  * Último snapshot ({ultimo}): bets [{bets_str}]; top [{', '.join(top)}].")
+            except Exception:
+                pass
+    if HORIZONS_PATH.exists():
+        try:
+            hor = json.loads(HORIZONS_PATH.read_text(encoding="utf-8"))
+            bmv = hor.get("bmv") or {}
+            asof = bmv.get("asof", "?")
+            listas = bmv.get("listas") or {}
+            partes.append(f"- Señales multi-horizonte (horizons.json, corte {asof}):")
+            for h_key in ("manana", "semana", "mes"):
+                top_h = [f"{x.get('ticker')} ({x.get('score', 0):+.2f})" for x in (listas.get(h_key) or [])[:3]]
+                partes.append(f"  * {h_key}: {', '.join(top_h)}")
+        except Exception:
+            pass
+    return "\n".join(partes)
 
 
 @tool(
@@ -67,41 +134,35 @@ async def schema_features_ml(args: dict) -> dict:
 @tool(
     "query_features_ml",
     "Responde una pregunta en lenguaje natural sobre la bitácora de modelos/experimentos, "
-    "leyendo data/eval/agent_scorecard.md y data/eval/trial_log.jsonl.",
+    "leyendo data/eval/agent_scorecard.md, data/eval/trial_log.jsonl y data/signals/.",
     {"pregunta": str},
 )
 async def query_features_ml(args: dict) -> dict:
-    pregunta = args.get("pregunta", "")
-    partes: list[str] = []
-    partes.append(
-        f"Pregunta recibida: {pregunta!r}" if pregunta
-        else "Bitácora completa de modelos/experimentos:"
-    )
+    pregunta = str(args.get("pregunta") or "").strip()
+    q_lower = pregunta.lower()
 
-    if AGENT_SCORECARD_PATH.exists():
-        partes.append(
-            "--- data/eval/agent_scorecard.md ---\n"
-            + AGENT_SCORECARD_PATH.read_text(encoding="utf-8").strip()
-        )
+    secciones: list[str] = [
+        "Fuente: datos locales offline (agent_scorecard.md, trial_log.jsonl, data/signals/)"
+    ]
+    if pregunta:
+        secciones.append(f"Consulta: {pregunta!r}")
+
+    # Enfoque específico según términos de la pregunta
+    if any(k in q_lower for k in ("senal", "señal", "history", "horizon", "produccion", "producción", "supermodel")):
+        secciones.append(_resumen_senales())
+        secciones.append(_resumen_scorecard())
+        secciones.append(_resumen_trials())
+    elif any(k in q_lower for k in ("trial", "bitacora", "bitácora", "backtest", "experimento", "corrida", "hash")):
+        secciones.append(_resumen_trials())
+        secciones.append(_resumen_scorecard())
+        secciones.append(_resumen_senales())
     else:
-        partes.append(f"No se encontró {AGENT_SCORECARD_PATH} — scorecard no generado todavía.")
+        secciones.append("--- Scorecard de Modelos y Agentes (data/eval/agent_scorecard.md) ---")
+        secciones.append(_resumen_scorecard())
+        secciones.append(_resumen_senales())
+        secciones.append(_resumen_trials())
 
-    if TRIAL_LOG_PATH.exists():
-        lineas = [l for l in TRIAL_LOG_PATH.read_text(encoding="utf-8").strip().splitlines() if l.strip()]
-        resumen = [f"--- data/eval/trial_log.jsonl: {len(lineas)} corridas registradas ---"]
-        for linea in lineas[-5:]:
-            try:
-                rec = json.loads(linea)
-            except json.JSONDecodeError:
-                continue
-            resumen.append(
-                f"- {rec.get('ts', '?')} family={rec.get('family', '?')} hash={rec.get('hash', '?')}"
-            )
-        partes.append("\n".join(resumen))
-    else:
-        partes.append(f"No se encontró {TRIAL_LOG_PATH}.")
-
-    return {"content": [{"type": "text", "text": "\n\n".join(partes)}]}
+    return {"content": [{"type": "text", "text": "\n\n".join(secciones)}]}
 
 
 @tool(
