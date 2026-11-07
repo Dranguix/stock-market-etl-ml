@@ -151,4 +151,8 @@ def fuente() -> Fuente:
         return FuentePostgres()
     if elegida not in ("", "dummy"):
         raise ValueError(f"LAB_FUENTE={elegida}: usa postgres o dummy")
+    # Permite leer el mismo sandbox de pruebas del Trading Agent sin alterar
+    # los archivos dummy originales del equipo.
+    if elegida == "dummy" and os.getenv("LAB_DUMMY_DIR"):
+        return FuenteArchivos(Path(os.environ["LAB_DUMMY_DIR"]).expanduser())
     return FuenteArchivos()

@@ -10,8 +10,9 @@ Distinción que SIEMPRE debe mantener al responder:
     sentimiento de noticias como predictor — ver data/eval/agent_scorecard.md
     y docs/SISTEMA_END_TO_END.md §9 para los veredictos reales.
 
-TODO equipo Features/ML: implementar query_features_ml de verdad sobre
-data/eval/trial_log.jsonl, agent_scorecard.md y data/signals/.
+Implementación del equipo Features/ML:
+query_features_ml consulta fuentes locales de evaluación,
+experimentos y señales sin utilizar llamadas a la API.
 """
 from __future__ import annotations
 

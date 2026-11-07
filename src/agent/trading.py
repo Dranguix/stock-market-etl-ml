@@ -17,6 +17,7 @@ en el schema, el que llegue se descarta y no hay excepción a los días mínimos
 from __future__ import annotations
 
 import json
+import os
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -32,86 +33,98 @@ from src.agent.tools import asignacion_schema
 
 ROOT = Path(__file__).resolve().parents[2]
 BOOK_PATH = ROOT / "data" / "agent" / "trading_book.json"
-_DUMMY_DIR = ROOT / "data" / "lab" / "dummy"
+_DUMMY_DIR = ROOT / "data" / "lab" / "dummy"  # Ejemplos compartidos: NO modificar
 
 SUBDOMINIO = "trading"
 
 
 def _next_id(path: Path) -> int:
-    """Devuelve el próximo ID disponible leyendo la última línea del JSONL."""
+    """Busca el mayor id de un JSONL y devuelve el siguiente."""
     if not path.exists():
         return 1
-    last_id = 0
-    for line in path.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if not line:
+    ultimo = 0
+    for linea in path.read_text(encoding="utf-8").splitlines():
+        if not linea.strip():
             continue
         try:
-            last_id = max(last_id, int(json.loads(line).get("id", 0)))
+            ultimo = max(ultimo, int(json.loads(linea).get("id", 0)))
         except (json.JSONDecodeError, TypeError, ValueError):
-            pass
-    return last_id + 1
+            continue
+    return ultimo + 1
 
 
-def _append_to_lab_dummy(validada: dict, resultado: dict) -> None:
-    """Escribe una decisión y sus entry_plans en los archivos dummy (JSONL).
+def _destino_lab_dummy() -> Path | None:
+    """Solo permite escribir si el usuario lo habilitó expresamente.
 
-    Nunca lanza excepciones: se llama dentro de un try/except en aplicar().
-    Solo escribe si LAB_FUENTE != 'postgres' (es decir, en modo dummy/offline).
+    LAB_FUENTE=dummy, LAB_DUMMY_WRITE=1 y LAB_DUMMY_DIR deben configurarse
+    juntos. Nunca se escribe en data/lab/dummy, que contiene fixtures del equipo.
     """
-    import os
-    if (os.environ.get("LAB_FUENTE") or "").strip().lower() == "postgres":
-        return  # No tocar el dummy cuando hay Postgres configurado
+    if (os.getenv("LAB_FUENTE") or "").lower().strip() != "dummy":
+        return None
+    if os.getenv("LAB_DUMMY_WRITE") != "1":
+        return None
+    valor = (os.getenv("LAB_DUMMY_DIR") or "").strip()
+    if not valor:
+        raise ValueError("Falta LAB_DUMMY_DIR: elige una carpeta separada para las pruebas")
+    carpeta = Path(valor).expanduser().resolve()
+    if carpeta == _DUMMY_DIR.resolve():
+        raise ValueError("No se permite escribir en data/lab/dummy: usa una carpeta de pruebas")
+    return carpeta
 
-    _DUMMY_DIR.mkdir(parents=True, exist_ok=True)
-    dec_path = _DUMMY_DIR / "decision.jsonl"
-    plan_path = _DUMMY_DIR / "entry_plan.jsonl"
 
-    from datetime import datetime, timezone
-    ahora = datetime.now(timezone.utc).isoformat()
-    hoy = date.today().isoformat()
+def _append_to_lab_dummy(validada: dict, resultado: dict, carpeta: Path, hoy: date) -> dict:
+    """Registra la asignación en JSONL, con columnas del esquema lab.
 
-    # --- decision ---
+    Es una simulación local. No se comunica con Postgres ni con Anthropic.
+    """
+    carpeta.mkdir(parents=True, exist_ok=True)
+    dec_path = carpeta / "decision.jsonl"
+    plan_path = carpeta / "entry_plan.jsonl"
     dec_id = _next_id(dec_path)
+    plan_id = _next_id(plan_path)
     allocations = validada.get("allocations") or []
     cash = validada.get("cash_usd")
     if cash is None:
-        total_inv = sum(float(a.get("usd", 0)) for a in allocations)
-        cash = max(0.0, BUDGET_USD - total_inv)
+        cash = BUDGET_USD - sum(float(a["usd"]) for a in allocations)
     decision_row = {
         "id": dec_id,
-        "decided_at": ahora,
-        "session_date": hoy,
-        "model": "trading_agent_local",
+        "decided_at": datetime.now(timezone.utc).isoformat(),
+        "session_date": hoy.isoformat(),
+        "model": "trading_agent_local_dummy",
         "cash_usd": float(cash),
         "motivo": str(validada.get("motivo") or ""),
         "raw": {
+            "tipo": "simulacion_local_no_produccion",
             "allocations": allocations,
-            "book_snapshot": resultado.get("book"),
+            "book_snapshot": resultado.get("libro"),
         },
     }
-    with dec_path.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(decision_row, ensure_ascii=False) + "\n")
-
-    # --- entry_plan (una fila por ticker con usd > 0) ---
-    plan_id = _next_id(plan_path)
+    planes = []
     for alloc in allocations:
         usd = float(alloc.get("usd", 0))
         if usd <= 0:
             continue
-        plan_row = {
+        planes.append({
             "id": plan_id,
             "decision_id": dec_id,
-            "ticker": str(alloc.get("ticker", "")),
+            "ticker": str(alloc["ticker"]),
             "usd": usd,
             "horizon": str(alloc.get("horizon") or ""),
-            "stop_usd": alloc.get("stop_usd"),
-            "p_sube": alloc.get("p_sube"),
-            "enter_on": hoy,
-        }
-        with plan_path.open("a", encoding="utf-8") as f:
-            f.write(json.dumps(plan_row, ensure_ascii=False) + "\n")
+            "stop_usd": None,  # Trading no calcula stops
+            "p_sube": None,    # No inventar probabilidades
+            "enter_on": hoy.isoformat(),
+        })
         plan_id += 1
+
+    # Ambos ficheros se preparan antes de escribir. Son datos sandbox locales;
+    # no es una transacción entre archivos, así que no usar para producción.
+    with dec_path.open("a", encoding="utf-8") as archivo:
+        archivo.write(json.dumps(decision_row, ensure_ascii=False) + "\n")
+    with plan_path.open("a", encoding="utf-8") as archivo:
+        for plan in planes:
+            archivo.write(json.dumps(plan, ensure_ascii=False) + "\n")
+    return {"decision_id": dec_id, "planes": len(planes), "carpeta": str(carpeta)}
+
 MAX_DIAS_SENAL = 3  # días hábiles lun-vie, sin calendario de asuetos BMV
 PREGUNTA_REPARTO = "Reparte el libro y termina con proponer_asignacion."
 
@@ -247,11 +260,11 @@ class AgenteTrading(AgenteInversor):
         return super().act(observation, apply=False)
 
     def aplicar(self, asignacion: dict) -> dict:
-        """Acción explícita: vuelve a pasar el guard de esta corrida y escribe el libro.
-
-        Después de aplicar exitosamente, registra la decisión en data/lab/dummy/
-        (solo en modo offline/dummy, nunca consume tokens ni conecta a Postgres).
-        """
+        """Valida, aplica al libro y, solo si se autoriza, registra en sandbox dummy."""
+        try:
+            carpeta = _destino_lab_dummy()
+        except ValueError as exc:
+            return {"ok": False, "error": str(exc)}
         prices = _prices_for(asignacion)
         validada = self.policy.guard(asignacion, self.book, prices)
         if not validada.get("ok"):
@@ -260,11 +273,15 @@ class AgenteTrading(AgenteInversor):
             resultado = {"ok": True, **self.book.apply(validada, prices)}
         except ValueError as exc:
             return {"ok": False, "error": str(exc)}
-        # Registrar en lab dummy (nunca falla el flujo principal)
+        if carpeta is None:
+            resultado["lab_dummy"] = {"estado": "omitido", "motivo": "escritura dummy no habilitada"}
+            return resultado
         try:
-            _append_to_lab_dummy(validada, resultado)
-        except Exception:
-            pass
+            registrado = _append_to_lab_dummy(validada, resultado, carpeta, self.policy.hoy)
+            resultado["lab_dummy"] = {"estado": "registrado", **registrado}
+        except (OSError, TypeError, ValueError) as exc:
+            # El libro ya fue aplicado: informar explícitamente si Lab falló.
+            resultado["lab_dummy"] = {"estado": "error", "detalle": str(exc)}
         return resultado
 
 

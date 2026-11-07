@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+from datetime import date
 from pathlib import Path
 
 import pandas as pd
@@ -28,62 +29,80 @@ def find_ticker(ticker: str) -> tuple[str, dict, str] | None:
 
 
 def _signal(slug: str) -> dict:
-    """Lee la señal más reciente del historial diario; cae al archivo estático si no hay historial.
+    """Carga señales de un universo sin confundir ranking con apuestas LONG.
 
-    El historial (data/signals/history/YYYY-MM-DD.json) tiene el esquema
-    {date, bets:[{ticker,conviction,direction,horizon_days}], top10_ranking:[{rank,ticker,conviction}]}.
-    Lo normalizamos al esquema estático usado por AgenteRanking y AgenteClima:
-    {fecha, top:[{puesto,ticker,score,razones,precio_actual}], evitar:[], consensus:[], mercado:{}}.
+    El historial del SuperModel solo se usa para BMV cuando el JSON declara
+    universe='bmv'. Para otros universos conservamos el archivo estático.
+    El ranking es informativo; solo LONG y presentes en ese ranking pueden
+    autorizar una compra. Una señal caducada no se rejuvenece aquí.
     """
     history_dir = SIGNALS / "history"
-    if history_dir.exists():
-        dated = sorted(history_dir.glob("????-??-??.json"))
-        if dated:
+    if slug == "bmv" and history_dir.exists():
+        # Elegir el último snapshot *válido* de BMV, no simplemente el último nombre.
+        for path in sorted(history_dir.glob("????-??-??.json"), reverse=True):
             try:
-                raw = json.loads(dated[-1].read_text(encoding="utf-8"))
-                fecha = raw.get("date") or dated[-1].stem
-                top10 = raw.get("top10_ranking") or []
-                bets = raw.get("bets") or []
-                bets_long = {b.get("ticker") for b in bets if b.get("direction") == "LONG"}
+                date.fromisoformat(path.stem)
+                raw = json.loads(path.read_text(encoding="utf-8"))
+                if str(raw.get("universe", "")).lower() != slug:
+                    continue
+                if raw.get("date") != path.stem:
+                    continue
+                top10 = raw.get("top10_ranking")
+                bets = raw.get("bets")
+                if not isinstance(top10, list) or not isinstance(bets, list):
+                    continue
+                # El archivo del 31/oct tiene, aun declarando BMV, nombres de USA.
+                # Solo consideramos tickers del catálogo local de BMV.
+                permitidos = set(SLUGS[slug][1]["tickers"])
+                ranked = [
+                    r for r in top10
+                    if isinstance(r, dict)
+                    and str(r.get("ticker", "")).upper() in permitidos
+                ]
+                longs = {
+                    str(b.get("ticker", "")).upper()
+                    for b in bets if isinstance(b, dict)
+                    and str(b.get("direction", "")).upper() == "LONG"
+                    and b.get("horizon_days") == 20
+                }
+                # Este contrato exige estar en el top + en apuestas LONG.
                 top = [
                     {
                         "puesto": r.get("rank", i + 1),
-                        "ticker": r.get("ticker", ""),
-                        "score": r.get("conviction", 0.0),
-                        "razones": ["historial_diario"],
+                        "ticker": str(r["ticker"]).upper(),
+                        "score": r.get("conviction"),
+                        "razones": ["ranking_historico_supermodel"],
                         "precio_actual": None,
                     }
-                    for i, r in enumerate(top10)
+                    for i, r in enumerate(ranked[:5])
                 ]
-                # consensus: cada ticker que aparece como LONG en bets
-                consensus = [
-                    {"ticker": t, "n_horizontes": 1}
-                    for b in bets if b.get("direction") == "LONG"
-                    for t in [b.get("ticker")] if t
-                ]
+                comprables = [r["ticker"] for r in top if r["ticker"] in longs]
                 return {
-                    "fecha": fecha,
-                    "top": top,
-                    "evitar": [],
-                    "consensus": consensus,
+                    "fecha": path.stem,
                     "mercado": {},
+                    "consensus": [],
                     "by_horizon": {
                         "4s": {
-                            "top5": top[:5],
+                            "top5": top,
+                            "comprables": comprables,
+                            # El histórico no trae un campo 'evitar'. No lo inventamos.
                             "evitar": [],
                         }
                     },
-                    "_fuente": f"historial_diario:{dated[-1].name}",
+                    "_fuente": f"historial_diario:{path.name}",
+                    "_nota": "Solo LONG en bets y en top BMV autorizan nuevas compras. "
+                             "El historial no proporciona lista evitar.",
                 }
-            except Exception:
-                pass  # cae al archivo estático
+            except (ValueError, TypeError, KeyError, json.JSONDecodeError):
+                # Ignorar un snapshot malformado y revisar el siguiente más reciente.
+                continue
 
-    # Fallback: archivo estático por slug
+    # En USA, ETFs, cripto y fibras se conserva su señal estática propia.
+    # Si no existe historial válido de BMV, también se usa su archivo estático.
     path = SIGNALS / f"{slug}.json"
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
-
 
 def _last_close(symbol: str) -> float | None:
     path = MARKET / f"{symbol}.parquet"
@@ -170,22 +189,25 @@ class AgenteRanking(ObservationAgent):
             return {"ok": False, "error": f"universo {universo}. Usa: {', '.join(SLUGS)}"}
         sig = _signal(slug)
         if not sig:
-            return {"ok": False, "error": f"no hay data/signals/{slug}.json"}
+            return {"ok": False, "error": f"no hay señal disponible para {slug}"}
         by_h = sig.get("by_horizon") or {}
+        # Un snapshot de 20 días no debe etiquetarse falsamente como 1s/2s/3s.
+        if horizonte not in by_h and sig.get("_fuente", "").startswith("historial_diario:"):
+            return {"ok": False, "error": f"el historial SuperModel solo publica horizonte 4s; solicitado {horizonte}"}
         block = by_h.get(horizonte) or by_h.get("4s") or {}
         consensus = {c["ticker"]: c for c in sig.get("consensus") or []}
         picks = []
-        for i, p in enumerate(block.get("top5") or [], start=1):
-            cons = consensus.get(p["ticker"]) or {}
+        for i, item in enumerate(block.get("top5") or [], start=1):
+            cons = consensus.get(item["ticker"]) or {}
             picks.append({
-                "puesto": i,
-                "ticker": p["ticker"],
-                "score": p.get("score"),
-                "razones": p.get("razones") or [],
-                "precio": p.get("precio_actual"),
+                "puesto": item.get("puesto", i),
+                "ticker": item["ticker"],
+                "score": item.get("score"),
+                "razones": item.get("razones") or [],
+                "precio": item.get("precio_actual"),
                 "horizontes": cons.get("n_horizontes"),
             })
-        return {
+        out = {
             "ok": True,
             "universo": slug,
             "horizonte": horizonte,
@@ -194,6 +216,10 @@ class AgenteRanking(ObservationAgent):
             "top": picks,
             "evitar": block.get("evitar") or [],
         }
+        if "comprables" in block:
+            out["comprables"] = [t for t in block["comprables"] if t in {p["ticker"] for p in picks}]
+            out["nota"] = sig.get("_nota", "")
+        return out
 
     def tool_schema(self) -> dict:
         return _schema(self.name, self.description, {
@@ -202,6 +228,10 @@ class AgenteRanking(ObservationAgent):
         }, required=["universo"])
 
     def comprables(self, resultado: dict) -> list[str]:
+        # Señales históricas: autorización explícita de bets LONG ∩ top BMV.
+        # Señales estáticas antiguas: mantener el contrato original (top).
+        if "comprables" in resultado:
+            return list(resultado["comprables"] or [])
         return [p["ticker"] for p in resultado.get("top") or []]
 
     def evitados(self, resultado: dict) -> list[str]:
