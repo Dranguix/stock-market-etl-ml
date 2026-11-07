@@ -1,0 +1,463 @@
+{
+  "entries": [
+    {
+      "date": "2026-07-03",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "WALMEX"
+      ],
+      "regime": "?",
+      "hash": "e91e316c79fd2f4b"
+    },
+    {
+      "date": "2026-07-04",
+      "n_bets": 2,
+      "bets": [
+        "WALMEX",
+        "ALSEA"
+      ],
+      "regime": "?",
+      "hash": "2d1008f1c8a489a8"
+    },
+    {
+      "date": "2026-07-11",
+      "n_bets": 2,
+      "bets": [
+        "ALSEA",
+        "WALMEX"
+      ],
+      "regime": "?",
+      "hash": "47e66ac3ceeab039"
+    },
+    {
+      "date": "2026-07-14",
+      "n_bets": 2,
+      "bets": [
+        "POSADAS",
+        "WALMEX"
+      ],
+      "regime": "?",
+      "hash": "1d0a5cb7673575dc"
+    },
+    {
+      "date": "2026-07-18",
+      "n_bets": 2,
+      "bets": [
+        "ALSEA",
+        "WALMEX"
+      ],
+      "regime": "?",
+      "hash": "968ae4663edf6e8e"
+    },
+    {
+      "date": "2026-07-28",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "HERDEZ"
+      ],
+      "regime": "?",
+      "hash": "a5346f3d481c2020"
+    },
+    {
+      "date": "2026-08-01",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "PINFRA"
+      ],
+      "regime": "?",
+      "hash": "fdc486fceb7b499b"
+    },
+    {
+      "date": "2026-08-02",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "POSADAS"
+      ],
+      "regime": "?",
+      "hash": "8e65e8eea10c11fe"
+    },
+    {
+      "date": "2026-08-05",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "HERDEZ"
+      ],
+      "regime": "?",
+      "hash": "5b3d6cf271f61e49"
+    },
+    {
+      "date": "2026-08-06",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "HERDEZ"
+      ],
+      "regime": "?",
+      "hash": "369fc08198992fc2"
+    },
+    {
+      "date": "2026-08-11",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "FEMSAUBD"
+      ],
+      "regime": "?",
+      "hash": "e9714899d3e01949"
+    },
+    {
+      "date": "2026-08-12",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "FEMSAUBD"
+      ],
+      "regime": "?",
+      "hash": "c4910fbcf7da025b"
+    },
+    {
+      "date": "2026-08-13",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "FEMSAUBD"
+      ],
+      "regime": "?",
+      "hash": "db9462a592a4aa26"
+    },
+    {
+      "date": "2026-08-14",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "GCC"
+      ],
+      "regime": "?",
+      "hash": "5f21584ee13daea1"
+    },
+    {
+      "date": "2026-08-16",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "MEGACPO"
+      ],
+      "regime": "?",
+      "hash": "a7ba7da1d95838f1"
+    },
+    {
+      "date": "2026-08-18",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "POSADAS"
+      ],
+      "regime": "?",
+      "hash": "eb1f04c3c4e9b069"
+    },
+    {
+      "date": "2026-08-20",
+      "n_bets": 2,
+      "bets": [
+        "POSADAS",
+        "GENTERA"
+      ],
+      "regime": "?",
+      "hash": "c02f08f1917ab6c2"
+    },
+    {
+      "date": "2026-08-21",
+      "n_bets": 2,
+      "bets": [
+        "WALMEX",
+        "FUNO11"
+      ],
+      "regime": "?",
+      "hash": "b30fbd644a5ed57d"
+    },
+    {
+      "date": "2026-08-28",
+      "n_bets": 2,
+      "bets": [
+        "QQQ",
+        "XLK"
+      ],
+      "regime": "?",
+      "hash": "4d919fa17b41862c"
+    },
+    {
+      "date": "2026-09-01",
+      "n_bets": 2,
+      "bets": [
+        "FUNO11",
+        "POSADAS"
+      ],
+      "regime": "?",
+      "hash": "afe4f5d71aa22c16"
+    },
+    {
+      "date": "2026-09-04",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "FUNO11"
+      ],
+      "regime": "?",
+      "hash": "f0169d917a6e3338"
+    },
+    {
+      "date": "2026-09-06",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "MEGACPO"
+      ],
+      "regime": "?",
+      "hash": "bd4ddfe539da12e7"
+    },
+    {
+      "date": "2026-09-09",
+      "n_bets": 2,
+      "bets": [
+        "POSADAS",
+        "GMEXICOB"
+      ],
+      "regime": "?",
+      "hash": "c17e14e6a4c6adee"
+    },
+    {
+      "date": "2026-09-11",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "GMEXICOB"
+      ],
+      "regime": "?",
+      "hash": "141e7dc53b3f547a"
+    },
+    {
+      "date": "2026-09-12",
+      "n_bets": 2,
+      "bets": [
+        "QQQ",
+        "INTC"
+      ],
+      "regime": "?",
+      "hash": "72246f9bc52261d6"
+    },
+    {
+      "date": "2026-09-13",
+      "n_bets": 2,
+      "bets": [
+        "QQQ",
+        "INTC"
+      ],
+      "regime": "?",
+      "hash": "d70a1a5958ad322f"
+    },
+    {
+      "date": "2026-09-15",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "BIMBOA"
+      ],
+      "regime": "?",
+      "hash": "75d60fd39b5d9641"
+    },
+    {
+      "date": "2026-09-17",
+      "n_bets": 1,
+      "bets": [
+        "WALMEX"
+      ],
+      "regime": "?",
+      "hash": "bf299bd0e1460f02"
+    },
+    {
+      "date": "2026-09-18",
+      "n_bets": 2,
+      "bets": [
+        "META",
+        "INTC"
+      ],
+      "regime": "?",
+      "hash": "514033d95f53b8bf"
+    },
+    {
+      "date": "2026-09-19",
+      "n_bets": 2,
+      "bets": [
+        "FIBRAPL",
+        "META"
+      ],
+      "regime": "?",
+      "hash": "0d8c8e1f8c527084"
+    },
+    {
+      "date": "2026-09-20",
+      "n_bets": 2,
+      "bets": [
+        "GENTERA",
+        "FUNO11"
+      ],
+      "regime": "?",
+      "hash": "bfd4c2db33abf405"
+    },
+    {
+      "date": "2026-09-21",
+      "n_bets": 2,
+      "bets": [
+        "GENTERA",
+        "POSADAS"
+      ],
+      "regime": "?",
+      "hash": "4937285e54252d08"
+    },
+    {
+      "date": "2026-09-26",
+      "n_bets": 2,
+      "bets": [
+        "WALMEX",
+        "CHDRAUIB"
+      ],
+      "regime": "?",
+      "hash": "4184423046925f04"
+    },
+    {
+      "date": "2026-09-29",
+      "n_bets": 2,
+      "bets": [
+        "GENTERA",
+        "ASURB"
+      ],
+      "regime": "?",
+      "hash": "32dc30993eab62a6"
+    },
+    {
+      "date": "2026-10-02",
+      "n_bets": 1,
+      "bets": [
+        "GCC"
+      ],
+      "regime": "?",
+      "hash": "a66b2f5e32757df9"
+    },
+    {
+      "date": "2026-10-08",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "GENTERA"
+      ],
+      "regime": "?",
+      "hash": "eb0504ad0101d619"
+    },
+    {
+      "date": "2026-10-09",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "POSADAS"
+      ],
+      "regime": "?",
+      "hash": "3042e7872294e355"
+    },
+    {
+      "date": "2026-10-15",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "WALMEX"
+      ],
+      "regime": "?",
+      "hash": "2f70965169fee53c"
+    },
+    {
+      "date": "2026-10-16",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "GENTERA"
+      ],
+      "regime": "?",
+      "hash": "db717c3d9f41532c"
+    },
+    {
+      "date": "2026-10-21",
+      "n_bets": 2,
+      "bets": [
+        "MSFT",
+        "QQQ"
+      ],
+      "regime": "?",
+      "hash": "7526a2fbd6271160"
+    },
+    {
+      "date": "2026-10-23",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "FUNO11"
+      ],
+      "regime": "?",
+      "hash": "5e4d79a3592570b6"
+    },
+    {
+      "date": "2026-10-25",
+      "n_bets": 2,
+      "bets": [
+        "GCC",
+        "FUNO11"
+      ],
+      "regime": "?",
+      "hash": "858787e9e07a423d"
+    },
+    {
+      "date": "2026-10-27",
+      "n_bets": 2,
+      "bets": [
+        "POSADAS",
+        "GCC"
+      ],
+      "regime": "?",
+      "hash": "f40012f55aa70c6e"
+    },
+    {
+      "date": "2026-10-28",
+      "n_bets": 2,
+      "bets": [
+        "QQQ",
+        "FIBRAPL"
+      ],
+      "regime": "?",
+      "hash": "c99845c57b7f3ccf"
+    },
+    {
+      "date": "2026-10-30",
+      "n_bets": 2,
+      "bets": [
+        "POSADAS",
+        "GRUMAB"
+      ],
+      "regime": "?",
+      "hash": "d69e375e9e3e1e89"
+    },
+    {
+      "date": "2026-10-31",
+      "n_bets": 2,
+      "bets": [
+        "POSADAS",
+        "GMEXICOB"
+      ],
+      "regime": "?",
+      "hash": "86bd71db526ea6c0"
+    }
+  ],
+  "last_updated": "2026-10-31T00:35:54.379118+00:00"
+}

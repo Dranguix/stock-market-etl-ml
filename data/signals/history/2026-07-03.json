@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-03",
+  "timestamp_utc": "2026-07-03T01:11:10.695460+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "FUNO11",
+      "conviction": 0.5726,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "WALMEX",
+      "conviction": 0.5618,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "QQQ",
+      "conviction": 0.7242,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "XLK",
+      "conviction": 0.708,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "FXI",
+      "conviction": 0.6714,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "FIBRAPL",
+      "conviction": 0.6604,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "FIBRAPL",
+      "conviction": 0.6561,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "XLP",
+      "conviction": 0.632,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "JNJ",
+      "conviction": 0.6207,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "XLY",
+      "conviction": 0.6205,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "EEM",
+      "conviction": 0.6181,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "SPY",
+      "conviction": 0.6089,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "e91e316c79fd2f4b"
+}

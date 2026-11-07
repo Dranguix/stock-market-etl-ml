@@ -1,0 +1,93 @@
+{
+  "universe": "full",
+  "index": "SPY,NAFTRAC",
+  "start": "2026-04-13",
+  "end": "2026-10-09",
+  "final_equity": 50.1,
+  "retorno_total_pct": 0.2,
+  "benchmark": "SPY",
+  "benchmark_ret_pct": 13.48,
+  "stopped_out_count": 2,
+  "months": [
+    {
+      "decide_day": "2026-04-13",
+      "equity_before": 50.0,
+      "equity_after": 52.43,
+      "retorno_pct": 4.86,
+      "allocations": {
+        "SPY": 30.0,
+        "NAFTRAC": 12.0
+      },
+      "stopped_out": [],
+      "motivo": "Ningún factor técnico pasó IV>=0.02 (máximo 0.0046) y el LSTM está en AUC~0.50-0.54, así que no hay señal fuerte para elegir nombres. El único factor con ganancia es momentum 12-1, y en BMV sola el co"
+    },
+    {
+      "decide_day": "2026-05-14",
+      "equity_before": 52.43,
+      "equity_after": 51.57,
+      "retorno_pct": -1.63,
+      "allocations": {
+        "SPY": 36.7,
+        "NAFTRAC": 15.73
+      },
+      "stopped_out": [],
+      "motivo": "No hay convicción fuerte en ningún nombre individual: el factor que sí funciona (momentum 12-1) es débil en BMV sola, donde los costos se comen casi todo y el índice le ganó a las picks en 24 meses. L"
+    },
+    {
+      "decide_day": "2026-06-12",
+      "equity_before": 51.57,
+      "equity_after": 50.9,
+      "retorno_pct": -1.31,
+      "allocations": {
+        "SPY": 30.94,
+        "NAFTRAC": 20.63
+      },
+      "stopped_out": [],
+      "motivo": "Sin convicción fuerte en nombres individuales. El único factor con evidencia en backtest es momentum 12-1, y en BMV sola los costos de transacción se comen casi toda la ventaja y el portafolio de acci"
+    },
+    {
+      "decide_day": "2026-07-13",
+      "equity_before": 50.9,
+      "equity_after": 51.72,
+      "retorno_pct": 1.62,
+      "allocations": {
+        "SPY": 40.72,
+        "NAFTRAC": 10.18
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull al 99% y momentum 12-1 del universo amplio con ganancia, así que el mercado está favorable para estar invertido. Las señales técnicas propias no sirven (IV máximo 0.0046, LSTM con AUC ~0."
+    },
+    {
+      "decide_day": "2026-08-11",
+      "equity_before": 51.72,
+      "equity_after": 50.89,
+      "retorno_pct": -1.59,
+      "allocations": {
+        "VESTA": 12.41,
+        "FUNO11": 10.34,
+        "PINFRA": 8.27,
+        "GMEXICOB": 5.17,
+        "SPY": 15.52
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (100%), así que mantengo exposición. Los picks individuales son los de mejor score combinado con fundamentales sólidos y volatilidad baja: VESTA (score +0.80, vol 19%, margen operativo 80"
+    },
+    {
+      "decide_day": "2026-09-09",
+      "equity_before": 50.89,
+      "equity_after": 50.1,
+      "retorno_pct": -1.56,
+      "allocations": {
+        "VOO": 25.45,
+        "FUNO11": 9.16,
+        "GMEXICOB": 9.16,
+        "AMD": 7.13
+      },
+      "stopped_out": [
+        "AMD",
+        "GMEXICOB"
+      ],
+      "motivo": "Régimen bull al 100%, así que el sesgo es estar invertido. La evidencia técnica propia no pasó el umbral de IV, el LSTM es casi azar, y el único factor con señal es el momentum 12-1, que en BMV sola s"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+[
+  {
+    "ticker": "NAFTRAC",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.7244,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.6489,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": 0.0,
+    "n_articles": 6,
+    "sources": [
+      "databursatil"
+    ]
+  },
+  {
+    "ticker": "FIBRAPL",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.7244,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.6489,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": 0.0,
+    "n_articles": 6,
+    "sources": [
+      "databursatil"
+    ]
+  },
+  {
+    "ticker": "SPY",
+    "news_sent_score": 0.1,
+    "news_count_7d": 1.9564,
+    "news_sent_delta": 0.1727,
+    "news_sent_vol": 0.378,
+    "news_relevance_avg": 0.9284,
+    "news_esg_score": 0.0,
+    "n_articles": 17,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "QQQ",
+    "news_sent_score": 0.2,
+    "news_count_7d": 0.1359,
+    "news_sent_delta": 0.3966,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 1,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "IWM",
+    "news_sent_score": 0.0,
+    "news_count_7d": 2.4993,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 30,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "VTI",
+    "news_sent_score": 0.0,
+    "news_count_7d": 2.1901,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.9446,
+    "news_esg_score": 0.0,
+    "n_articles": 27,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "VOO",
+    "news_sent_score": -0.1,
+    "news_count_7d": 2.3841,
+    "news_sent_delta": 0.04,
+    "news_sent_vol": 0.196,
+    "news_relevance_avg": 0.9866,
+    "news_esg_score": 0.0,
+    "n_articles": 28,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLK",
+    "news_sent_score": 0.1,
+    "news_count_7d": 1.5939,
+    "news_sent_delta": -0.0523,
+    "news_sent_vol": 0.2226,
+    "news_relevance_avg": 0.9004,
+    "news_esg_score": 0.0,
+    "n_articles": 11,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLF",
+    "news_sent_score": -0.7,
+    "news_count_7d": 0.2291,
+    "news_sent_delta": -0.1288,
+    "news_sent_vol": 0.335,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": 0.0,
+    "n_articles": 5,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLE",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.6059,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 2,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLV",
+    "news_sent_score": 0.2,
+    "news_count_7d": 2.3555,
+    "news_sent_delta": 0.0595,
+    "news_sent_vol": 0.2365,
+    "news_relevance_avg": 0.9856,
+    "news_esg_score": 0.0,
+    "n_articles": 30,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLI",
+    "news_sent_score": 0.0,
+    "news_count_7d": 2.3763,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.9953,
+    "news_esg_score": 0.0,
+    "n_articles": 30,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLY",
+    "news_sent_score": 0.0,
+    "news_count_7d": 1.5775,
+    "news_sent_delta": -0.0182,
+    "news_sent_vol": 0.2916,
+    "news_relevance_avg": 0.988,
+    "news_esg_score": 0.0,
+    "n_articles": 16,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLP",
+    "news_sent_score": 0.0,
+    "news_count_7d": 2.2725,
+    "news_sent_delta": 0.0108,
+    "news_sent_vol": 0.2695,
+    "news_relevance_avg": 0.9947,
+    "news_esg_score": 0.0,
+    "n_articles": 30,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "EEM",
+    "news_sent_score": 0.1,
+    "news_count_7d": 0.4236,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.8285,
+    "news_esg_score": 0.0,
+    "n_articles": 2,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "EWZ",
+    "news_sent_score": 0.8,
+    "news_count_7d": 1.1264,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 5,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "FXI",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "GLD",
+    "news_sent_score": 0.1,
+    "news_count_7d": 1.2591,
+    "news_sent_delta": 0.224,
+    "news_sent_vol": 0.4689,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 8,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "SLV",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "USO",
+    "news_sent_score": 0.1,
+    "news_count_7d": 2.4781,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 30,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "TLT",
+    "news_sent_score": 0.2,
+    "news_count_7d": 0.8481,
+    "news_sent_delta": -0.041,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.9805,
+    "news_esg_score": 0.0,
+    "n_articles": 7,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "HYG",
+    "news_sent_score": -0.3,
+    "news_count_7d": 2.1485,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.9769,
+    "news_esg_score": 0.0,
+    "n_articles": 30,
+    "sources": [
+      "google_news"
+    ]
+  }
+]

@@ -1,0 +1,309 @@
+[
+  {
+    "ticker": "AAPL",
+    "news_sent_score": 0.2,
+    "news_count_7d": 0.2567,
+    "news_sent_delta": 1.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 1,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "MSFT",
+    "news_sent_score": 0.7,
+    "news_count_7d": 0.5525,
+    "news_sent_delta": -0.6411,
+    "news_sent_vol": 0.4797,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 2,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "NVDA",
+    "news_sent_score": 0.8,
+    "news_count_7d": 1.4397,
+    "news_sent_delta": 0.7485,
+    "news_sent_vol": 0.4997,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 7,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "GOOGL",
+    "news_sent_score": -0.1,
+    "news_count_7d": 1.1148,
+    "news_sent_delta": -0.3131,
+    "news_sent_vol": 0.4638,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 4,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "META",
+    "news_sent_score": -0.5,
+    "news_count_7d": 0.4974,
+    "news_sent_delta": 0.2428,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 1,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "AMZN",
+    "news_sent_score": 0.6,
+    "news_count_7d": 1.1877,
+    "news_sent_delta": 1.375,
+    "news_sent_vol": 0.4841,
+    "news_relevance_avg": 0.9241,
+    "news_esg_score": 0.0,
+    "n_articles": 6,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "TSLA",
+    "news_sent_score": 0.1,
+    "news_count_7d": 0.5156,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 3,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "AMD",
+    "news_sent_score": 0.0,
+    "news_count_7d": 1.902,
+    "news_sent_delta": 0.3511,
+    "news_sent_vol": 0.5929,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 18,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "INTC",
+    "news_sent_score": -0.4,
+    "news_count_7d": 2.0083,
+    "news_sent_delta": -0.0615,
+    "news_sent_vol": 0.7531,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 18,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "JPM",
+    "news_sent_score": 0.6,
+    "news_count_7d": 1.9507,
+    "news_sent_delta": 0.3395,
+    "news_sent_vol": 0.6642,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 13,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "BAC",
+    "news_sent_score": 0.5,
+    "news_count_7d": 2.1086,
+    "news_sent_delta": -0.343,
+    "news_sent_vol": 0.407,
+    "news_relevance_avg": 0.9535,
+    "news_esg_score": -1.0,
+    "n_articles": 16,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "GS",
+    "news_sent_score": 0.0,
+    "news_count_7d": 1.4454,
+    "news_sent_delta": -0.1095,
+    "news_sent_vol": 0.5344,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 9,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "V",
+    "news_sent_score": 0.7,
+    "news_count_7d": 0.834,
+    "news_sent_delta": 0.4968,
+    "news_sent_vol": 0.5,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 2,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "MA",
+    "news_sent_score": 0.4,
+    "news_count_7d": 0.5083,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 1,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "KO",
+    "news_sent_score": 0.8,
+    "news_count_7d": 1.5094,
+    "news_sent_delta": -0.3088,
+    "news_sent_vol": 0.4541,
+    "news_relevance_avg": 0.7795,
+    "news_esg_score": 0.0,
+    "n_articles": 16,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "PEP",
+    "news_sent_score": 0.2,
+    "news_count_7d": 1.4577,
+    "news_sent_delta": 0.2426,
+    "news_sent_vol": 0.4287,
+    "news_relevance_avg": 0.949,
+    "news_esg_score": 0.0,
+    "n_articles": 8,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "MCD",
+    "news_sent_score": -0.6,
+    "news_count_7d": 1.2005,
+    "news_sent_delta": -0.0349,
+    "news_sent_vol": 0.5996,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 5,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "JNJ",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "PFE",
+    "news_sent_score": 0.7,
+    "news_count_7d": 0.6096,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 2,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XOM",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "CVX",
+    "news_sent_score": 0.8,
+    "news_count_7d": 0.7176,
+    "news_sent_delta": 0.2695,
+    "news_sent_vol": 0.4437,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 5,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "AMX",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.9868,
+    "news_sent_delta": 0.0267,
+    "news_sent_vol": 0.5404,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": 0.0,
+    "n_articles": 11,
+    "sources": [
+      "google_news",
+      "databursatil"
+    ]
+  },
+  {
+    "ticker": "FMX",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.7244,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.6489,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": 0.0,
+    "n_articles": 6,
+    "sources": [
+      "databursatil"
+    ]
+  },
+  {
+    "ticker": "BSMX",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  }
+]

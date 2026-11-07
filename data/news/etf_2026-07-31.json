@@ -1,0 +1,278 @@
+[
+  {
+    "ticker": "NAFTRAC",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "FIBRAPL",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "SPY",
+    "news_sent_score": 0.5,
+    "news_count_7d": 1.0485,
+    "news_sent_delta": 0.0421,
+    "news_sent_vol": 0.4832,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 3,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "QQQ",
+    "news_sent_score": -0.5,
+    "news_count_7d": 1.2392,
+    "news_sent_delta": 0.3021,
+    "news_sent_vol": 0.4592,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 4,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "IWM",
+    "news_sent_score": -0.7,
+    "news_count_7d": 1.9397,
+    "news_sent_delta": -0.0664,
+    "news_sent_vol": 0.2489,
+    "news_relevance_avg": 0.9284,
+    "news_esg_score": 0.0,
+    "n_articles": 23,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "VTI",
+    "news_sent_score": 0.0,
+    "news_count_7d": 1.5751,
+    "news_sent_delta": 0.0877,
+    "news_sent_vol": 0.3271,
+    "news_relevance_avg": 0.9564,
+    "news_esg_score": 0.0,
+    "n_articles": 10,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "VOO",
+    "news_sent_score": 0.3,
+    "news_count_7d": 1.6569,
+    "news_sent_delta": 0.2983,
+    "news_sent_vol": 0.6663,
+    "news_relevance_avg": 0.9103,
+    "news_esg_score": 0.0,
+    "n_articles": 14,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLK",
+    "news_sent_score": 0.2,
+    "news_count_7d": 1.0405,
+    "news_sent_delta": 0.3182,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.7218,
+    "news_esg_score": 0.0,
+    "n_articles": 8,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLF",
+    "news_sent_score": 0.7,
+    "news_count_7d": 0.3908,
+    "news_sent_delta": 0.3314,
+    "news_sent_vol": 0.4995,
+    "news_relevance_avg": 0.3421,
+    "news_esg_score": 0.0,
+    "n_articles": 4,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLE",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.3319,
+    "news_sent_delta": -0.1938,
+    "news_sent_vol": 0.2797,
+    "news_relevance_avg": 0.9273,
+    "news_esg_score": 0.0,
+    "n_articles": 2,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLV",
+    "news_sent_score": -0.2,
+    "news_count_7d": 1.3438,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 14,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLI",
+    "news_sent_score": 0.1,
+    "news_count_7d": 0.9588,
+    "news_sent_delta": -0.0683,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.9551,
+    "news_esg_score": 0.0,
+    "n_articles": 10,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLY",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.8423,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 4,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLP",
+    "news_sent_score": -0.1,
+    "news_count_7d": 1.0077,
+    "news_sent_delta": 0.0422,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.945,
+    "news_esg_score": 0.0,
+    "n_articles": 5,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "EEM",
+    "news_sent_score": -0.8,
+    "news_count_7d": 0.956,
+    "news_sent_delta": 0.3584,
+    "news_sent_vol": 0.4795,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 5,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "EWZ",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "FXI",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "GLD",
+    "news_sent_score": -0.4,
+    "news_count_7d": 0.3465,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 2,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "SLV",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "USO",
+    "news_sent_score": 0.3,
+    "news_count_7d": 1.3738,
+    "news_sent_delta": -0.4318,
+    "news_sent_vol": 0.4785,
+    "news_relevance_avg": 0.967,
+    "news_esg_score": 0.0,
+    "n_articles": 16,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "TLT",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.295,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.7402,
+    "news_esg_score": 0.0,
+    "n_articles": 3,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "HYG",
+    "news_sent_score": -0.3,
+    "news_count_7d": 0.6541,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 4,
+    "sources": [
+      "google_news"
+    ]
+  }
+]

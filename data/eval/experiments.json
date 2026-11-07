@@ -195,6 +195,140 @@
       "win_rate_net": 48.5,
       "n_periods": 97
     },
-    "low_n_warning": false
+    "low_n_warning": false,
+    "frontier_gim_sharpe_uplift_h20": 0.71
+  },
+  "exp4_frontier_ab": {
+    "generated_at": "2026-07-01T22:30:03.723566+00:00",
+    "description": "Graph-Ising (gim_*) + order flow brokers (flow_*) vs baseline, walk-forward expanding refit 63d",
+    "promotion_rule": "delta_auc > 0.015 y delta_sharpe > 0",
+    "h20": {
+      "arms": {
+        "A_baseline": {
+          "auc": 0.5248,
+          "auc_ci90": [
+            0.5191,
+            0.5305
+          ],
+          "sharpe_net": -0.027,
+          "hit_top2": 0.4211,
+          "n_periods": 38
+        },
+        "B_gim": {
+          "auc": 0.5268,
+          "auc_ci90": [
+            0.5213,
+            0.5325
+          ],
+          "sharpe_net": 0.538,
+          "hit_top2": 0.4737,
+          "n_periods": 38
+        },
+        "C_flow": {
+          "auc": 0.5256,
+          "auc_ci90": [
+            0.5198,
+            0.5315
+          ],
+          "sharpe_net": -0.243,
+          "hit_top2": 0.4079,
+          "n_periods": 38
+        },
+        "D_gim_flow": {
+          "auc": 0.5271,
+          "auc_ci90": [
+            0.5218,
+            0.5327
+          ],
+          "sharpe_net": 0.685,
+          "hit_top2": 0.5,
+          "n_periods": 38
+        }
+      },
+      "verdicts": {
+        "B_gim": {
+          "delta_auc": 0.002,
+          "delta_sharpe": 0.565,
+          "promote": false
+        },
+        "C_flow": {
+          "delta_auc": 0.0008,
+          "delta_sharpe": -0.216,
+          "promote": false
+        },
+        "D_gim_flow": {
+          "delta_auc": 0.0023,
+          "delta_sharpe": 0.712,
+          "promote": false
+        }
+      },
+      "test_start": "2023-06-01",
+      "flow_data_start": "2025-06-30"
+    },
+    "h5": {
+      "arms": {
+        "A_baseline": {
+          "auc": 0.5085,
+          "auc_ci90": [
+            0.5019,
+            0.5154
+          ],
+          "sharpe_net": 0.505,
+          "hit_top2": 0.5662,
+          "n_periods": 151
+        },
+        "B_gim": {
+          "auc": 0.5098,
+          "auc_ci90": [
+            0.5032,
+            0.5164
+          ],
+          "sharpe_net": -0.277,
+          "hit_top2": 0.5364,
+          "n_periods": 151
+        },
+        "C_flow": {
+          "auc": 0.5071,
+          "auc_ci90": [
+            0.5008,
+            0.5139
+          ],
+          "sharpe_net": 0.632,
+          "hit_top2": 0.5894,
+          "n_periods": 151
+        },
+        "D_gim_flow": {
+          "auc": 0.5102,
+          "auc_ci90": [
+            0.5039,
+            0.5167
+          ],
+          "sharpe_net": -0.151,
+          "hit_top2": 0.5497,
+          "n_periods": 151
+        }
+      },
+      "verdicts": {
+        "B_gim": {
+          "delta_auc": 0.0013,
+          "delta_sharpe": -0.782,
+          "promote": false
+        },
+        "C_flow": {
+          "delta_auc": -0.0014,
+          "delta_sharpe": 0.127,
+          "promote": false
+        },
+        "D_gim_flow": {
+          "delta_auc": 0.0017,
+          "delta_sharpe": -0.656,
+          "promote": false
+        }
+      },
+      "test_start": "2023-06-22",
+      "flow_data_start": "2025-06-30"
+    },
+    "conclusion": "h20: gim_* sube Sharpe_net top-2 de -0.03 a +0.54 (B) y +0.69 (D), hit_top2 0.42->0.50; delta_AUC +0.002 no cruza el umbral 0.015 -> no promocion formal, pero features quedan integradas en SuperModel (h20 BMV) para monitoreo. h5: sin edge, ruido domina. flow_* solo tiene 65 dias de datos (creditos API agotados) -> re-evaluar con mas historia.",
+    "promoted": false
   }
 }

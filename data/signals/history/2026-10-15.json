@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-15",
+  "timestamp_utc": "2026-10-15T01:50:35.658621+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "GCC",
+      "conviction": 0.7171,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "WALMEX",
+      "conviction": 0.6822,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "QQQ",
+      "conviction": 0.8039,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "FIBRAPL",
+      "conviction": 0.7617,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "TSLA",
+      "conviction": 0.7209,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "GCC",
+      "conviction": 0.7171,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "AMZN",
+      "conviction": 0.7156,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "WALMEX",
+      "conviction": 0.6822,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "GENTERA",
+      "conviction": 0.6821,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "AAPL",
+      "conviction": 0.6632,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "META",
+      "conviction": 0.6605,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "FUNO11",
+      "conviction": 0.6394,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "2f70965169fee53c"
+}

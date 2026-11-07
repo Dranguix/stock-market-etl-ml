@@ -1,0 +1,50 @@
+{
+  "daily_cost": {
+    "label": "[daily cost=0.0055]",
+    "freq": "daily",
+    "cost_rate": 0.0055,
+    "anti_churn": false,
+    "start": "2026-09-09",
+    "end": "2026-10-09",
+    "final_equity": 49.14,
+    "retorno_pct": -1.72,
+    "turnover_usd_total": 579.8,
+    "costo_usd_total": 3.19
+  },
+  "daily_cost_antichurn": {
+    "label": "[daily +anti-churn cost=0.0055]",
+    "freq": "daily",
+    "cost_rate": 0.0055,
+    "anti_churn": true,
+    "start": "2026-09-09",
+    "end": "2026-10-09",
+    "final_equity": 50.23,
+    "retorno_pct": 0.47,
+    "turnover_usd_total": 207.0,
+    "costo_usd_total": 1.14
+  },
+  "weekly_cost": {
+    "label": "[weekly cost=0.0055]",
+    "freq": "weekly",
+    "cost_rate": 0.0055,
+    "anti_churn": false,
+    "start": "2026-09-09",
+    "end": "2026-10-09",
+    "final_equity": 49.39,
+    "retorno_pct": -1.22,
+    "turnover_usd_total": 189.47,
+    "costo_usd_total": 1.04
+  },
+  "monthly_cost": {
+    "label": "[monthly cost=0.0055]",
+    "freq": "monthly",
+    "cost_rate": 0.0055,
+    "anti_churn": false,
+    "start": "2026-09-09",
+    "end": "2026-10-09",
+    "final_equity": 52.35,
+    "retorno_pct": 4.7,
+    "turnover_usd_total": 50.0,
+    "costo_usd_total": 0.27
+  }
+}

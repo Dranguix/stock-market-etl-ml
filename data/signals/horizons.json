@@ -1,0 +1,332 @@
+{
+  "todo": {
+    "asof": "2026-10-09",
+    "sleeve": "todo",
+    "listas": {
+      "manana": [
+        {
+          "ticker": "AMX",
+          "symbol": "AMX",
+          "score": 0.037,
+          "precio": 21.32,
+          "puesto": 1
+        },
+        {
+          "ticker": "AMXB",
+          "symbol": "AMXB.MX",
+          "score": 0.0262,
+          "precio": 19.67,
+          "puesto": 2
+        },
+        {
+          "ticker": "MARA",
+          "symbol": "MARA",
+          "score": 0.0262,
+          "precio": 9.65,
+          "puesto": 3
+        },
+        {
+          "ticker": "INTC",
+          "symbol": "INTC",
+          "score": 0.0222,
+          "precio": 104.7,
+          "puesto": 4
+        },
+        {
+          "ticker": "AMD",
+          "symbol": "AMD",
+          "score": 0.0203,
+          "precio": 608.1,
+          "puesto": 5
+        }
+      ],
+      "semana": [
+        {
+          "ticker": "CLSK",
+          "symbol": "CLSK",
+          "score": 0.1762,
+          "precio": 10.495,
+          "puesto": 1
+        },
+        {
+          "ticker": "RIOT",
+          "symbol": "RIOT",
+          "score": 0.1442,
+          "precio": 16.885,
+          "puesto": 2
+        },
+        {
+          "ticker": "MARA",
+          "symbol": "MARA",
+          "score": 0.1407,
+          "precio": 9.65,
+          "puesto": 3
+        },
+        {
+          "ticker": "INTC",
+          "symbol": "INTC",
+          "score": 0.1226,
+          "precio": 104.7,
+          "puesto": 4
+        },
+        {
+          "ticker": "BOLSAA",
+          "symbol": "BOLSAA.MX",
+          "score": 0.0824,
+          "precio": 35.19,
+          "puesto": 5
+        }
+      ],
+      "mes": [
+        {
+          "ticker": "INTC",
+          "symbol": "INTC",
+          "score": 1.7233,
+          "precio": 104.7,
+          "puesto": 1
+        },
+        {
+          "ticker": "AMD",
+          "symbol": "AMD",
+          "score": 1.2162,
+          "precio": 608.1,
+          "puesto": 2
+        },
+        {
+          "ticker": "VISTAA",
+          "symbol": "VISTAA.MX",
+          "score": 1.1509,
+          "precio": 1219.0,
+          "puesto": 3
+        },
+        {
+          "ticker": "USO",
+          "symbol": "USO",
+          "score": 1.1363,
+          "precio": 148.2,
+          "puesto": 4
+        },
+        {
+          "ticker": "GMEXICOB",
+          "symbol": "GMEXICOB.MX",
+          "score": 0.5088,
+          "precio": 242.48,
+          "puesto": 5
+        }
+      ]
+    },
+    "libro": {
+      "mes": [
+        {
+          "ticker": "INTC",
+          "symbol": "INTC",
+          "score": 1.7233,
+          "precio": 104.7,
+          "puesto": 1,
+          "usd": 12.5,
+          "horizonte": "mes",
+          "dias": 20
+        },
+        {
+          "ticker": "AMD",
+          "symbol": "AMD",
+          "score": 1.2162,
+          "precio": 608.1,
+          "puesto": 2,
+          "usd": 12.5,
+          "horizonte": "mes",
+          "dias": 20
+        }
+      ],
+      "semana": [
+        {
+          "ticker": "CLSK",
+          "symbol": "CLSK",
+          "score": 0.1762,
+          "precio": 10.495,
+          "puesto": 1,
+          "usd": 15.0,
+          "horizonte": "semana",
+          "dias": 5
+        }
+      ],
+      "manana": [
+        {
+          "ticker": "AMX",
+          "symbol": "AMX",
+          "score": 0.037,
+          "precio": 21.32,
+          "puesto": 1,
+          "usd": 10.0,
+          "horizonte": "manana",
+          "dias": 1
+        }
+      ]
+    }
+  },
+  "bmv": {
+    "asof": "2026-10-09",
+    "sleeve": "bmv",
+    "listas": {
+      "manana": [
+        {
+          "ticker": "AMXB",
+          "symbol": "AMXB.MX",
+          "score": 0.0262,
+          "precio": 19.67,
+          "puesto": 1
+        },
+        {
+          "ticker": "VISTAA",
+          "symbol": "VISTAA.MX",
+          "score": 0.0049,
+          "precio": 1219.0,
+          "puesto": 2
+        },
+        {
+          "ticker": "BIMBOA",
+          "symbol": "BIMBOA.MX",
+          "score": 0.0018,
+          "precio": 55.92,
+          "puesto": 3
+        },
+        {
+          "ticker": "WALMEX",
+          "symbol": "WALMEX.MX",
+          "score": 0.0011,
+          "precio": 47.26,
+          "puesto": 4
+        },
+        {
+          "ticker": "VOLARA",
+          "symbol": "VOLARA.MX",
+          "score": 0.0009,
+          "precio": 11.52,
+          "puesto": 5
+        }
+      ],
+      "semana": [
+        {
+          "ticker": "BOLSAA",
+          "symbol": "BOLSAA.MX",
+          "score": 0.0824,
+          "precio": 35.19,
+          "puesto": 1
+        },
+        {
+          "ticker": "VOLARA",
+          "symbol": "VOLARA.MX",
+          "score": 0.0311,
+          "precio": 11.52,
+          "puesto": 2
+        },
+        {
+          "ticker": "OMAB",
+          "symbol": "OMAB.MX",
+          "score": 0.0295,
+          "precio": 207.35,
+          "puesto": 3
+        },
+        {
+          "ticker": "TLEVISACPO",
+          "symbol": "TLEVISACPO.MX",
+          "score": 0.0183,
+          "precio": 8.06,
+          "puesto": 4
+        },
+        {
+          "ticker": "GRUMAB",
+          "symbol": "GRUMAB.MX",
+          "score": -0.0001,
+          "precio": 237.88,
+          "puesto": 5
+        }
+      ],
+      "mes": [
+        {
+          "ticker": "VISTAA",
+          "symbol": "VISTAA.MX",
+          "score": 1.1509,
+          "precio": 1219.0,
+          "puesto": 1
+        },
+        {
+          "ticker": "GMEXICOB",
+          "symbol": "GMEXICOB.MX",
+          "score": 0.5088,
+          "precio": 242.48,
+          "puesto": 2
+        },
+        {
+          "ticker": "KOFUBL",
+          "symbol": "KOFUBL.MX",
+          "score": 0.2135,
+          "precio": 201.69,
+          "puesto": 3
+        },
+        {
+          "ticker": "ORBIA",
+          "symbol": "ORBIA.MX",
+          "score": 0.2128,
+          "precio": 22.73,
+          "puesto": 4
+        },
+        {
+          "ticker": "VESTA",
+          "symbol": "VESTA.MX",
+          "score": 0.1704,
+          "precio": 62.32,
+          "puesto": 5
+        }
+      ]
+    },
+    "libro": {
+      "mes": [
+        {
+          "ticker": "VISTAA",
+          "symbol": "VISTAA.MX",
+          "score": 1.1509,
+          "precio": 1219.0,
+          "puesto": 1,
+          "usd": 12.5,
+          "horizonte": "mes",
+          "dias": 20
+        },
+        {
+          "ticker": "GMEXICOB",
+          "symbol": "GMEXICOB.MX",
+          "score": 0.5088,
+          "precio": 242.48,
+          "puesto": 2,
+          "usd": 12.5,
+          "horizonte": "mes",
+          "dias": 20
+        }
+      ],
+      "semana": [
+        {
+          "ticker": "BOLSAA",
+          "symbol": "BOLSAA.MX",
+          "score": 0.0824,
+          "precio": 35.19,
+          "puesto": 1,
+          "usd": 15.0,
+          "horizonte": "semana",
+          "dias": 5
+        }
+      ],
+      "manana": [
+        {
+          "ticker": "AMXB",
+          "symbol": "AMXB.MX",
+          "score": 0.0262,
+          "precio": 19.67,
+          "puesto": 1,
+          "usd": 10.0,
+          "horizonte": "manana",
+          "dias": 1
+        }
+      ]
+    }
+  }
+}

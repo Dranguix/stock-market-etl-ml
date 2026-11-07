@@ -1,0 +1,3354 @@
+{
+  "WALMEX": [
+    {
+      "pago_date": "2021-11-24",
+      "ex_date": "2021-11-23",
+      "pago": 0.81,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-12-28",
+      "ex_date": "2021-12-27",
+      "pago": 0.82,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-22",
+      "ex_date": "2022-11-21",
+      "pago": 0.85,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-12-27",
+      "ex_date": "2022-12-26",
+      "pago": 0.86,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-04-11",
+      "ex_date": "2023-04-10",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-11-29",
+      "ex_date": "2023-11-28",
+      "pago": 0.97,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-12-06",
+      "ex_date": "2023-12-05",
+      "pago": 0.97,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-11-12",
+      "ex_date": "2024-11-11",
+      "pago": 0.59,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-12-10",
+      "ex_date": "2024-12-09",
+      "pago": 1.09,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-11-19",
+      "ex_date": "2025-11-18",
+      "pago": 0.84,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-12-17",
+      "ex_date": "2025-12-16",
+      "pago": 0.85,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2025-12-17",
+      "ex_date": "2025-12-16",
+      "pago": 0.85,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "FEMSAUBD": [
+    {
+      "pago_date": "2021-05-06",
+      "ex_date": "2021-05-05",
+      "pago": 1.15,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-11-05",
+      "ex_date": "2021-11-04",
+      "pago": 1.15,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-05",
+      "ex_date": "2022-05-04",
+      "pago": 1.7,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-07",
+      "ex_date": "2022-11-06",
+      "pago": 1.7,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-08",
+      "ex_date": "2023-05-07",
+      "pago": 1.8322,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-11-07",
+      "ex_date": "2023-11-06",
+      "pago": 1.8322,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-04-18",
+      "ex_date": "2024-04-17",
+      "pago": 1.0993,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-07-18",
+      "ex_date": "2024-07-17",
+      "pago": 1.8694,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-10-17",
+      "ex_date": "2024-10-16",
+      "pago": 1.8694,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-01-16",
+      "ex_date": "2025-01-15",
+      "pago": 1.8694,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-04-25",
+      "ex_date": "2025-04-24",
+      "pago": 3.67275,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-07-18",
+      "ex_date": "2025-07-17",
+      "pago": 3.67275,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-10-17",
+      "ex_date": "2025-10-16",
+      "pago": 3.67275,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-01-16",
+      "ex_date": "2026-01-15",
+      "pago": 3.67275,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-04-23",
+      "ex_date": "2026-04-22",
+      "pago": 3.202925,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-07-16",
+      "ex_date": "2026-07-15",
+      "pago": 3.202925,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-10-15",
+      "ex_date": "2026-10-14",
+      "pago": 3.202925,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-10-15",
+      "ex_date": "2026-10-14",
+      "pago": 3.202925,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "GMEXICOB": [
+    {
+      "pago_date": "2021-02-26",
+      "ex_date": "2021-02-25",
+      "pago": 1.25,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-05-27",
+      "ex_date": "2021-05-26",
+      "pago": 1.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-08-30",
+      "ex_date": "2021-08-29",
+      "pago": 1.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-12-01",
+      "ex_date": "2021-11-30",
+      "pago": 1.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-03-04",
+      "ex_date": "2022-03-03",
+      "pago": 1.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-06-02",
+      "ex_date": "2022-06-01",
+      "pago": 1.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-08-29",
+      "ex_date": "2022-08-28",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-25",
+      "ex_date": "2022-11-24",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-03-02",
+      "ex_date": "2023-03-01",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-29",
+      "ex_date": "2023-05-28",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-08-28",
+      "ex_date": "2023-08-27",
+      "pago": 0.8,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-11-27",
+      "ex_date": "2023-11-26",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-03-04",
+      "ex_date": "2024-03-03",
+      "pago": 0.8,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-24",
+      "ex_date": "2024-05-23",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-08-28",
+      "ex_date": "2024-08-27",
+      "pago": 1.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-11-26",
+      "ex_date": "2024-11-25",
+      "pago": 1.3,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-02-28",
+      "ex_date": "2025-02-27",
+      "pago": 1.1,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-27",
+      "ex_date": "2025-05-26",
+      "pago": 1.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-09-05",
+      "ex_date": "2025-09-04",
+      "pago": 1.3,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-12-01",
+      "ex_date": "2025-11-30",
+      "pago": 1.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-03-02",
+      "ex_date": "2026-03-01",
+      "pago": 1.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-06-01",
+      "ex_date": "2026-05-31",
+      "pago": 1.65,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-08-28",
+      "ex_date": "2026-08-27",
+      "pago": 0.8,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-08-28",
+      "ex_date": "2026-08-27",
+      "pago": 0.8,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "CEMEXCPO": [
+    {
+      "pago_date": "2024-06-18",
+      "ex_date": "2024-06-17",
+      "pago": 0.038136,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-09-17",
+      "ex_date": "2024-09-16",
+      "pago": 0.040488,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-12-11",
+      "ex_date": "2024-12-10",
+      "pago": 0.041658,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-03-11",
+      "ex_date": "2025-03-10",
+      "pago": 0.041922,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-06-18",
+      "ex_date": "2025-06-17",
+      "pago": 0.042315,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-09-18",
+      "ex_date": "2025-09-17",
+      "pago": 0.041097,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-12-16",
+      "ex_date": "2025-12-15",
+      "pago": 0.040404,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-03-12",
+      "ex_date": "2026-03-11",
+      "pago": 0.039381,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-06-18",
+      "ex_date": "2026-06-17",
+      "pago": 0.053619,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-09-17",
+      "ex_date": "2026-09-15",
+      "pago": 0.053385,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-09-17",
+      "ex_date": "2026-09-16",
+      "pago": 0.053385,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "GFNORTEO": [
+    {
+      "pago_date": "2021-05-04",
+      "ex_date": "2021-05-03",
+      "pago": 3.1670299314214,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-11-30",
+      "ex_date": "2021-11-29",
+      "pago": 2.6450972240576,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-31",
+      "ex_date": "2022-05-30",
+      "pago": 6.0774572703538,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-12-08",
+      "ex_date": "2022-12-07",
+      "pago": 5.8121271554781,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-06-12",
+      "ex_date": "2023-06-11",
+      "pago": 7.8738960658427,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-10-16",
+      "ex_date": "2023-10-15",
+      "pago": 5.202089752699,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-06-28",
+      "ex_date": "2024-06-27",
+      "pago": 9.0894778255989,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-12-18",
+      "ex_date": "2024-12-17",
+      "pago": 3.5547256847799,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-05",
+      "ex_date": "2025-05-04",
+      "pago": 9.9866974105974,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-12-09",
+      "ex_date": "2025-12-08",
+      "pago": 6.9906881874182,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-29",
+      "ex_date": "2026-05-28",
+      "pago": 10.4488291506783,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-05-29",
+      "ex_date": "2026-05-28",
+      "pago": 10.4488291506783,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "BIMBOA": [
+    {
+      "pago_date": "2021-05-17",
+      "ex_date": "2021-05-16",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-19",
+      "ex_date": "2022-05-18",
+      "pago": 0.65,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-28",
+      "ex_date": "2022-11-27",
+      "pago": 0.65,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-18",
+      "ex_date": "2023-05-17",
+      "pago": 0.78,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-14",
+      "ex_date": "2024-05-13",
+      "pago": 0.94,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-14",
+      "ex_date": "2025-05-13",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-13",
+      "ex_date": "2026-05-12",
+      "pago": 1.075,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-05-13",
+      "ex_date": "2026-05-12",
+      "pago": 1.075,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "ALSEA": [
+    {
+      "pago_date": "2024-05-14",
+      "ex_date": "2024-05-13",
+      "pago": 1.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-10-14",
+      "ex_date": "2025-10-13",
+      "pago": 0.5342226389,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-10-31",
+      "ex_date": "2025-10-30",
+      "pago": 0.5342226389,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-07",
+      "ex_date": "2026-05-06",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-05-07",
+      "ex_date": "2026-05-06",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "KIMBERA": [
+    {
+      "pago_date": "2021-04-08",
+      "ex_date": "2021-04-07",
+      "pago": 0.43,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-07-01",
+      "ex_date": "2021-06-30",
+      "pago": 0.43,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-10-07",
+      "ex_date": "2021-10-06",
+      "pago": 0.43,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-12-02",
+      "ex_date": "2021-12-01",
+      "pago": 0.43,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-04-07",
+      "ex_date": "2022-04-06",
+      "pago": 0.41,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-07-07",
+      "ex_date": "2022-07-06",
+      "pago": 0.41,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-10-06",
+      "ex_date": "2022-10-05",
+      "pago": 0.41,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-12-01",
+      "ex_date": "2022-11-30",
+      "pago": 0.41,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-04-13",
+      "ex_date": "2023-04-12",
+      "pago": 0.405,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-07-06",
+      "ex_date": "2023-07-05",
+      "pago": 0.405,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-10-05",
+      "ex_date": "2023-10-04",
+      "pago": 0.405,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-12-07",
+      "ex_date": "2023-12-06",
+      "pago": 0.405,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-04-04",
+      "ex_date": "2024-04-03",
+      "pago": 0.465,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-07-04",
+      "ex_date": "2024-07-03",
+      "pago": 0.465,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-10-03",
+      "ex_date": "2024-10-02",
+      "pago": 0.465,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-12-05",
+      "ex_date": "2024-12-04",
+      "pago": 0.465,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-04-03",
+      "ex_date": "2025-04-02",
+      "pago": 0.51,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-07-03",
+      "ex_date": "2025-07-02",
+      "pago": 0.51,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-10-02",
+      "ex_date": "2025-10-01",
+      "pago": 0.51,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-12-04",
+      "ex_date": "2025-12-03",
+      "pago": 0.51,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-07-02",
+      "ex_date": "2026-07-01",
+      "pago": 0.55,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-10-01",
+      "ex_date": "2026-09-30",
+      "pago": 0.55,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-12-03",
+      "ex_date": "2026-12-02",
+      "pago": 0.55,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-12-03",
+      "ex_date": "2026-12-02",
+      "pago": 0.55,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "GRUMAB": [
+    {
+      "pago_date": "2021-01-08",
+      "ex_date": "2021-01-07",
+      "pago": 1.41,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-04-09",
+      "ex_date": "2021-04-08",
+      "pago": 1.41,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-07-09",
+      "ex_date": "2021-07-08",
+      "pago": 1.3,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-10-08",
+      "ex_date": "2021-10-07",
+      "pago": 1.3,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-01-07",
+      "ex_date": "2022-01-06",
+      "pago": 1.3,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-04-08",
+      "ex_date": "2022-04-07",
+      "pago": 1.3,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-07-08",
+      "ex_date": "2022-07-07",
+      "pago": 1.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-10-07",
+      "ex_date": "2022-10-06",
+      "pago": 1.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-01-06",
+      "ex_date": "2023-01-05",
+      "pago": 1.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-04-10",
+      "ex_date": "2023-04-09",
+      "pago": 1.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-07-07",
+      "ex_date": "2023-07-06",
+      "pago": 1.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-10-06",
+      "ex_date": "2023-10-05",
+      "pago": 1.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-01-12",
+      "ex_date": "2024-01-11",
+      "pago": 1.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-04-12",
+      "ex_date": "2024-04-11",
+      "pago": 1.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-07-12",
+      "ex_date": "2024-07-11",
+      "pago": 1.26,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-10-11",
+      "ex_date": "2024-10-10",
+      "pago": 1.26,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-01-10",
+      "ex_date": "2025-01-09",
+      "pago": 1.26,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-04-11",
+      "ex_date": "2025-04-10",
+      "pago": 1.26,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-07-11",
+      "ex_date": "2025-07-10",
+      "pago": 1.44,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-10-10",
+      "ex_date": "2025-10-09",
+      "pago": 1.44,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-01-09",
+      "ex_date": "2026-01-08",
+      "pago": 1.44,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-04-10",
+      "ex_date": "2026-04-09",
+      "pago": 1.44,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-07-10",
+      "ex_date": "2026-07-09",
+      "pago": 1.44,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-07-10",
+      "ex_date": "2026-07-09",
+      "pago": 1.44,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "ASURB": [
+    {
+      "pago_date": "2021-10-01",
+      "ex_date": "2021-09-30",
+      "pago": 8.21,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-06-01",
+      "ex_date": "2022-05-31",
+      "pago": 15.03,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-31",
+      "ex_date": "2023-05-30",
+      "pago": 9.93,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-11-29",
+      "ex_date": "2023-11-28",
+      "pago": 10.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-29",
+      "ex_date": "2025-05-28",
+      "pago": 50.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-09-30",
+      "ex_date": "2025-09-29",
+      "pago": 15.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-11-27",
+      "ex_date": "2025-11-26",
+      "pago": 15.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-28",
+      "ex_date": "2026-05-27",
+      "pago": 10.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-11-30",
+      "ex_date": "2026-11-29",
+      "pago": 10.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-12-23",
+      "ex_date": "2026-12-22",
+      "pago": 10.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-12-23",
+      "ex_date": "2026-12-22",
+      "pago": 10.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "GAPB": [
+    {
+      "pago_date": "2021-05-28",
+      "ex_date": "2021-05-27",
+      "pago": 3.8230950615,
+      "tipo": "REEMBOLSO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-09-28",
+      "ex_date": "2021-09-27",
+      "pago": 7.8,
+      "tipo": "REEMBOLSO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-16",
+      "ex_date": "2022-05-15",
+      "pago": 7.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-17",
+      "ex_date": "2022-11-16",
+      "pago": 7.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-18",
+      "ex_date": "2023-05-17",
+      "pago": 3.71,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-07-13",
+      "ex_date": "2023-07-12",
+      "pago": 3.71,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-10-12",
+      "ex_date": "2023-10-11",
+      "pago": 3.71,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-12-14",
+      "ex_date": "2023-12-13",
+      "pago": 3.71,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-07-23",
+      "ex_date": "2024-07-22",
+      "pago": 6.93,
+      "tipo": "REEMBOLSO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-11-26",
+      "ex_date": "2024-11-25",
+      "pago": 6.93,
+      "tipo": "REEMBOLSO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2024-11-26",
+      "ex_date": "2024-11-25",
+      "pago": 6.93,
+      "tipo": "REEMBOLSO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-28",
+      "ex_date": "2025-05-27",
+      "pago": 8.42,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-08-14",
+      "ex_date": "2025-08-13",
+      "pago": 8.42,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2025-08-14",
+      "ex_date": "2025-08-13",
+      "pago": 8.42,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "ORBIA": [
+    {
+      "pago_date": "2021-04-14",
+      "ex_date": "2021-04-13",
+      "pago": 0.504075,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-07-14",
+      "ex_date": "2021-07-13",
+      "pago": 0.497,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-09-15",
+      "ex_date": "2021-09-14",
+      "pago": 0.4967925,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-12-15",
+      "ex_date": "2021-12-14",
+      "pago": 0.522305,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-04-13",
+      "ex_date": "2022-04-12",
+      "pago": 0.6177255549746,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-06-15",
+      "ex_date": "2022-06-14",
+      "pago": 0.6235335279528,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-09-15",
+      "ex_date": "2022-09-14",
+      "pago": 0.6229410355472,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-12-15",
+      "ex_date": "2022-12-14",
+      "pago": 0.6239079661457,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-04-21",
+      "ex_date": "2023-04-20",
+      "pago": 0.0314640301319,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-06-30",
+      "ex_date": "2023-06-29",
+      "pago": 0.0314521382236,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-09-29",
+      "ex_date": "2023-09-28",
+      "pago": 0.0313524053,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-12-29",
+      "ex_date": "2023-12-28",
+      "pago": 0.0314596917571,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-04-23",
+      "ex_date": "2024-04-22",
+      "pago": 0.0209058073213,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-06-28",
+      "ex_date": "2024-06-27",
+      "pago": 0.0209082183934,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-09-27",
+      "ex_date": "2024-09-26",
+      "pago": 0.0209735156145,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-12-18",
+      "ex_date": "2024-12-17",
+      "pago": 0.0209845185927,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "USD",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2024-12-18",
+      "ex_date": "2024-12-17",
+      "pago": 0.0209845185927,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "AC": [
+    {
+      "pago_date": "2021-04-27",
+      "ex_date": "2021-04-26",
+      "pago": 2.94,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-09-13",
+      "ex_date": "2021-09-12",
+      "pago": 1.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-12-15",
+      "ex_date": "2021-12-14",
+      "pago": 1.1,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-04-19",
+      "ex_date": "2022-04-18",
+      "pago": 3.18,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-29",
+      "ex_date": "2022-11-28",
+      "pago": 3.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-04-17",
+      "ex_date": "2023-04-16",
+      "pago": 3.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-11-22",
+      "ex_date": "2023-11-21",
+      "pago": 2.22,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-04-11",
+      "ex_date": "2024-04-10",
+      "pago": 3.8,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-08-29",
+      "ex_date": "2024-08-28",
+      "pago": 2.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-04-03",
+      "ex_date": "2025-04-02",
+      "pago": 4.12,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-06-09",
+      "ex_date": "2025-06-08",
+      "pago": 3.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-11-05",
+      "ex_date": "2025-11-04",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-04-08",
+      "ex_date": "2026-04-07",
+      "pago": 4.28,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-08-05",
+      "ex_date": "2026-08-04",
+      "pago": 2.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-10-28",
+      "ex_date": "2026-10-27",
+      "pago": 2.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-10-28",
+      "ex_date": "2026-10-27",
+      "pago": 2.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "VESTA": [
+    {
+      "pago_date": "2021-01-15",
+      "ex_date": "2021-01-14",
+      "pago": 0.0236793528556,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-04-15",
+      "ex_date": "2021-04-14",
+      "pago": 0.0242169501694,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-07-15",
+      "ex_date": "2021-07-14",
+      "pago": 0.020133633336,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-10-15",
+      "ex_date": "2021-10-14",
+      "pago": 0.020133633336,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-04-13",
+      "ex_date": "2022-04-12",
+      "pago": 0.0207046509985,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-07-15",
+      "ex_date": "2022-07-14",
+      "pago": 0.0208627734074,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-10-14",
+      "ex_date": "2022-10-13",
+      "pago": 0.0208646455298,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-01-13",
+      "ex_date": "2023-01-12",
+      "pago": 0.0208646454995,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-04-17",
+      "ex_date": "2023-04-16",
+      "pago": 0.0217657990003,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-07-17",
+      "ex_date": "2023-07-16",
+      "pago": 0.0180286923305,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-10-16",
+      "ex_date": "2023-10-15",
+      "pago": 0.0180286923305,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-01-15",
+      "ex_date": "2024-01-14",
+      "pago": 0.017156764568,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-04-16",
+      "ex_date": "2024-04-15",
+      "pago": 0.0183189452467,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-07-16",
+      "ex_date": "2024-07-15",
+      "pago": 0.0183189452467,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-10-15",
+      "ex_date": "2024-10-14",
+      "pago": 0.0184330505894,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-01-15",
+      "ex_date": "2025-01-14",
+      "pago": 0.0186674742588,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-04-15",
+      "ex_date": "2025-04-14",
+      "pago": 0.0203448947438,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-07-15",
+      "ex_date": "2025-07-14",
+      "pago": 0.0203418898196,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-10-15",
+      "ex_date": "2025-10-14",
+      "pago": 0.0203418898196,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-01-19",
+      "ex_date": "2026-01-18",
+      "pago": 0.0203418898196,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-06",
+      "ex_date": "2026-05-05",
+      "pago": 0.0218067551342,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-07-15",
+      "ex_date": "2026-07-14",
+      "pago": 0.0199919207772,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "USD",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-07-15",
+      "ex_date": "2026-07-14",
+      "pago": 0.0199919207772,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "PINFRA": [
+    {
+      "pago_date": "2021-09-14",
+      "ex_date": "2021-09-13",
+      "pago": 2.392211,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-12-27",
+      "ex_date": "2021-12-26",
+      "pago": 2.427494,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-12-28",
+      "ex_date": "2022-12-27",
+      "pago": 5.2925239513502,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-10-17",
+      "ex_date": "2024-10-16",
+      "pago": 2.6635315479796,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-10-28",
+      "ex_date": "2024-10-27",
+      "pago": 2.6641347085614,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-01-30",
+      "ex_date": "2025-01-29",
+      "pago": 2.666514006962,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-06-04",
+      "ex_date": "2025-06-03",
+      "pago": 1.3335819627982,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-08-20",
+      "ex_date": "2025-08-19",
+      "pago": 0.0712065124277,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-12-04",
+      "ex_date": "2025-12-03",
+      "pago": 0.1333803056088,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "USD",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2025-12-04",
+      "ex_date": "2025-12-03",
+      "pago": 0.1333803056088,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "OMAB": [
+    {
+      "pago_date": "2021-12-14",
+      "ex_date": "2021-12-13",
+      "pago": 5.126738671,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-01-19",
+      "ex_date": "2022-01-18",
+      "pago": 11.201923995,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-24",
+      "ex_date": "2022-05-23",
+      "pago": 4.614064804,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-07-25",
+      "ex_date": "2022-07-24",
+      "pago": 1.281684668,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-23",
+      "ex_date": "2024-05-22",
+      "pago": 5.447159838,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-11-20",
+      "ex_date": "2024-11-19",
+      "pago": 5.447159838,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-26",
+      "ex_date": "2025-05-23",
+      "pago": 5.767581004,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2025-05-26",
+      "ex_date": "2025-05-25",
+      "pago": 5.767581004,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "MEGACPO": [
+    {
+      "pago_date": "2021-05-20",
+      "ex_date": "2021-05-19",
+      "pago": 2.56,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-26",
+      "ex_date": "2022-05-25",
+      "pago": 2.82,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-25",
+      "ex_date": "2023-05-24",
+      "pago": 2.96,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-23",
+      "ex_date": "2024-05-22",
+      "pago": 3.08,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-22",
+      "ex_date": "2025-05-21",
+      "pago": 3.34,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-21",
+      "ex_date": "2026-05-20",
+      "pago": 3.7,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-05-21",
+      "ex_date": "2026-05-20",
+      "pago": 3.7,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "TLEVISA": [
+    {
+      "pago_date": "2021-05-31",
+      "ex_date": "2021-05-30",
+      "pago": 0.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-31",
+      "ex_date": "2022-05-30",
+      "pago": 0.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-31",
+      "ex_date": "2023-05-30",
+      "pago": 0.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-31",
+      "ex_date": "2024-05-30",
+      "pago": 0.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-06-02",
+      "ex_date": "2025-05-30",
+      "pago": 0.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2025-06-02",
+      "ex_date": "2025-06-01",
+      "pago": 0.35,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "BOLSAA": [
+    {
+      "pago_date": "2021-05-14",
+      "ex_date": "2021-05-13",
+      "pago": 2.02,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-16",
+      "ex_date": "2022-05-15",
+      "pago": 2.16,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-15",
+      "ex_date": "2023-05-14",
+      "pago": 2.3,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-13",
+      "ex_date": "2024-05-12",
+      "pago": 2.12,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-12",
+      "ex_date": "2025-05-11",
+      "pago": 2.05,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-11",
+      "ex_date": "2026-05-08",
+      "pago": 2.05,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-05-11",
+      "ex_date": "2026-05-10",
+      "pago": 2.05,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "GCARSOA1": [
+    {
+      "pago_date": "2021-06-28",
+      "ex_date": "2021-06-27",
+      "pago": 0.48,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-12-20",
+      "ex_date": "2021-12-19",
+      "pago": 0.48,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-06-27",
+      "ex_date": "2022-06-26",
+      "pago": 0.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-12-27",
+      "ex_date": "2022-12-26",
+      "pago": 0.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-06-28",
+      "ex_date": "2024-06-27",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-12-20",
+      "ex_date": "2024-12-19",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-06-30",
+      "ex_date": "2025-06-29",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-12-19",
+      "ex_date": "2025-12-18",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-06-30",
+      "ex_date": "2026-06-29",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-06-30",
+      "ex_date": "2026-06-29",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "LABB": [
+    {
+      "pago_date": "2021-12-10",
+      "ex_date": "2021-12-09",
+      "pago": 0.381679389,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-06-08",
+      "ex_date": "2022-06-07",
+      "pago": 0.381679389,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-11",
+      "ex_date": "2022-11-10",
+      "pago": 0.381679389,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-06-07",
+      "ex_date": "2023-06-06",
+      "pago": 0.19608,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-09-29",
+      "ex_date": "2023-09-28",
+      "pago": 0.19608,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-12-27",
+      "ex_date": "2023-12-26",
+      "pago": 0.19608,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-03-25",
+      "ex_date": "2024-03-24",
+      "pago": 0.19608,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-06-21",
+      "ex_date": "2024-06-20",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-09-17",
+      "ex_date": "2024-09-16",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-12-18",
+      "ex_date": "2024-12-17",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-03-14",
+      "ex_date": "2025-03-13",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-07-01",
+      "ex_date": "2025-06-30",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-09-19",
+      "ex_date": "2025-09-18",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-12-23",
+      "ex_date": "2025-12-22",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-03-31",
+      "ex_date": "2026-03-30",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-06-29",
+      "ex_date": "2026-06-28",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-09-30",
+      "ex_date": "2026-09-29",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-09-30",
+      "ex_date": "2026-09-29",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "CUERVO": [
+    {
+      "pago_date": "2021-08-05",
+      "ex_date": "2021-08-04",
+      "pago": 0.43039,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-08-04",
+      "ex_date": "2022-08-03",
+      "pago": 0.42051,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-08-03",
+      "ex_date": "2023-08-02",
+      "pago": 0.49128,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-08-06",
+      "ex_date": "2024-08-05",
+      "pago": 0.39544,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-08",
+      "ex_date": "2025-05-07",
+      "pago": 0.39721,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-07",
+      "ex_date": "2026-05-06",
+      "pago": 0.54457,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-12",
+      "ex_date": "2026-05-11",
+      "pago": 0.54457,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-05-12",
+      "ex_date": "2026-05-11",
+      "pago": 0.54457,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "HERDEZ": [
+    {
+      "pago_date": "2021-05-12",
+      "ex_date": "2021-05-11",
+      "pago": 0.6,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-10-13",
+      "ex_date": "2021-10-12",
+      "pago": 0.6,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-11",
+      "ex_date": "2022-05-10",
+      "pago": 0.6,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-10-12",
+      "ex_date": "2022-10-11",
+      "pago": 0.6,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-11",
+      "ex_date": "2023-05-10",
+      "pago": 0.6,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-10-11",
+      "ex_date": "2023-10-10",
+      "pago": 0.6,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-13",
+      "ex_date": "2024-05-12",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-10-14",
+      "ex_date": "2024-10-13",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-06",
+      "ex_date": "2025-05-05",
+      "pago": 1.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-10-07",
+      "ex_date": "2025-10-06",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-04-14",
+      "ex_date": "2026-04-13",
+      "pago": 15.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-12",
+      "ex_date": "2026-05-11",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-10-13",
+      "ex_date": "2026-10-12",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-10-13",
+      "ex_date": "2026-10-12",
+      "pago": 0.75,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "GENTERA": [
+    {
+      "pago_date": "2022-05-13",
+      "ex_date": "2022-05-12",
+      "pago": 0.2957141216198,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-23",
+      "ex_date": "2022-11-22",
+      "pago": 0.2965735689253,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-04-27",
+      "ex_date": "2023-04-26",
+      "pago": 0.5760022307906,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-11-17",
+      "ex_date": "2023-11-16",
+      "pago": 0.5767316966312,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-14",
+      "ex_date": "2024-05-13",
+      "pago": 0.5978019065625,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-11-14",
+      "ex_date": "2024-11-13",
+      "pago": 0.5978019065625,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-16",
+      "ex_date": "2025-05-15",
+      "pago": 0.7604272007954,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-11-20",
+      "ex_date": "2025-11-19",
+      "pago": 0.7604272007954,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-04-23",
+      "ex_date": "2026-04-22",
+      "pago": 1.0403429717019,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-04-23",
+      "ex_date": "2026-04-22",
+      "pago": 1.0403429717019,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "Q": [
+    {
+      "pago_date": "2021-05-14",
+      "ex_date": "2021-05-13",
+      "pago": 4.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-09",
+      "ex_date": "2022-05-08",
+      "pago": 4.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-09",
+      "ex_date": "2022-11-08",
+      "pago": 2.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-09",
+      "ex_date": "2023-05-08",
+      "pago": 2.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-11-09",
+      "ex_date": "2023-11-08",
+      "pago": 2.5,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-08",
+      "ex_date": "2024-05-07",
+      "pago": 4.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-11-08",
+      "ex_date": "2024-11-07",
+      "pago": 4.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-09",
+      "ex_date": "2025-05-08",
+      "pago": 5.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-11-07",
+      "ex_date": "2025-11-06",
+      "pago": 5.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2025-11-07",
+      "ex_date": "2025-11-06",
+      "pago": 5.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "FUNO11": [
+    {
+      "pago_date": "2021-02-09",
+      "ex_date": "2021-02-08",
+      "pago": 0.31191211254,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-05-10",
+      "ex_date": "2021-05-09",
+      "pago": 0.3283452898232,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-08-09",
+      "ex_date": "2021-08-08",
+      "pago": 0.218526,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-11-09",
+      "ex_date": "2021-11-05",
+      "pago": 0.074,
+      "tipo": "REEMBOLSO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2021-11-09",
+      "ex_date": "2021-11-08",
+      "pago": 0.296,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-02-09",
+      "ex_date": "2022-02-08",
+      "pago": 0.68285500185,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-09",
+      "ex_date": "2022-05-08",
+      "pago": 0.50488,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-08-09",
+      "ex_date": "2022-08-08",
+      "pago": 0.5236316485842,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-09",
+      "ex_date": "2022-11-08",
+      "pago": 0.5659,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-02-10",
+      "ex_date": "2023-02-09",
+      "pago": 0.95136607356,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-03-15",
+      "ex_date": "2023-03-14",
+      "pago": 0.15541235172,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-09",
+      "ex_date": "2023-05-08",
+      "pago": 0.38913271152,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-08-09",
+      "ex_date": "2023-08-08",
+      "pago": 0.57131293843,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-11-09",
+      "ex_date": "2023-11-08",
+      "pago": 0.58227906325,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-02-09",
+      "ex_date": "2024-02-08",
+      "pago": 0.60577475033,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-03-15",
+      "ex_date": "2024-03-14",
+      "pago": 0.09703737994,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-09",
+      "ex_date": "2024-05-08",
+      "pago": 0.40296262006,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-08-09",
+      "ex_date": "2024-08-08",
+      "pago": 0.51902258433,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-11-11",
+      "ex_date": "2024-11-10",
+      "pago": 0.525,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-02-10",
+      "ex_date": "2025-02-09",
+      "pago": 0.55132772891,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-09",
+      "ex_date": "2025-05-08",
+      "pago": 0.55495337983,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-08-11",
+      "ex_date": "2025-08-10",
+      "pago": 0.57,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-11-10",
+      "ex_date": "2025-11-09",
+      "pago": 0.605,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-02-09",
+      "ex_date": "2026-02-08",
+      "pago": 0.67,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-11",
+      "ex_date": "2026-05-10",
+      "pago": 0.62,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-08-10",
+      "ex_date": "2026-08-07",
+      "pago": 0.63977930173,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-08-10",
+      "ex_date": "2026-08-09",
+      "pago": 0.63977930173,
+      "tipo": "DISTRIBUCION DE EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "GCC": [
+    {
+      "pago_date": "2021-01-11",
+      "ex_date": "2021-01-10",
+      "pago": 0.47,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-08-17",
+      "ex_date": "2021-08-16",
+      "pago": 1.0105,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-17",
+      "ex_date": "2022-05-16",
+      "pago": 1.1621,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-24",
+      "ex_date": "2023-05-23",
+      "pago": 1.3364,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-05-22",
+      "ex_date": "2024-05-21",
+      "pago": 1.5369,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-05-13",
+      "ex_date": "2025-05-12",
+      "pago": 1.7674,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-12",
+      "ex_date": "2026-05-11",
+      "pago": 2.0325,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-05-12",
+      "ex_date": "2026-05-11",
+      "pago": 2.0325,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "AMXL": [
+    {
+      "pago_date": "2021-07-19",
+      "ex_date": "2021-07-18",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-11-08",
+      "ex_date": "2021-11-07",
+      "pago": 0.2,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-08-29",
+      "ex_date": "2022-08-28",
+      "pago": 0.44,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-07-17",
+      "ex_date": "2023-07-16",
+      "pago": 0.23,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-11-13",
+      "ex_date": "2023-11-12",
+      "pago": 0.23,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-07-15",
+      "ex_date": "2024-07-14",
+      "pago": 0.24,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-11-11",
+      "ex_date": "2024-11-10",
+      "pago": 0.24,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-07-14",
+      "ex_date": "2025-07-13",
+      "pago": 0.26,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-11-10",
+      "ex_date": "2025-11-09",
+      "pago": 0.26,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-07-15",
+      "ex_date": "2026-07-14",
+      "pago": 0.27,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-07-15",
+      "ex_date": "2026-07-14",
+      "pago": 0.27,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "CHDRAUIB": [
+    {
+      "pago_date": "2021-04-13",
+      "ex_date": "2021-04-12",
+      "pago": 0.475,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-04-20",
+      "ex_date": "2022-04-19",
+      "pago": 0.522497,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-04-19",
+      "ex_date": "2023-04-18",
+      "pago": 0.9333,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-04-16",
+      "ex_date": "2024-04-15",
+      "pago": 1.1889,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-11-27",
+      "ex_date": "2024-11-26",
+      "pago": 0.5187,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-12-18",
+      "ex_date": "2024-12-17",
+      "pago": 0.5187,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-04-22",
+      "ex_date": "2025-04-21",
+      "pago": 1.0446,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-11-25",
+      "ex_date": "2025-11-24",
+      "pago": 0.5913,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-12-18",
+      "ex_date": "2025-12-17",
+      "pago": 0.5913,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-04-23",
+      "ex_date": "2026-04-22",
+      "pago": 1.017,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-11-25",
+      "ex_date": "2026-11-24",
+      "pago": 0.6497,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-12-18",
+      "ex_date": "2026-12-17",
+      "pago": 0.6497,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-12-18",
+      "ex_date": "2026-12-17",
+      "pago": 0.6497,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "GFINBURO": [
+    {
+      "pago_date": "2025-05-12",
+      "ex_date": "2025-05-11",
+      "pago": 1.0,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-05-13",
+      "ex_date": "2026-05-12",
+      "pago": 1.1,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-05-13",
+      "ex_date": "2026-05-12",
+      "pago": 1.1,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "KOFUBL": [
+    {
+      "pago_date": "2021-05-04",
+      "ex_date": "2021-05-03",
+      "pago": 2.52,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2021-11-03",
+      "ex_date": "2021-11-02",
+      "pago": 2.52,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-05-03",
+      "ex_date": "2022-05-02",
+      "pago": 2.715,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2022-11-03",
+      "ex_date": "2022-11-02",
+      "pago": 2.715,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-05-03",
+      "ex_date": "2023-05-02",
+      "pago": 2.9,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2023-11-03",
+      "ex_date": "2023-11-02",
+      "pago": 2.9,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-04-16",
+      "ex_date": "2024-04-15",
+      "pago": 1.52,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-07-16",
+      "ex_date": "2024-07-15",
+      "pago": 1.52,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-10-15",
+      "ex_date": "2024-10-14",
+      "pago": 1.52,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2024-12-09",
+      "ex_date": "2024-12-08",
+      "pago": 1.52,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-04-23",
+      "ex_date": "2025-04-22",
+      "pago": 1.84,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-07-16",
+      "ex_date": "2025-07-15",
+      "pago": 1.84,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-10-15",
+      "ex_date": "2025-10-14",
+      "pago": 1.84,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2025-12-09",
+      "ex_date": "2025-12-08",
+      "pago": 1.84,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-04-21",
+      "ex_date": "2026-04-20",
+      "pago": 1.935,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-07-14",
+      "ex_date": "2026-07-13",
+      "pago": 1.935,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-10-13",
+      "ex_date": "2026-10-12",
+      "pago": 1.935,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-12-08",
+      "ex_date": "2026-12-07",
+      "pago": 1.935,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-12-08",
+      "ex_date": "2026-12-07",
+      "pago": 1.935,
+      "tipo": "DIVIDENDO EN EFECTIVO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ],
+  "HOTEL": [
+    {
+      "pago_date": "2023-05-31",
+      "ex_date": "2023-05-30",
+      "pago": 0.9957,
+      "tipo": "REEMBOLSO",
+      "divisa": "MXN",
+      "source": "historico"
+    },
+    {
+      "pago_date": "2026-06-26",
+      "ex_date": "2026-06-25",
+      "pago": 0.416652626192,
+      "tipo": "REEMBOLSO",
+      "divisa": "USD",
+      "source": "reciente"
+    },
+    {
+      "pago_date": "2026-06-26",
+      "ex_date": "2026-06-25",
+      "pago": 0.416652626192,
+      "tipo": "REEMBOLSO",
+      "divisa": "MXN",
+      "source": "historico"
+    }
+  ]
+}

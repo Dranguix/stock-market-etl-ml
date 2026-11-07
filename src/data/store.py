@@ -26,7 +26,7 @@ Grupos:
 from __future__ import annotations
 
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Optional
 
 import pandas as pd
@@ -121,10 +121,10 @@ FIBRA_TICKERS: dict[str, str] = {
 }
 
 MACRO_TICKERS: dict[str, str] = {
-    "USDMXN":   "MXN=X",
-    "NAFTRAC":  "NAFTRAC.MX",
-    "WTI":      "CL=F",
-    "SP500":    "^GSPC",
+    "USDMXN":   "MXN=X",      # tipo de cambio, no es un título
+    "NAFTRAC":  "NAFTRAC.MX", # serie de referencia; la orden es NAFTRACISHRS
+    "WTI":      "CL=F",       # futuro, no es un título
+    "SP500":    "^GSPC",      # índice; la orden es SPY o VOO
 }
 
 # Índice completo de todos los símbolos del store
@@ -147,6 +147,27 @@ UNIVERSE_GROUPS: dict[str, dict[str, str]] = {
     "macro":  MACRO_TICKERS,
 }
 
+# Dónde se compra en GBM. "no" = no es una orden (referencia o deslistada).
+# bmv — mercado local, pesos. usa — SIC o Trading USA, dólares.
+_ETF_LOCAL = {"NAFTRAC_ETF", "FIBRAPL_ETF"}
+GBM_VENUE: dict[str, str] = {
+    **{name: "bmv" for name in BMV_TICKERS},
+    **{name: "usa" for name in USA_TICKERS},
+    **{name: ("bmv" if name in _ETF_LOCAL else "usa") for name in ETF_TICKERS},
+    **{name: "usa" for name in CRYPTO_TICKERS},
+    **{name: "bmv" for name in FIBRA_TICKERS},
+    **{name: "no" for name in MACRO_TICKERS},
+}
+GBM_VENUE["ALFAA"] = "no"
+
+# Siguen listadas, pero casi no operan.
+GBM_ILLIQUID = frozenset({"HOTEL", "POSADAS"})
+
+
+def gbm_tradable(name: str) -> bool:
+    """True si el nombre es un título que se puede ordenar en GBM."""
+    return GBM_VENUE.get(name) in {"bmv", "usa"}
+
 
 def _parquet_path(symbol: str) -> Path:
     safe = symbol.replace("/", "_").replace("^", "")
@@ -154,8 +175,11 @@ def _parquet_path(symbol: str) -> Path:
 
 
 def _download(symbol: str, start: str = "2000-01-01") -> pd.DataFrame:
+    # yfinance trata `end` como exclusivo: hay que pedir el día siguiente
+    # para que entre la sesión ya cerrada de hoy.
+    end = (datetime.today() + timedelta(days=1)).strftime("%Y-%m-%d")
     raw = yf.download(
-        symbol, start=start, end=datetime.today().strftime("%Y-%m-%d"),
+        symbol, start=start, end=end,
         auto_adjust=False, progress=False, actions=False,
     )
     if isinstance(raw.columns, pd.MultiIndex):
@@ -224,10 +248,18 @@ def update(symbol: str, verbose: bool = True) -> pd.DataFrame:
                 print(f"  {symbol:<14} ya actualizado ({len(existing):,} días)")
             return existing
 
-        df = pd.concat([existing, new]).drop_duplicates()
+        # Dedup solo por fecha. drop_duplicates() por valor borraba días
+        # ilíquidos con el mismo OHLC y volumen 0 que un día previo.
+        df = pd.concat([existing, new])
         df = df[~df.index.duplicated(keep="last")].sort_index()
+        added = len(df) - len(existing)
         if verbose:
-            print(f"  {symbol:<14} +{len(new)} días nuevos  →  total {len(df):,}", end=" ")
+            print(f"  {symbol:<14} +{added} días nuevos  →  total {len(df):,}", end=" ")
+
+    if df is None or len(df) == 0:
+        if verbose:
+            print(f"  {symbol:<14} sin datos")
+        return existing if existing is not None else pd.DataFrame()
 
     save(symbol, df)
     if verbose:

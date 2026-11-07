@@ -1,0 +1,258 @@
+{
+  "start": "2026-09-09",
+  "end": "2026-10-09",
+  "final_equity": 52.82,
+  "log": [
+    {
+      "day": "2026-09-09",
+      "equity_before": 50.0,
+      "equity_next": 49.03,
+      "cash": 0.0,
+      "allocations": {
+        "GMEXICOB": 20.0,
+        "FUNO11": 15.0,
+        "FEMSAUBD": 15.0
+      },
+      "motivo": "Régimen bull (100% invertido permitido) y el único factor con ganancia pre-costos en backtest es momentum 12-1, así que priorizo las emisoras con mejor 'año' que además tienen respaldo fundamental. GM"
+    },
+    {
+      "day": "2026-09-10",
+      "equity_before": 49.03,
+      "equity_next": 49.26,
+      "cash": -0.26,
+      "allocations": {
+        "GMEXICOB": 19.612005031059223,
+        "FUNO11": 14.709003773294418,
+        "GFNORTEO": 14.709003773294418
+      },
+      "motivo": "GMEXICOB: el factor que sí mostró ganancia en backtest (momentum 12-1, +66.7%) respaldado por crecimiento real (ventas +48.6%, utilidad +199.5%) y márgenes altos (operativo 55%); riesgo alto por volat"
+    },
+    {
+      "day": "2026-09-11",
+      "equity_before": 49.26,
+      "equity_next": 50.25,
+      "cash": 0.0,
+      "allocations": {
+        "FEMSAUBD": 19.702093513553955,
+        "GMEXICOB": 14.776570135165466,
+        "KOFUBL": 14.776570135165466
+      },
+      "motivo": "El único factor con ganancia pre-costos en backtest es momentum 12-1, así que la decisión parte de ahí y no de señales técnicas, LSTM ni order-flow, que tomo como ruido. Régimen bull 63%. FEMSAUBD: mo"
+    },
+    {
+      "day": "2026-09-14",
+      "equity_before": 50.25,
+      "equity_next": 50.39,
+      "cash": -0.0,
+      "allocations": {
+        "FEMSAUBD": 25.126612378349833,
+        "GMEXICOB": 15.0759674270099,
+        "VISTA": 10.050644951339933
+      },
+      "motivo": "Régimen bull al 100%, así que el riesgo se mantiene invertido. El factor validado en backtest es momentum 12-1, y los tres nombres elegidos son los de mayor 'año' con fundamentales no deteriorados: FE"
+    },
+    {
+      "day": "2026-09-15",
+      "equity_before": 50.39,
+      "equity_next": 50.61,
+      "cash": 10.08,
+      "allocations": {
+        "KOFUBL": 15.117940463816916,
+        "FEMSAUBD": 15.117940463816916,
+        "GMEXICOB": 10.078626975877945
+      },
+      "motivo": "El único factor con ganancia pre-costos en backtest es el momentum 12-1, así que la selección parte de ahí: KOFUBL (+18.2%), FEMSAUBD (+17.6%) y GMEXICOB (+58.3%) tienen momentum 12-1 positivo y no es"
+    },
+    {
+      "day": "2026-09-17",
+      "equity_before": 50.61,
+      "equity_next": 48.55,
+      "cash": 0.17,
+      "allocations": {
+        "VISTA": 20.244887507131587,
+        "GMEXICOB": 15.18366563034869,
+        "FEMSAUBD": 15.18366563034869
+      },
+      "motivo": "Régimen bull al 100%, así que se despliega todo el capital. Se eligen los tres nombres con mayor momentum 12-1 (el único factor con ganancia en backtest) que además tienen respaldo en fundamentales o "
+    },
+    {
+      "day": "2026-09-18",
+      "equity_before": 48.55,
+      "equity_next": 48.84,
+      "cash": 0.0,
+      "allocations": {
+        "GMEXICOB": 19.419527767904768,
+        "VESTA": 14.564645825928578,
+        "KOFUBL": 14.564645825928578
+      },
+      "motivo": "Régimen bull (99%) y momentum 12-1 como único factor con ganancia en backtest: GMEXICOB +67.6% año, ventas +48.6% YoY, margen operativo 55% y utilidad +199.5% YoY, con volatilidad alta (38%), así que "
+    },
+    {
+      "day": "2026-09-21",
+      "equity_before": 48.84,
+      "equity_next": 50.02,
+      "cash": -0.12,
+      "allocations": {
+        "GMEXICOB": 19.536195793360786,
+        "KOFUBL": 14.65214684502059,
+        "FEMSAUBD": 14.65214684502059
+      },
+      "motivo": "Régimen bull (97%) y momentum 12-1 como factor con ganancia en backtest. GMEXICOB: +77.5% en el año, ventas +48.6% y utilidad +199.5% YoY, márgenes sólidos (bruto 56%, neto 43%); el riesgo es valuació"
+    },
+    {
+      "day": "2026-09-22",
+      "equity_before": 50.02,
+      "equity_next": 49.8,
+      "cash": 0.19,
+      "allocations": {
+        "GMEXICOB": 25.00820924670368,
+        "KOFUBL": 15.004925548022207,
+        "FEMSAUBD": 10.003283698681471
+      },
+      "motivo": "Régimen bull (100% invertido). Factor con ganancia en backtest: momentum 12-1. GMEXICOB lidera en momentum de 12 meses con +73.5%, márgenes fuertes (bruto 56%, operativo 55%, neto 43%), ingresos +48.6"
+    },
+    {
+      "day": "2026-09-23",
+      "equity_before": 49.8,
+      "equity_next": 49.79,
+      "cash": 0.0,
+      "allocations": {
+        "GMEXICOB": 19.921987603264732,
+        "FEMSAUBD": 14.941490702448547,
+        "VESTA": 14.941490702448547
+      },
+      "motivo": "Régimen bull al 100%, así que invierto todo. La única señal con ganancia pre-costos en el backtest es momentum 12-1, y los tres nombres lideran esa columna con fundamentales que la respaldan. GMEXICOB"
+    },
+    {
+      "day": "2026-09-24",
+      "equity_before": 49.79,
+      "equity_next": 50.44,
+      "cash": 4.97,
+      "allocations": {
+        "GMEXICOB": 19.91498695612496,
+        "KOFUBL": 14.936240217093719,
+        "FEMSAUBD": 9.95749347806248
+      },
+      "motivo": "Régimen lateral (84%), así que sizing moderado y 5 USD en cash. El único factor validado en backtest es momentum 12-1, y los tres nombres lo tienen fuerte: GMEXICOB +63.2% (la mayor señal de la lista,"
+    },
+    {
+      "day": "2026-09-25",
+      "equity_before": 50.44,
+      "equity_next": 50.63,
+      "cash": -0.08,
+      "allocations": {
+        "GMEXICOB": 20.17667431079016,
+        "KOFUBL": 15.13250573309262,
+        "VESTA": 15.13250573309262
+      },
+      "motivo": "Régimen bull (89%) y momentum 12-1 como único factor con ganancia pre-costos. GMEXICOB: +56.8% en 12-1, ventas +48.6% y utilidad +199.5% YoY, márgenes sólidos; pesa 20 USD pese a vol 33% y earnYield b"
+    },
+    {
+      "day": "2026-09-28",
+      "equity_before": 50.63,
+      "equity_next": 50.84,
+      "cash": -0.05,
+      "allocations": {
+        "GMEXICOB": 20.25078728130787,
+        "KOFUBL": 15.188090460980902,
+        "GFNORTEO": 15.188090460980902
+      },
+      "motivo": "Régimen bull al 100%, así que se invierte. Momentum 12-1 (único factor con ganancia en backtest) guía la selección. GMEXICOB: +54.9% en el año, a 5.2% de su máximo de 52s, ventas +48.6% y utilidad +19"
+    },
+    {
+      "day": "2026-09-29",
+      "equity_before": 50.84,
+      "equity_next": 50.24,
+      "cash": -0.0,
+      "allocations": {
+        "VISTA": 20.33505938583327,
+        "GMEXICOB": 15.251294539374951,
+        "VESTA": 15.251294539374951
+      },
+      "motivo": "Régimen bull (100%), así que se invierte. Se usa momentum 12-1 como factor principal: VISTA (+84.8%), GMEXICOB (+47.9%) y VESTA (+14.3%) son de los pocos con momentum anual fuerte y fundamentales conf"
+    },
+    {
+      "day": "2026-09-30",
+      "equity_before": 50.24,
+      "equity_next": 49.84,
+      "cash": -0.0,
+      "allocations": {
+        "GMEXICOB": 25.11906574010741,
+        "KOFUBL": 25.11906574010741
+      },
+      "motivo": "GMEXICOB tiene la combinación más completa: momentum 12-1 de +40.0%, retorno de +2.3% en la semana y +1.1% en el mes, a solo -5.1% de su máximo de 52 semanas, márgenes netos de 43.3% con ventas +48.6%"
+    },
+    {
+      "day": "2026-10-01",
+      "equity_before": 49.84,
+      "equity_next": 50.8,
+      "cash": -0.04,
+      "allocations": {
+        "GMEXICOB": 24.918004898470276,
+        "KOFUBL": 14.950802939082164,
+        "PINFRA": 9.96720195938811
+      },
+      "motivo": "Régimen bull (60%) y el único factor con ganancia pre-costos en backtest es momentum 12-1, así que la asignación se basa en ese factor, reforzado por fundamentales y noticias. GMEXICOB (año +42.4%, ve"
+    },
+    {
+      "day": "2026-10-02",
+      "equity_before": 50.8,
+      "equity_next": 51.28,
+      "cash": -0.19,
+      "allocations": {
+        "GMEXICOB": 25.400195943494637,
+        "KOFUBL": 15.240117566096782,
+        "VESTA": 10.160078377397854
+      },
+      "motivo": "Régimen bull (100% invertido permitido). Según el backtest, el único factor con ganancia pre-costos es momentum 12-1, así que ordeno por la columna 'año' y uso fundamentales y vol como filtros. GMEXIC"
+    },
+    {
+      "day": "2026-10-05",
+      "equity_before": 51.28,
+      "equity_next": 51.21,
+      "cash": 0.25,
+      "allocations": {
+        "GMEXICOB": 20.510194883882363,
+        "KOFUBL": 15.382646162911772,
+        "GFNORTEO": 15.382646162911772
+      },
+      "motivo": "Régimen bull (61%) y momentum 12-1 como único factor con ganancia pre-costos. GMEXICOB: año +39.5%, a 1% de su máximo de 52 semanas, con crecimiento de ventas +48.6%, utilidad +199.5% y márgenes fuert"
+    },
+    {
+      "day": "2026-10-06",
+      "equity_before": 51.21,
+      "equity_next": 51.0,
+      "cash": 0.19,
+      "allocations": {
+        "GMEXICOB": 20.48447986798888,
+        "PINFRA": 15.363359900991663,
+        "VESTA": 15.363359900991663
+      },
+      "motivo": "Régimen bull (100%) y momentum 12-1 como factor con ganancia en backtest. GMEXICOB: +62.5% en el año, a 2.1% de su máximo de 52 semanas, con ventas +48.6%, UPA +199.5%, márgenes amplios y sentimiento "
+    },
+    {
+      "day": "2026-10-07",
+      "equity_before": 51.0,
+      "equity_next": 51.51,
+      "cash": 0.3,
+      "allocations": {
+        "GMEXICOB": 20.39843362827518,
+        "KOFUBL": 15.298825221206382,
+        "GFNORTEO": 15.298825221206382
+      },
+      "motivo": "Régimen bull (61%) con macro favorable (S&P500 +2.0%, IPC +0.7%). Uso el momentum 12-1 como señal principal, único factor con ganancia pre-costos. GMEXICOB (+66.6% año, a 3% del máximo de 52s, márgene"
+    },
+    {
+      "day": "2026-10-08",
+      "equity_before": 51.51,
+      "equity_next": 52.82,
+      "cash": 5.15,
+      "allocations": {
+        "GMEXICOB": 20.603216975219894,
+        "VESTA": 15.452412731414922,
+        "KOFUBL": 10.301608487609947
+      },
+      "motivo": "Filtro principal: momentum 12-1 (columna año), el único factor con ganancia pre-costos en backtest; los técnicos y el LSTM se ignoran por ruido. GMEXICOB tiene el mayor momentum del universo (+62% año"
+    }
+  ]
+}

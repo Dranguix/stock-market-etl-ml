@@ -1,0 +1,17 @@
+{
+  "pesos": {
+    "WALMEX": 0.24149694505088895,
+    "FEMSAUBD": 0.0,
+    "GFNORTEO": 0.008503054949154968,
+    "CEMEXCPO": 0.25,
+    "AMXL": 0.0,
+    "SPY": 0.0,
+    "AAPL": 0.25,
+    "JPM": 0.0,
+    "XOM": 5.195194000976252e-15,
+    "JNJ": 0.25
+  },
+  "retorno_portafolio_pct": 4.728945258541037,
+  "riesgo_portafolio_pct": 4.573268482116671,
+  "lambda": 0.01
+}

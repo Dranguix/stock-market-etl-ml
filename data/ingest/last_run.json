@@ -1,13 +1,74 @@
 {
-  "started_at": "2026-06-30T01:01:12.018518+00:00",
+  "started_at": "2026-10-31T00:30:00.167639+00:00",
   "steps": {
+    "ohlcv": {
+      "status": "ok",
+      "elapsed_s": 33.9,
+      "groups": [
+        "bmv",
+        "usa",
+        "etf",
+        "crypto",
+        "fibra",
+        "macro"
+      ],
+      "tickers_updated": {
+        "bmv": 36,
+        "usa": 23,
+        "etf": 22,
+        "crypto": 9,
+        "fibra": 3,
+        "macro": 4
+      }
+    },
     "news": {
       "status": "ok",
-      "elapsed_s": 129.9,
-      "days_back": 7
+      "elapsed_s": 316.8,
+      "days_back": 7,
+      "universe": "all",
+      "gdelt": false,
+      "tickers_by_universe": {
+        "bmv": 36,
+        "usa": 24,
+        "etf": 22,
+        "crypto": 9,
+        "fibra": 5
+      },
+      "total_tickers": 96,
+      "paths": {
+        "universe_bmv": "/Users/rod/Projects/stock-market/data/news/bmv_2026-10-30.json",
+        "universe_usa": "/Users/rod/Projects/stock-market/data/news/usa_2026-10-30.json",
+        "universe_etf": "/Users/rod/Projects/stock-market/data/news/etf_2026-10-30.json",
+        "universe_crypto": "/Users/rod/Projects/stock-market/data/news/crypto_2026-10-30.json",
+        "universe_fibra": "/Users/rod/Projects/stock-market/data/news/fibra_2026-10-30.json",
+        "latest": "/Users/rod/Projects/stock-market/data/news/latest.json",
+        "dated": "/Users/rod/Projects/stock-market/data/news/2026-10-30.json"
+      }
+    },
+    "tasas_hoy": {
+      "status": "ok",
+      "elapsed_s": 0.3,
+      "ok": true,
+      "n_tasas": 8,
+      "tiie28": 6.8061,
+      "tasa_obj": 6.5
+    },
+    "hechos_hoy": {
+      "status": "ok",
+      "elapsed_s": 3.1,
+      "fecha": "2026-10-29",
+      "ok": true,
+      "output": "os: 1 días hábiles, 1 pendientes ══\n  [1/1] 2026-10-29: ok (2420 filas)\n\n✅ Backfill terminado: 1 ok, 0 sin archivo, 0 errores\n   Parquets en /Users/rod/Projects/stock-market/data/microstructure/hechos"
+    },
+    "record_signals": {
+      "status": "ok",
+      "elapsed_s": 787.7,
+      "ok": true,
+      "n_bets": 2,
+      "output": "1\n  Régimen:  ?\n  Apuestas: 2\n    → POSADAS      conv=0.624 LONG h=20d\n    → GMEXICOB     conv=0.611 LONG h=20d\n  Hash:     86bd71db526ea6c0\n\n  Guardado: /Users/rod/Projects/stock-market/data/signals/history/2026-10-31.json\n  Índice:   /Users/rod/Projects/stock-market/data/signals/history/index.json"
     }
   },
   "success": true,
-  "finished_at": "2026-06-30T01:03:21.921498+00:00",
-  "elapsed_s": 129.9
+  "finished_at": "2026-10-31T00:49:02.009624+00:00",
+  "elapsed_s": 1141.8
 }

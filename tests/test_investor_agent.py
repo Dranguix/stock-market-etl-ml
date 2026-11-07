@@ -70,6 +70,8 @@ def test_pregunta_ofrece_tools_y_no_pega_el_historico():
     pregunta = agent.observe()
     names = [t["function"]["name"] for t in pregunta["tools"]]
     assert "ver_woe" in names
+    assert "ver_modelos" in names
+    assert "ver_horizontes" in names
     assert "proponer_asignacion" in names
     assert len(pregunta["user"]) < 800
 

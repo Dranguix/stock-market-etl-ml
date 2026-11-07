@@ -42,6 +42,8 @@ FEATURE_COLS = [
     "ret_10d",      # retorno 10 días
     "ret_20d",      # retorno 20 días (momentum mensual)
     "sma20_slope",  # pendiente normalizada del SMA20 en 5 días
+    "macd_hist",    # histograma MACD(12,26,9) normalizado por precio (Kumbure 2022)
+    "macd_signal",  # línea de señal MACD normalizada por precio
 
     # ── D: Volumen ────────────────────────────────────────────────────────────
     "vol_ratio_20",     # volumen hoy vs media 20d
@@ -63,6 +65,16 @@ FEATURE_COLS = [
     "rel_str5",       # retorno ticker 5d menos NAFTRAC 5d  — señal idiosincrática
     "wti_ret5",       # retorno WTI petróleo en 5d
     "sp500_ret5",     # retorno S&P 500 en 5d  — contagio global
+    # ── F2: Tasas de mercado de dinero mexicanas ──────────────────────────────
+    "tiie_spread",    # TIIE91 - TIIE28 (bp) — pendiente corta interbank
+    "cete_slope",     # CETE364 - CETE28 (bp) — pendiente curva CETES
+    "tiie28_level",   # nivel TIIE28 (% anual) — costo de capital en MX
+    "tiie28_ret5",    # cambio TIIE28 en 5d (bp) — ¿sube o baja la tasa?
+    "tasa_obj_delta", # cambio Tasa_Objetivo 63d (bp) — ciclo de política monetaria
+    # ── F3: Dividendo ex-date ─────────────────────────────────────────────────
+    "dias_a_ex_date", # días al ex-date más próximo (negativo = pasó)
+    "ex_date_window", # 1 si en ventana [-3, +10] del ex-date
+    "div_yield_fwd",  # dividendo anualizado / precio (%)
     # ── G: Cross-seccionales (ranking vs universo) ───────────────────────────
     "cs_ret5_rank",   # percentil retorno 5d vs universo  (momentum relativo)
     "cs_ret20_rank",  # percentil retorno 20d vs universo
@@ -80,6 +92,8 @@ MACRO_FEATURE_COLS = [
     "usdmxn_ret5", "usdmxn_vs_ma20",
     "mkt_ret10", "mkt_trend", "rel_str5",
     "wti_ret5", "sp500_ret5",
+    "tiie_spread", "cete_slope", "tiie28_level", "tiie28_ret5", "tasa_obj_delta",
+    "dias_a_ex_date", "ex_date_window", "div_yield_fwd",
 ]
 
 # Features puramente técnicas (calculables con solo OHLCV del ticker)
@@ -260,6 +274,14 @@ def compute_features(df: pd.DataFrame) -> pd.DataFrame:  # noqa: C901
     bb_high = sma20 + 2 * bb_std
     df["bb_pct"]   = (c - bb_low)  / (bb_high - bb_low + 1e-8) * 100
     df["bb_width"] = (bb_high - bb_low) / (sma20 + 1e-8) * 100
+
+    # ── MACD(12,26,9) — normalizado por precio para comparabilidad cross-ticker
+    ema12 = c.ewm(span=12, adjust=False).mean()
+    ema26 = c.ewm(span=26, adjust=False).mean()
+    macd_line = ema12 - ema26
+    macd_sig = macd_line.ewm(span=9, adjust=False).mean()
+    df["macd_signal"] = macd_sig / (c + 1e-8) * 100
+    df["macd_hist"]   = (macd_line - macd_sig) / (c + 1e-8) * 100
 
     # ── Grupo B: Estructura de precio ─────────────────────────────────────────
     high_52 = h.rolling(252, min_periods=50).max()

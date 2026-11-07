@@ -1,0 +1,348 @@
+{
+  "start": "2024-10-04",
+  "end": "2026-10-09",
+  "final_equity": 38.98,
+  "retorno_total_pct": -22.05,
+  "naftrac_ret_pct": 23.18,
+  "stopped_out_count": 16,
+  "months": [
+    {
+      "decide_day": "2024-10-04",
+      "equity_before": 50.0,
+      "equity_after": 48.22,
+      "retorno_pct": -3.57,
+      "allocations": {
+        "PINFRA": 20.0,
+        "HERDEZ": 15.0,
+        "ASURB": 10.0
+      },
+      "stopped_out": [
+        "HERDEZ"
+      ],
+      "motivo": "Régimen bull (91%) y momentum 12-1 como el único factor con ganancia pre-costos. PINFRA (score +0.72) combina momentum anual +15.1%, margen operativo +60%, utilidad +93% YoY, earnings yield 12.1%, vol"
+    },
+    {
+      "decide_day": "2024-11-04",
+      "equity_before": 48.22,
+      "equity_after": 48.86,
+      "retorno_pct": 1.32,
+      "allocations": {
+        "VISTA": 19.29,
+        "LABB": 14.47,
+        "GMEXICOB": 14.47
+      },
+      "stopped_out": [
+        "GMEXICOB"
+      ],
+      "motivo": "Régimen bull (99%) y momentum 12-1 como factor con ganancia real. VISTA (score +0.88, +83% a 12 meses, crecimiento de ventas +66% y utilidad +168%, a 4% de su máximo de 52 semanas, sin noticias negati"
+    },
+    {
+      "decide_day": "2024-12-04",
+      "equity_before": 48.86,
+      "equity_after": 47.61,
+      "retorno_pct": -2.55,
+      "allocations": {
+        "LABB": 19.54,
+        "ASURB": 19.54,
+        "VISTA": 9.77
+      },
+      "stopped_out": [
+        "LABB"
+      ],
+      "motivo": "Régimen bull (100%) y IPC +2.6% en 5 días dan contexto favorable. Los tres nombres son los de mayor score multifactor y tienen evidencia fundamental y de momentum. LABB (score +1.15): momentum 12-1 de"
+    },
+    {
+      "decide_day": "2025-01-07",
+      "equity_before": 47.61,
+      "equity_after": 47.82,
+      "retorno_pct": 0.43,
+      "allocations": {
+        "VISTA": 14.28,
+        "PINFRA": 23.8,
+        "GAPB": 9.52
+      },
+      "stopped_out": [
+        "VISTA"
+      ],
+      "motivo": "VISTA tiene el score más alto (+1.57) y el momentum 12-1 más fuerte (+127% en el año), con márgenes muy altos (bruto +90%, operativo +79%), ventas +53% y utilidad +99% YoY; está a -1.1% de su máximo d"
+    },
+    {
+      "decide_day": "2025-02-06",
+      "equity_before": 47.82,
+      "equity_after": 46.5,
+      "retorno_pct": -2.74,
+      "allocations": {
+        "LABB": 19.13,
+        "PINFRA": 19.13,
+        "GAPB": 9.56
+      },
+      "stopped_out": [
+        "LABB"
+      ],
+      "motivo": "Régimen bull casi seguro (99%) y los factores técnicos propios son ruido, así que la decisión descansa en el score multifactor, sobre todo en momentum 12-1, que es el único factor con ganancia pre-cos"
+    },
+    {
+      "decide_day": "2025-03-07",
+      "equity_before": 46.5,
+      "equity_after": 44.47,
+      "retorno_pct": -4.36,
+      "allocations": {
+        "GAPB": 18.6,
+        "PINFRA": 13.95,
+        "GMEXICOB": 13.95
+      },
+      "stopped_out": [
+        "GMEXICOB"
+      ],
+      "motivo": "Régimen lateral (84%) con S&P500 -3.1% en 5 días: no conviene apostar fuerte a beta, así que elegí nombres con momentum 12-1 positivo y fundamentales sólidos, sin pedir al resto del portafolio más de "
+    },
+    {
+      "decide_day": "2025-04-08",
+      "equity_before": 44.47,
+      "equity_after": 45.57,
+      "retorno_pct": 2.47,
+      "allocations": {
+        "PINFRA": 13.34,
+        "HERDEZ": 13.34
+      },
+      "stopped_out": [],
+      "motivo": "Régimen HMM en bear al 100%, con USD/MXN +1.1% y S&P500 -11.5% en 5 días, así que despliego solo parte del capital. Los factores técnicos y el LSTM son ruido según el backtest, por lo que la decisión "
+    },
+    {
+      "decide_day": "2025-05-12",
+      "equity_before": 45.57,
+      "equity_after": 44.9,
+      "retorno_pct": -1.47,
+      "allocations": {
+        "PINFRA": 22.78,
+        "AC": 22.78
+      },
+      "stopped_out": [],
+      "motivo": "PINFRA lidera el score (+1.10) con la mejor combinación de calidad y momentum: margen operativo de 58%, margen neto de 71%, ventas +18.9% y utilidad +43.8% YoY, earnings yield de 10.9%, momentum 12-1 "
+    },
+    {
+      "decide_day": "2025-06-10",
+      "equity_before": 44.9,
+      "equity_after": 41.75,
+      "retorno_pct": -7.01,
+      "allocations": {
+        "OMAB": 22.45,
+        "PINFRA": 13.47,
+        "GENTERA": 8.98
+      },
+      "stopped_out": [
+        "OMAB",
+        "GENTERA"
+      ],
+      "motivo": "Régimen bull al 100%, así que la exposición a renta variable tiene respaldo. Los tres nombres con mayor score multifactor son OMAB (+1.27), PINFRA (+1.09) y GENTERA (+1.06), y el momentum 12-1 es el ú"
+    },
+    {
+      "decide_day": "2025-07-09",
+      "equity_before": 41.75,
+      "equity_after": 41.19,
+      "retorno_pct": -1.35,
+      "allocations": {
+        "GAPB": 20.88,
+        "BOLSAA": 20.88
+      },
+      "stopped_out": [
+        "BOLSAA"
+      ],
+      "motivo": "Régimen bull (100%) y momentum 12-1 como factor con ganancia pre-costos. GAPB tiene el mejor score (+1.37), +60.7% en el año, margen operativo de 42.5%, ventas +30% YoY y utilidad +15.7% YoY, y está a"
+    },
+    {
+      "decide_day": "2025-08-07",
+      "equity_before": 41.19,
+      "equity_after": 41.06,
+      "retorno_pct": -0.3,
+      "allocations": {
+        "OMAB": 14.0,
+        "PINFRA": 14.0,
+        "GAPB": 13.18
+      },
+      "stopped_out": [],
+      "motivo": "Régimen lateral (98%) y señales técnicas propias sin poder predictivo, así que la decisión se apoya en momentum 12-1, fundamentales y calidad. OMAB (score +1.51) combina momentum de +72% anual, márgen"
+    },
+    {
+      "decide_day": "2025-09-05",
+      "equity_before": 41.06,
+      "equity_after": 39.92,
+      "retorno_pct": -2.77,
+      "allocations": {
+        "GENTERA": 16.42,
+        "OMAB": 12.32,
+        "BOLSAA": 12.32
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (97%) y el score multifactor ubican a GENTERA, OMAB y BOLSAA en el top. GENTERA: momentum 12-1 de +106.5%, earnings yield de 11% y dividendo de 3%; está a -2.5% de su máximo de 52 semanas"
+    },
+    {
+      "decide_day": "2025-10-07",
+      "equity_before": 39.92,
+      "equity_after": 41.82,
+      "retorno_pct": 4.75,
+      "allocations": {
+        "OMAB": 13.57,
+        "PINFRA": 13.57,
+        "FUNO11": 12.78
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (81%) y momentum 12-1 como único factor con ganancia en backtest. Tomo los tres de mayor score con fundamentales sólidos y volatilidad moderada. OMAB: score 1.03, margen operativo 52.7%, "
+    },
+    {
+      "decide_day": "2025-11-05",
+      "equity_before": 41.82,
+      "equity_after": 39.97,
+      "retorno_pct": -4.43,
+      "allocations": {
+        "PINFRA": 20.91,
+        "FUNO11": 12.55,
+        "GENTERA": 8.36
+      },
+      "stopped_out": [
+        "FUNO11",
+        "GENTERA"
+      ],
+      "motivo": "Régimen lateral (86%), así que sizing moderado y sin apalancar. PINFRA: score +0.98, márgenes bruto/operativo/neto de 61/59/51%, ventas +14% YoY, utilidad +7%, sentimiento de noticias positivo (+0.21)"
+    },
+    {
+      "decide_day": "2025-12-05",
+      "equity_before": 39.97,
+      "equity_after": 41.97,
+      "retorno_pct": 5.0,
+      "allocations": {
+        "PINFRA": 19.99,
+        "OMAB": 11.99,
+        "GMEXICOB": 7.99
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (100%), así que se invierte. PINFRA lidera el score (+1.10) con momentum 12-1 de +33.5%, cerca de su máximo de 52 semanas, márgenes muy sólidos (bruto 60.8%, operativo 59.3%), ventas +14."
+    },
+    {
+      "decide_day": "2026-01-08",
+      "equity_before": 41.97,
+      "equity_after": 47.45,
+      "retorno_pct": 13.05,
+      "allocations": {
+        "PINFRA": 20.98,
+        "FUNO11": 12.59,
+        "GMEXICOB": 8.39
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (92%) y el score multifactor pone a PINFRA y FUNO11 arriba. PINFRA combina el mejor score (+1.24), momentum 12-1 de +44.7%, márgenes altos (bruto 60.8%, neto 50.9%), earnings yield de 15."
+    },
+    {
+      "decide_day": "2026-02-09",
+      "equity_before": 47.45,
+      "equity_after": 43.53,
+      "retorno_pct": -8.25,
+      "allocations": {
+        "PINFRA": 18.98,
+        "FUNO11": 14.23,
+        "GENTERA": 14.23
+      },
+      "stopped_out": [
+        "GENTERA",
+        "PINFRA"
+      ],
+      "motivo": "Régimen lateral al 100%, así que no hay sesgo de tendencia y el tamaño se mantiene moderado. PINFRA (score 0.74) combina momentum 12-1 de +32.7%, márgenes muy altos (bruto 60.8%, operativo 59.3%, neto"
+    },
+    {
+      "decide_day": "2026-03-10",
+      "equity_before": 43.53,
+      "equity_after": 45.07,
+      "retorno_pct": 3.52,
+      "allocations": {
+        "FUNO11": 17.41,
+        "GFNORTEO": 13.06,
+        "VESTA": 8.71
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bear 69% y macro risk-off (USD/MXN +2.1%, IPC -1.6%), así que sizing moderado y 5 USD en cash. FUNO11: score top (+1.16) con combinación rara de baja volatilidad (20d 25%), earnings yield 18.6"
+    },
+    {
+      "decide_day": "2026-04-13",
+      "equity_before": 45.07,
+      "equity_after": 43.76,
+      "retorno_pct": -2.9,
+      "allocations": {
+        "FUNO11": 22.53,
+        "PINFRA": 13.52,
+        "VESTA": 9.01
+      },
+      "stopped_out": [
+        "VESTA"
+      ],
+      "motivo": "Elegí las tres emisoras donde el momentum 12-1 se combina con calidad, valor y volatilidad moderada, en lugar de sólo perseguir el score más alto. FUNO11 (25 USD): earnings yield 17.3%, dividendo 8%, "
+    },
+    {
+      "decide_day": "2026-05-14",
+      "equity_before": 43.76,
+      "equity_after": 43.06,
+      "retorno_pct": -1.61,
+      "allocations": {
+        "FUNO11": 21.88,
+        "PINFRA": 13.13,
+        "GMEXICOB": 8.75
+      },
+      "stopped_out": [],
+      "motivo": "Compro los tres primeros del score multifactor, que combinan momentum 12-1, calidad y valor. FUNO11 (score +1.17) tiene el mejor perfil combinado: earnings yield 17.6%, dividendo 8.3%, márgenes altos "
+    },
+    {
+      "decide_day": "2026-06-12",
+      "equity_before": 43.06,
+      "equity_after": 41.09,
+      "retorno_pct": -4.57,
+      "allocations": {
+        "GMEXICOB": 17.22,
+        "PINFRA": 17.22,
+        "VESTA": 8.61
+      },
+      "stopped_out": [
+        "GMEXICOB"
+      ],
+      "motivo": "Régimen bull (38%) con IPC +2.7% en 5 días y S&P500 +0.6%, así que el entorno acompaña. GMEXICOB es el líder del score (+1.33): momentum 12m +89%, sigue a -4.9% de su máximo de 52s, márgenes muy altos"
+    },
+    {
+      "decide_day": "2026-07-13",
+      "equity_before": 41.09,
+      "equity_after": 40.26,
+      "retorno_pct": -2.02,
+      "allocations": {
+        "VESTA": 14.79,
+        "FUNO11": 14.79,
+        "PINFRA": 11.51
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull al 99% y los tres nombres con mayor score multifactor (VESTA +1.12, FUNO11 +1.07, PINFRA +0.81). VESTA combina momentum 12-1 de +22%, margen operativo de 80%, crecimiento de ingresos de +"
+    },
+    {
+      "decide_day": "2026-08-11",
+      "equity_before": 40.26,
+      "equity_after": 39.43,
+      "retorno_pct": -2.06,
+      "allocations": {
+        "FUNO11": 16.1,
+        "VESTA": 12.08,
+        "PINFRA": 12.08
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull al 100%, así que despliego capital. Elijo los tres nombres con mejor combinación de score y fundamentales en el top de la lista, con volatilidad baja y valuación razonable. FUNO11 (score "
+    },
+    {
+      "decide_day": "2026-09-09",
+      "equity_before": 39.43,
+      "equity_after": 38.98,
+      "retorno_pct": -1.16,
+      "allocations": {
+        "GMEXICOB": 15.77,
+        "FUNO11": 11.83,
+        "PINFRA": 11.83
+      },
+      "stopped_out": [
+        "GMEXICOB"
+      ],
+      "motivo": "Régimen bull (100% invertido permitido) y macro estable (IPC +0.6%, S&P +0.1%). Los tres nombres tienen los scores más altos (+1.09, +0.99, +0.71). GMEXICOB tiene el mejor momentum 12-1 (+71.2%), márg"
+    }
+  ]
+}

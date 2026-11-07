@@ -1,0 +1,17 @@
+[
+  {
+    "estrategia": "nunca_reentrena",
+    "mae": 3.760483721405296,
+    "n_reentrenos": 1
+  },
+  {
+    "estrategia": "reentrena_cada_60d",
+    "mae": 3.7661286375923964,
+    "n_reentrenos": 17
+  },
+  {
+    "estrategia": "reentrena_cada_20d",
+    "mae": 3.7649509882143857,
+    "n_reentrenos": 50
+  }
+]

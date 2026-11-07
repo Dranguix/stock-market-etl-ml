@@ -1,0 +1,89 @@
+{
+  "date": "2026-10-02",
+  "timestamp_utc": "2026-10-02T18:02:21.250137+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "GCC",
+      "conviction": 0.6032,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 1,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "META",
+      "conviction": 0.7703,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "INTC",
+      "conviction": 0.7191,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "FIBRAPL",
+      "conviction": 0.6807,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "CLSK",
+      "conviction": 0.68,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "QQQ",
+      "conviction": 0.6785,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "MARA",
+      "conviction": 0.6584,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "AAPL",
+      "conviction": 0.6455,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "XLY",
+      "conviction": 0.6406,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "GCC",
+      "conviction": 0.6032,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "ETHA",
+      "conviction": 0.6028,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "a66b2f5e32757df9"
+}

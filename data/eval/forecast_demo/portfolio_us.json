@@ -1,0 +1,32 @@
+[
+  {
+    "ticker": "SPY",
+    "precio0": 763.989990234375,
+    "retorno_esperado_pct": 0.37690302708175416,
+    "riesgo_pct": 10.472425055785319
+  },
+  {
+    "ticker": "AAPL",
+    "precio0": 330.32000732421875,
+    "retorno_esperado_pct": 4.029307127786019,
+    "riesgo_pct": 26.611171701091056
+  },
+  {
+    "ticker": "JPM",
+    "precio0": 333.17999267578125,
+    "retorno_esperado_pct": 0.6672061631645132,
+    "riesgo_pct": 18.07292387258477
+  },
+  {
+    "ticker": "XOM",
+    "precio0": 163.82000732421875,
+    "retorno_esperado_pct": 1.464068709179256,
+    "riesgo_pct": 23.862649206224155
+  },
+  {
+    "ticker": "JNJ",
+    "precio0": 258.6600036621094,
+    "retorno_esperado_pct": 5.115491584909759,
+    "riesgo_pct": 19.70370721395772
+  }
+]

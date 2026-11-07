@@ -339,6 +339,101 @@ def asignacion_schema() -> dict:
     }
 
 
+class AgenteModelos(ObservationAgent):
+    name = "ver_modelos"
+    description = (
+        "Information Value de las variables y el AUC del LSTM y del ranking. "
+        "Léelo antes de repartir: IV bajo 0.02 no separa, AUC 0.50 es un volado."
+    )
+
+    def observe(self, **params) -> dict:
+        root = ROOT / "data"
+
+        def _iv(path: Path, key: str | None = None) -> list:
+            if not path.exists():
+                return []
+            payload = json.loads(path.read_text())
+            rows = payload.get(key) if key else payload.get("iv")
+            if rows is None and "iv_summary" in payload:
+                rows = payload["iv_summary"]
+            return [
+                {"feature": r.get("feature"), "iv": r.get("iv")}
+                for r in (rows or [])
+            ]
+
+        lstm = []
+        lstm_path = root / "eval" / "lstm_vs_lgbm.json"
+        if lstm_path.exists():
+            raw = json.loads(lstm_path.read_text())
+            summary = raw.get("summary") or []
+            lstm = [
+                {
+                    "ticker": row.get("ticker"),
+                    "auc_lstm": row.get("lstm_seq_mean_auc"),
+                    "auc_ranking": row.get("xs_lgbm_mean_auc"),
+                    "lstm_wins": row.get("lstm_wins"),
+                    "folds": [
+                        {
+                            "fold": fold.get("fold"),
+                            "test_start": fold.get("test_start"),
+                            "test_end": fold.get("test_end"),
+                            "auc_lstm": fold.get("lstm_seq_auc"),
+                            "auc_ranking": fold.get("xs_lgbm_auc"),
+                        }
+                        for fold in ((raw.get("tickers") or {}).get(row.get("ticker"), {}).get("folds") or [])
+                    ],
+                }
+                for row in summary
+            ]
+        return {
+            "ok": True,
+            "umbral_iv": 0.02,
+            "nota": "IV menor a 0.02 no distingue. AUC 0.50 es un volado. El LSTM no tiene probabilidad de hoy, solo estas pruebas.",
+            "woe_patrones_20d": _iv(root / "woe_pattern.json"),
+            "woe_50_extra": _iv(root / "woe_extra_iv.json"),
+            "woe_valor": _iv(root / "woe_value_iv.json"),
+            "woe_clasico": _iv(root / "woe_results.json"),
+            "flujo": _iv(root / "eval" / "flow_iv.json"),
+            "lstm_auc_5d": lstm,
+        }
+
+    def tool_schema(self) -> dict:
+        return _schema(self.name, self.description, {})
+
+
+class AgenteHorizontes(ObservationAgent):
+    name = "ver_horizontes"
+    description = (
+        "Ranking completo de cada plazo: todas las emisoras con score y precio. "
+        "Mañana y semana ordenan por reversión. El mes, por momentum de 12 meses. "
+        "libro es solo un reparto posible. Tú eliges cualquier nombre de ranking_completo."
+    )
+
+    def observe(self, manga: str = "bmv", **params) -> dict:
+        sleeve = params.get("sleeve") or manga or "bmv"
+        if sleeve not in ("bmv", "todo"):
+            sleeve = "bmv"
+        from src.agent.horizons import libro
+        asof = pd.Timestamp.today().normalize()
+        # El último cierre que exista en un precio líquido.
+        sample = ROOT / "data" / "market" / "WALMEX.MX.parquet"
+        if sample.exists():
+            idx = pd.read_parquet(sample, columns=["Close"]).index
+            asof = pd.to_datetime(idx).tz_localize(None).max()
+        block = libro(asof, sleeve)
+        from src.agent.horizons import rank_horizon
+        block["ranking_completo"] = {
+            kind: rank_horizon(asof, kind, sleeve=sleeve, top_n=500)
+            for kind in ("manana", "semana", "mes")
+        }
+        return {"ok": True, **block}
+
+    def tool_schema(self) -> dict:
+        return _schema(self.name, self.description, {
+            "sleeve": {"type": "string", "enum": ["bmv", "todo"], "description": "bmv solo mexicanas, todo incluye USA y cripto"},
+        })
+
+
 def build_tools(book: Book) -> dict[str, ObservationAgent]:
     agents = [
         AgenteLibro(book),
@@ -347,5 +442,7 @@ def build_tools(book: Book) -> dict[str, ObservationAgent]:
         AgenteWoe(),
         AgenteNoticias(),
         AgenteSalida(),
+        AgenteModelos(),
+        AgenteHorizontes(),
     ]
     return {a.name: a for a in agents}

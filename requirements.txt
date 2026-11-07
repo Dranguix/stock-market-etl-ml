@@ -72,3 +72,11 @@ pypdf>=4.0.0               # PDF text extraction for articles/knowledge/
 black>=23.7.0              # Code formatter
 flake8>=6.1.0              # Linter
 isort>=5.12.0              # Import sorter
+
+# Multi-agent (orquestador + agentes de dominio, src/agents_mcp/)
+claude-agent-sdk>=0.1.0    # Agent loop + MCP tools in-process, por Anthropic
+anthropic>=0.40.0          # Cliente directo de la API de Messages
+
+# MCP server standalone (mcp_server/) — protocolo MCP oficial vía HTTP,
+# para que claude.ai / Claude Desktop se conecten por URL como "custom connector"
+mcp[cli]>=1.0.0            # SDK oficial de Model Context Protocol (ya viene como dep de claude-agent-sdk)

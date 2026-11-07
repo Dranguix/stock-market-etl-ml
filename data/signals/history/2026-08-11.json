@@ -1,0 +1,95 @@
+{
+  "date": "2026-08-11",
+  "timestamp_utc": "2026-08-11T14:19:15.203594+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "FUNO11",
+      "conviction": 0.7191,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "FEMSAUBD",
+      "conviction": 0.6583,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "FUNO11",
+      "conviction": 0.7493,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "QQQ",
+      "conviction": 0.7227,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "FUNO11",
+      "conviction": 0.7191,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "FIBRAPL",
+      "conviction": 0.7077,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "XLK",
+      "conviction": 0.6617,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "FIBRAPL",
+      "conviction": 0.6617,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "FEMSAUBD",
+      "conviction": 0.6583,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "GCC",
+      "conviction": 0.6568,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "PINFRA",
+      "conviction": 0.6483,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "MEGACPO",
+      "conviction": 0.6399,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "e9714899d3e01949"
+}

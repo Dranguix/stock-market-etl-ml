@@ -1,0 +1,36 @@
+{
+  "n_scenarios": 50,
+  "n_steps": 20,
+  "calibration_source": "NAFTRAC.MX",
+  "leaderboard": [
+    {
+      "agent": "quant",
+      "n_trades": 485,
+      "hit_rate": 0.9705,
+      "mean_pnl": 0.015992,
+      "sharpe_approx": 13.215
+    },
+    {
+      "agent": "trader",
+      "n_trades": 432,
+      "hit_rate": 0.9147,
+      "mean_pnl": 0.015546,
+      "sharpe_approx": 12.677
+    },
+    {
+      "agent": "random",
+      "n_trades": 473,
+      "hit_rate": 0.4905,
+      "mean_pnl": 0.001263,
+      "sharpe_approx": 0.869
+    },
+    {
+      "agent": "contrarian",
+      "n_trades": 412,
+      "hit_rate": 0.0284,
+      "mean_pnl": -0.012604,
+      "sharpe_approx": -11.073
+    }
+  ],
+  "winner": "quant"
+}

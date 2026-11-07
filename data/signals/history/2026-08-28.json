@@ -1,0 +1,95 @@
+{
+  "date": "2026-08-28",
+  "timestamp_utc": "2026-08-28T00:36:59.216587+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "QQQ",
+      "conviction": 0.8535,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "XLK",
+      "conviction": 0.7843,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "QQQ",
+      "conviction": 0.8535,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "XLK",
+      "conviction": 0.7843,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "XLI",
+      "conviction": 0.7251,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "XLY",
+      "conviction": 0.709,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "XLV",
+      "conviction": 0.6875,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "VOO",
+      "conviction": 0.6479,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "USO",
+      "conviction": 0.6472,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "VTI",
+      "conviction": 0.6452,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "AMZN",
+      "conviction": 0.6355,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "XLF",
+      "conviction": 0.6331,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "4d919fa17b41862c"
+}

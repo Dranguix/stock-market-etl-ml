@@ -1,0 +1,68 @@
+[
+  {
+    "ticker": "FUNO11",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.9052,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 2,
+    "sources": [
+      "databursatil"
+    ]
+  },
+  {
+    "ticker": "FIBRAPL",
+    "news_sent_score": 0.2,
+    "news_count_7d": 1.055,
+    "news_sent_delta": -0.1579,
+    "news_sent_vol": 0.3646,
+    "news_relevance_avg": 0.5974,
+    "news_esg_score": -1.0,
+    "n_articles": 4,
+    "sources": [
+      "databursatil"
+    ]
+  },
+  {
+    "ticker": "TERRA13",
+    "news_sent_score": 0.3,
+    "news_count_7d": 0.6369,
+    "news_sent_delta": -0.3333,
+    "news_sent_vol": 0.4714,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": -1.0,
+    "n_articles": 3,
+    "sources": [
+      "databursatil"
+    ]
+  },
+  {
+    "ticker": "FINN13",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.8797,
+    "news_sent_delta": -0.2105,
+    "news_sent_vol": 0.4077,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": -1.0,
+    "n_articles": 6,
+    "sources": [
+      "databursatil"
+    ]
+  },
+  {
+    "ticker": "MXOT",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.9078,
+    "news_sent_delta": -0.2008,
+    "news_sent_vol": 0.4006,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": -1.0,
+    "n_articles": 7,
+    "sources": [
+      "databursatil",
+      "google_news"
+    ]
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-31",
+  "timestamp_utc": "2026-10-31T00:35:54.379118+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "POSADAS",
+      "conviction": 0.6236,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "GMEXICOB",
+      "conviction": 0.6106,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "QQQ",
+      "conviction": 0.8171,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "FIBRAPL",
+      "conviction": 0.787,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "FUNO11",
+      "conviction": 0.6967,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "AAPL",
+      "conviction": 0.6729,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "CLSK",
+      "conviction": 0.6674,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "MSFT",
+      "conviction": 0.6607,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "TSLA",
+      "conviction": 0.6552,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "SLV",
+      "conviction": 0.6398,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "FINN13",
+      "conviction": 0.6365,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "POSADAS",
+      "conviction": 0.6236,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "86bd71db526ea6c0"
+}

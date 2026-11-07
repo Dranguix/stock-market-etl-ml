@@ -1,0 +1,258 @@
+{
+  "horizon_days": 20,
+  "cutoff": "2021-06-03",
+  "n_train": 354349,
+  "n_features": 50,
+  "iv": [
+    {
+      "feature": "up_days_120",
+      "iv": 0.00432,
+      "n_bins": 6
+    },
+    {
+      "feature": "hl_mean_20",
+      "iv": 0.00423,
+      "n_bins": 6
+    },
+    {
+      "feature": "hl_mean_10",
+      "iv": 0.00416,
+      "n_bins": 6
+    },
+    {
+      "feature": "ret_250",
+      "iv": 0.00248,
+      "n_bins": 6
+    },
+    {
+      "feature": "accel_60_120",
+      "iv": 0.00224,
+      "n_bins": 6
+    },
+    {
+      "feature": "ret_120",
+      "iv": 0.00223,
+      "n_bins": 6
+    },
+    {
+      "feature": "min_ret_20",
+      "iv": 0.00223,
+      "n_bins": 6
+    },
+    {
+      "feature": "dist_sma200",
+      "iv": 0.00219,
+      "n_bins": 6
+    },
+    {
+      "feature": "days_since_high_60",
+      "iv": 0.00211,
+      "n_bins": 6
+    },
+    {
+      "feature": "vol_10",
+      "iv": 0.00185,
+      "n_bins": 6
+    },
+    {
+      "feature": "vol_20",
+      "iv": 0.00176,
+      "n_bins": 6
+    },
+    {
+      "feature": "dd_120",
+      "iv": 0.00176,
+      "n_bins": 6
+    },
+    {
+      "feature": "dist_high_120",
+      "iv": 0.00153,
+      "n_bins": 6
+    },
+    {
+      "feature": "close_loc",
+      "iv": 0.00151,
+      "n_bins": 6
+    },
+    {
+      "feature": "max_ret_20",
+      "iv": 0.00127,
+      "n_bins": 6
+    },
+    {
+      "feature": "bounce_5",
+      "iv": 0.00125,
+      "n_bins": 6
+    },
+    {
+      "feature": "vol_60",
+      "iv": 0.00123,
+      "n_bins": 6
+    },
+    {
+      "feature": "body",
+      "iv": 0.00114,
+      "n_bins": 6
+    },
+    {
+      "feature": "tail_ratio_20",
+      "iv": 0.0011,
+      "n_bins": 6
+    },
+    {
+      "feature": "dd_20",
+      "iv": 0.00105,
+      "n_bins": 6
+    },
+    {
+      "feature": "ret_1",
+      "iv": 0.00091,
+      "n_bins": 6
+    },
+    {
+      "feature": "accel_20_60",
+      "iv": 0.0009,
+      "n_bins": 6
+    },
+    {
+      "feature": "dist_low_120",
+      "iv": 0.00085,
+      "n_bins": 6
+    },
+    {
+      "feature": "higher_high_10",
+      "iv": 0.00078,
+      "n_bins": 5
+    },
+    {
+      "feature": "ret_3",
+      "iv": 0.00077,
+      "n_bins": 6
+    },
+    {
+      "feature": "overnight_5",
+      "iv": 0.00077,
+      "n_bins": 6
+    },
+    {
+      "feature": "efficiency_60",
+      "iv": 0.00076,
+      "n_bins": 6
+    },
+    {
+      "feature": "pos_in_20",
+      "iv": 0.00076,
+      "n_bins": 6
+    },
+    {
+      "feature": "volume_trend_20",
+      "iv": 0.00073,
+      "n_bins": 6
+    },
+    {
+      "feature": "efficiency_20",
+      "iv": 0.00073,
+      "n_bins": 6
+    },
+    {
+      "feature": "vol_of_vol_20",
+      "iv": 0.00069,
+      "n_bins": 6
+    },
+    {
+      "feature": "ret_40",
+      "iv": 0.00068,
+      "n_bins": 6
+    },
+    {
+      "feature": "ret_10",
+      "iv": 0.00065,
+      "n_bins": 6
+    },
+    {
+      "feature": "dist_sma100",
+      "iv": 0.00061,
+      "n_bins": 6
+    },
+    {
+      "feature": "dist_sma10",
+      "iv": 0.0006,
+      "n_bins": 6
+    },
+    {
+      "feature": "days_since_low_60",
+      "iv": 0.00059,
+      "n_bins": 6
+    },
+    {
+      "feature": "skew_20",
+      "iv": 0.00057,
+      "n_bins": 6
+    },
+    {
+      "feature": "accel_5_20",
+      "iv": 0.00049,
+      "n_bins": 6
+    },
+    {
+      "feature": "range_compress",
+      "iv": 0.00043,
+      "n_bins": 6
+    },
+    {
+      "feature": "intraday_5",
+      "iv": 0.0004,
+      "n_bins": 6
+    },
+    {
+      "feature": "ret_pct_60",
+      "iv": 0.0004,
+      "n_bins": 6
+    },
+    {
+      "feature": "up_days_10",
+      "iv": 0.00039,
+      "n_bins": 6
+    },
+    {
+      "feature": "kurt_20",
+      "iv": 0.00038,
+      "n_bins": 6
+    },
+    {
+      "feature": "vol_ratio_10_60",
+      "iv": 0.00025,
+      "n_bins": 6
+    },
+    {
+      "feature": "lower_low_10",
+      "iv": 0.00024,
+      "n_bins": 5
+    },
+    {
+      "feature": "autocorr_20",
+      "iv": 0.00018,
+      "n_bins": 6
+    },
+    {
+      "feature": "volume_z_20",
+      "iv": 0.00018,
+      "n_bins": 6
+    },
+    {
+      "feature": "gap",
+      "iv": 0.00017,
+      "n_bins": 6
+    },
+    {
+      "feature": "dollar_vol_z_20",
+      "iv": 0.00013,
+      "n_bins": 6
+    },
+    {
+      "feature": "sign_agree_3",
+      "iv": 5e-05,
+      "n_bins": 3
+    }
+  ]
+}

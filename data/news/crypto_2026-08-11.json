@@ -1,0 +1,119 @@
+[
+  {
+    "ticker": "IBIT",
+    "news_sent_score": 0.5,
+    "news_count_7d": 2.5796,
+    "news_sent_delta": -0.0534,
+    "news_sent_vol": 0.2249,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 28,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "FBTC",
+    "news_sent_score": 0.7,
+    "news_count_7d": 1.408,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 9,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "ETHA",
+    "news_sent_score": -0.3,
+    "news_count_7d": 1.1961,
+    "news_sent_delta": 0.1483,
+    "news_sent_vol": 0.3554,
+    "news_relevance_avg": 0.9274,
+    "news_esg_score": 0.0,
+    "n_articles": 17,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "GBTC",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.7234,
+    "news_sent_delta": 0.5335,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 3,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "MSTR",
+    "news_sent_score": -0.2,
+    "news_count_7d": 0.758,
+    "news_sent_delta": 0.4794,
+    "news_sent_vol": 0.4996,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 3,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "COIN",
+    "news_sent_score": -0.8,
+    "news_count_7d": 0.6248,
+    "news_sent_delta": 0.1346,
+    "news_sent_vol": 0.4595,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 3,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "MARA",
+    "news_sent_score": 0.2,
+    "news_count_7d": 2.0725,
+    "news_sent_delta": -0.0808,
+    "news_sent_vol": 0.3607,
+    "news_relevance_avg": 0.9439,
+    "news_esg_score": 0.0,
+    "n_articles": 22,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "RIOT",
+    "news_sent_score": 0.8,
+    "news_count_7d": 2.8701,
+    "news_sent_delta": 0.0875,
+    "news_sent_vol": 0.3999,
+    "news_relevance_avg": 0.969,
+    "news_esg_score": 0.0,
+    "n_articles": 30,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "CLSK",
+    "news_sent_score": -0.5,
+    "news_count_7d": 1.8539,
+    "news_sent_delta": -0.4446,
+    "news_sent_vol": 0.4969,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 23,
+    "sources": [
+      "google_news"
+    ]
+  }
+]

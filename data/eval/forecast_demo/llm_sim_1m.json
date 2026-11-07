@@ -1,0 +1,124 @@
+{
+  "policy": "llm",
+  "start": "2026-09-30",
+  "end": "2026-10-30",
+  "final_equity_usd": 51.28,
+  "peso_mexico_promedio": 0.755,
+  "usd": {
+    "libro": {
+      "retorno_pct": 2.57,
+      "cagr_pct": 33.67,
+      "vol_anual_pct": 11.48,
+      "sharpe": 2.584,
+      "max_dd_pct": -1.62
+    },
+    "SPY": {
+      "retorno_pct": -0.91,
+      "cagr_pct": -9.9,
+      "vol_anual_pct": 11.4,
+      "sharpe": -0.859,
+      "max_dd_pct": -3.0
+    },
+    "NAFTRAC": {
+      "retorno_pct": 4.15,
+      "cagr_pct": 59.41,
+      "vol_anual_pct": 13.66,
+      "sharpe": 3.481,
+      "max_dd_pct": -2.05
+    },
+    "mezcla_0.75NAFTRAC": {
+      "retorno_pct": 2.91,
+      "cagr_pct": 38.91,
+      "vol_anual_pct": 11.2,
+      "sharpe": 2.991,
+      "max_dd_pct": -2.09
+    }
+  },
+  "mxn": {
+    "libro": {
+      "retorno_pct": 7.16,
+      "cagr_pct": 120.85,
+      "vol_anual_pct": 11.55,
+      "sharpe": 6.926,
+      "max_dd_pct": -1.04
+    },
+    "SPY": {
+      "retorno_pct": 3.53,
+      "cagr_pct": 48.86,
+      "vol_anual_pct": 14.51,
+      "sharpe": 2.814,
+      "max_dd_pct": -1.67
+    },
+    "NAFTRAC": {
+      "retorno_pct": 8.82,
+      "cagr_pct": 163.37,
+      "vol_anual_pct": 12.81,
+      "sharpe": 7.632,
+      "max_dd_pct": -1.36
+    },
+    "mezcla_0.75NAFTRAC": {
+      "retorno_pct": 7.52,
+      "cagr_pct": 129.51,
+      "vol_anual_pct": 11.32,
+      "sharpe": 7.407,
+      "max_dd_pct": -1.0
+    }
+  },
+  "vs_mezcla": {
+    "active_pct_anual": -3.82,
+    "ir": -1.027
+  },
+  "atribucion_usd": {
+    "nucleo_local": 3.17,
+    "nucleo_fx": -1.69,
+    "satelite_local": 0.0,
+    "satelite_fx": 0.0,
+    "costos": -0.2
+  },
+  "costos_usd": 0.2,
+  "turnover_usd": 39.05,
+  "operaciones": 1,
+  "daily_returns": [
+    -0.01201,
+    -0.002711,
+    0.013857,
+    0.007118,
+    -0.003746,
+    0.004399,
+    0.003211,
+    0.008983,
+    -0.000122,
+    -0.008386,
+    0.008555,
+    0.015336,
+    0.000765,
+    0.003632,
+    0.003289,
+    -0.008075,
+    0.001027,
+    -0.003047,
+    0.006556,
+    -0.008815,
+    -0.003118,
+    -0.000801
+  ],
+  "decisions": [
+    {
+      "asof": "2026-09-30",
+      "weights": {
+        "NAFTRAC": 0.8
+      },
+      "motivo": "Régimen lateral al 92% y ningún factor propio con señal (IV máximo 0.0046, LSTM con AUC ~0.50-0.54). El único factor con ganancia pre-costos es el momentum 12-1, y en BMV sola los costos se comen casi"
+    }
+  ],
+  "dsr": {
+    "sharpe_anual": 2.584,
+    "sr0_anual": 5.993,
+    "dsr": 0.161,
+    "n_obs": 22,
+    "skew": 0.114,
+    "kurtosis": 2.415
+  },
+  "n_trials": 15,
+  "sharpe_azar_esperado": 5.993
+}

@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-13",
+  "timestamp_utc": "2026-09-13T16:34:36.107028+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "QQQ",
+      "conviction": 0.8302,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "INTC",
+      "conviction": 0.7745,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "QQQ",
+      "conviction": 0.8302,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "INTC",
+      "conviction": 0.7745,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "META",
+      "conviction": 0.7132,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "XLV",
+      "conviction": 0.7011,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "XLY",
+      "conviction": 0.6967,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "ETHA",
+      "conviction": 0.678,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "XLI",
+      "conviction": 0.6679,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "MSTR",
+      "conviction": 0.6556,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "FIBRAPL",
+      "conviction": 0.6314,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "MARA",
+      "conviction": 0.6257,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "d70a1a5958ad322f"
+}

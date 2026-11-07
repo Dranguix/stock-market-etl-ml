@@ -1,0 +1,192 @@
+{
+  "policy": "llm",
+  "start": "2026-07-30",
+  "end": "2026-10-30",
+  "final_equity_usd": 49.92,
+  "peso_mexico_promedio": 0.423,
+  "usd": {
+    "libro": {
+      "retorno_pct": -0.17,
+      "cagr_pct": -0.65,
+      "vol_anual_pct": 8.84,
+      "sharpe": -0.03,
+      "max_dd_pct": -3.8
+    },
+    "SPY": {
+      "retorno_pct": 1.89,
+      "cagr_pct": 7.54,
+      "vol_anual_pct": 10.75,
+      "sharpe": 0.729,
+      "max_dd_pct": -3.06
+    },
+    "NAFTRAC": {
+      "retorno_pct": -4.11,
+      "cagr_pct": -15.02,
+      "vol_anual_pct": 13.76,
+      "sharpe": -1.114,
+      "max_dd_pct": -10.05
+    },
+    "mezcla_0.42NAFTRAC": {
+      "retorno_pct": -0.62,
+      "cagr_pct": -2.37,
+      "vol_anual_pct": 9.27,
+      "sharpe": -0.213,
+      "max_dd_pct": -4.61
+    }
+  },
+  "mxn": {
+    "libro": {
+      "retorno_pct": 7.9,
+      "cagr_pct": 34.3,
+      "vol_anual_pct": 11.02,
+      "sharpe": 2.732,
+      "max_dd_pct": -4.12
+    },
+    "SPY": {
+      "retorno_pct": 10.13,
+      "cagr_pct": 45.36,
+      "vol_anual_pct": 13.6,
+      "sharpe": 2.819,
+      "max_dd_pct": -4.22
+    },
+    "NAFTRAC": {
+      "retorno_pct": 3.64,
+      "cagr_pct": 14.87,
+      "vol_anual_pct": 13.09,
+      "sharpe": 1.124,
+      "max_dd_pct": -5.17
+    },
+    "mezcla_0.42NAFTRAC": {
+      "retorno_pct": 7.42,
+      "cagr_pct": 31.97,
+      "vol_anual_pct": 10.87,
+      "sharpe": 2.606,
+      "max_dd_pct": -4.07
+    }
+  },
+  "vs_mezcla": {
+    "active_pct_anual": 1.71,
+    "ir": 0.502
+  },
+  "atribucion_usd": {
+    "nucleo_local": 1.9,
+    "nucleo_fx": -1.41,
+    "satelite_local": 0.0,
+    "satelite_fx": 0.0,
+    "costos": -0.58
+  },
+  "costos_usd": 0.58,
+  "turnover_usd": 137.78,
+  "operaciones": 7,
+  "daily_returns": [
+    -0.005144,
+    0.003258,
+    0.009507,
+    -0.000704,
+    -0.001724,
+    0.007461,
+    -0.001367,
+    -0.00703,
+    0.003657,
+    -0.002207,
+    -0.003476,
+    -0.003484,
+    -0.005744,
+    0.000928,
+    0.000563,
+    0.012422,
+    -0.000308,
+    0.004337,
+    -0.00113,
+    0.001147,
+    -0.003806,
+    -0.003954,
+    -0.008895,
+    0.005084,
+    0.009159,
+    -0.003853,
+    -0.00348,
+    -0.003676,
+    -0.006148,
+    0.003884,
+    -0.002024,
+    -0.007447,
+    -0.003444,
+    0.008103,
+    -0.001819,
+    0.010482,
+    0.003493,
+    -0.006551,
+    -0.004177,
+    0.004031,
+    -0.00531,
+    -0.003816,
+    -0.005566,
+    -0.006821,
+    0.000238,
+    0.012247,
+    0.00691,
+    -0.003486,
+    0.001958,
+    0.004177,
+    0.006444,
+    -0.000125,
+    -0.00944,
+    0.007185,
+    0.008073,
+    0.001808,
+    0.003691,
+    0.003992,
+    -0.009482,
+    -0.000761,
+    -0.000209,
+    0.006532,
+    -0.005563,
+    -0.003447,
+    -0.005837
+  ],
+  "decisions": [
+    {
+      "asof": "2026-07-30",
+      "weights": {
+        "NAFTRAC": 0.8,
+        "PINFRA": 0.2
+      },
+      "motivo": "No hay convicción fuerte en nombres individuales: los factores técnicos no pasan Information Value (máximo 0.0046), el LSTM está en azar (AUC ~0.50-0.54) y el único factor con señal, momentum 12-1, pi"
+    },
+    {
+      "asof": "2026-07-31",
+      "weights": {
+        "SPY": 0.5,
+        "NAFTRAC": 0.5
+      },
+      "motivo": "Régimen bull (100% invertido), pero la evidencia individual es débil: los factores técnicos propios tienen IV máximo de 0.0046, el LSTM está en AUC ~0.50-0.54 y el momentum 12-1 perdió contra el índic"
+    },
+    {
+      "asof": "2026-08-31",
+      "weights": {
+        "SPY": 0.7,
+        "NAFTRAC": 0.3
+      },
+      "motivo": "Régimen bull (100%), así que invierto el libro completo. No hay convicción fuerte en nombres individuales: el score top (FUNO11 +1.15) tiene momentum 12-1 de +19% pero -7% en el mes y utilidad YoY dis"
+    },
+    {
+      "asof": "2026-09-30",
+      "weights": {
+        "NAFTRAC": 0.6,
+        "SPY": 0.3
+      },
+      "motivo": "Sin convicción fuerte en ningún nombre individual. El régimen es lateral (92%) y no hay señal técnica útil (IV < 0.02, LSTM con AUC ~0.5). El único factor con ganancia, momentum 12-1, se lo come el co"
+    }
+  ],
+  "dsr": {
+    "sharpe_anual": -0.03,
+    "sr0_anual": 3.486,
+    "dsr": 0.038,
+    "n_obs": 65,
+    "skew": 0.396,
+    "kurtosis": 2.277
+  },
+  "n_trials": 15,
+  "sharpe_azar_esperado": 3.486
+}

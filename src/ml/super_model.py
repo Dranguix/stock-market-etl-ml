@@ -92,10 +92,47 @@ from src.ml.kb_enhance import (
     select_priority_features,
     select_priority_rn_cols,
 )
+
+try:
+    from src.ml.flow_features import FLOW_FEATURE_COLS, add_flow_features, compute_flow_panel
+    _FLOW_AVAILABLE = True
+except ImportError:
+    FLOW_FEATURE_COLS = []  # type: ignore[misc, assignment]
+    _FLOW_AVAILABLE = False
+
+try:
+    from src.ml.graph_ising import GIM_FEATURE_COLS, add_gim_features, compute_gim_panel
+    _GIM_AVAILABLE = True
+except ImportError:
+    GIM_FEATURE_COLS = []  # type: ignore[misc, assignment]
+    _GIM_AVAILABLE = False
+
+try:
+    from src.ml.rates_features import (
+        RATES_FEATURE_COLS, add_rates_features,
+        build_rates_panel, compute_rates_features, fetch_tasas_snapshot,
+    )
+    _RATES_AVAILABLE = True
+except ImportError:
+    RATES_FEATURE_COLS = []  # type: ignore[misc, assignment]
+    _RATES_AVAILABLE = False
+
+try:
+    from src.ml.dividend_features import (
+        DIVIDEND_FEATURE_COLS, add_dividend_features,
+        build_dividend_panel, fetch_all_dividends,
+    )
+    _DIVIDENDS_AVAILABLE = True
+except ImportError:
+    DIVIDEND_FEATURE_COLS = []  # type: ignore[misc, assignment]
+    _DIVIDENDS_AVAILABLE = False
+
 # Modelos base para fusión L2 / stacking (KB-012, KB-060)
 STACK_BASE_MODELS = CORE_MODELS
 EXTENDED_FEATURE_COLS = (
     FEATURE_COLS + LONG_MOMENTUM_COLS + FUNDAMENTAL_FEATURE_COLS + list(INTRADAY_FEATURE_COLS)
+    + list(FLOW_FEATURE_COLS) + list(GIM_FEATURE_COLS)
+    + list(RATES_FEATURE_COLS) + list(DIVIDEND_FEATURE_COLS)
 )
 
 # Sufijo rank-normalizado (percentil cross-seccional) — sobre features extendidas
@@ -131,6 +168,8 @@ class SuperModel:
         use_stacking: bool = True,
         include_intraday: bool = True,
         skip_lstm: bool = False,
+        include_flow: bool = True,
+        include_graph_ising: bool = True,
     ):
         """
         Parameters
@@ -141,12 +180,17 @@ class SuperModel:
                        supere AUC-weight en holdout temporal (KB-060).
         include_intraday : añade microestructura 5m→diario cuando hay parquet cache.
         skip_lstm    : omitir lstm_seq (modo --fast, ~20 min más rápido).
+        include_flow : order flow de brokers (data/microstructure/hechos/).
+        include_graph_ising : features Graph-Ising (presión emergente sobre
+                       grafo de correlación con evidencia WoE).
         """
         self.top_gemini = top_gemini
         self.verbose = verbose
         self.use_stacking = use_stacking
         self.include_intraday = include_intraday and _INTRADAY_AVAILABLE
         self.skip_lstm = skip_lstm
+        self.include_flow = include_flow and _FLOW_AVAILABLE
+        self.include_graph_ising = include_graph_ising and _GIM_AVAILABLE
         self._macro: dict[str, pd.DataFrame] = {}
         self._regime_cache: dict[str, dict] = {}
         self._news: pd.DataFrame | None = None
@@ -305,6 +349,83 @@ class SuperModel:
             frames = add_cross_section_features(frames)
             if self.include_intraday and INTRADAY_FEATURE_COLS:
                 self._impute_intraday_cross_section(frames, list(INTRADAY_FEATURE_COLS))
+            frames = self._add_flow_and_gim(frames)
+        return frames
+
+    def _add_flow_and_gim(self, frames: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
+        """Order flow de brokers + Graph-Ising + tasas + dividendos (todos point-in-time)."""
+        if self.include_flow:
+            try:
+                closes = pd.DataFrame({t: df["Close"] for t, df in frames.items()})
+                closes.index = pd.to_datetime(closes.index)
+                if getattr(closes.index, "tz", None) is not None:
+                    closes.index = closes.index.tz_localize(None)
+                flow_panel = compute_flow_panel(list(frames.keys()), close_panel=closes)
+                if not flow_panel.empty:
+                    n_hit = flow_panel["ticker"].nunique()
+                    self._log(f"    order flow: {n_hit} tickers con hechos")
+                frames = {
+                    t: add_flow_features(df, t, flow_panel) for t, df in frames.items()
+                }
+            except Exception as e:
+                logger.debug(f"flow features: {e}")
+
+        if self.include_graph_ising and len(frames) >= 5:
+            try:
+                gim_panel = compute_gim_panel(frames)
+                if not gim_panel.empty:
+                    self._log(
+                        f"    graph-ising: {gim_panel['date'].nunique()} días, "
+                        f"{gim_panel['ticker'].nunique()} nodos"
+                    )
+                frames = {
+                    t: add_gim_features(df, t, gim_panel) for t, df in frames.items()
+                }
+            except Exception as e:
+                logger.debug(f"graph-ising features: {e}")
+
+        # ── Tasas de mercado de dinero mexicanas ─────────────────────────────
+        if _RATES_AVAILABLE:
+            try:
+                raw_rates = build_rates_panel()
+                rates_panel = compute_rates_features(raw_rates) if not raw_rates.empty else None
+                if rates_panel is not None and not rates_panel.empty:
+                    self._log(f"    tasas: panel {len(rates_panel)}d "
+                              f"({rates_panel.index[0].date()} → {rates_panel.index[-1].date()})")
+                    frames = {
+                        t: add_rates_features(df, rates_panel) for t, df in frames.items()
+                    }
+                else:
+                    self._log("    tasas: panel vacío (guardando snapshot de hoy…)")
+                    fetch_tasas_snapshot(sleep=0)
+                    frames = {t: add_rates_features(df, None) for t, df in frames.items()}
+            except Exception as e:
+                logger.debug(f"rates features: {e}")
+
+        # ── Dividendos ex-date ────────────────────────────────────────────────
+        if _DIVIDENDS_AVAILABLE:
+            try:
+                import os
+                token = os.environ.get("DATABURSATIL_API_TOKEN", "")
+                tickers_list = list(frames.keys())
+                dividends = fetch_all_dividends(tickers_list, token=token, sleep=0.4)
+                if dividends:
+                    # Construir index de fechas desde el primer frame disponible
+                    first_df = next(iter(frames.values()))
+                    date_idx = pd.DatetimeIndex(first_df.index)
+                    closes = pd.DataFrame(
+                        {t: df["Close"] for t, df in frames.items()
+                         if "Close" in df.columns}
+                    )
+                    div_panel = build_dividend_panel(dividends, date_idx, close_panel=closes)
+                    n_div = len([t for t in tickers_list if t in dividends])
+                    self._log(f"    dividendos: {n_div} tickers con historial")
+                    frames = {
+                        t: add_dividend_features(df, t, div_panel) for t, df in frames.items()
+                    }
+            except Exception as e:
+                logger.debug(f"dividend features: {e}")
+
         return frames
 
     # ── Modelos base por universo ───────────────────────────────────────────
@@ -330,11 +451,20 @@ class SuperModel:
         priority_feats = select_priority_features(feat_cols, include_news=include_news)
         ens_feats = priority_feats if len(priority_feats) >= 8 else feat_cols
 
-        # Imputar fundamentales (yfinance/trimestral) para no perder filas
+        # Imputar features con cobertura parcial para no perder filas históricas.
+        # Se aplica a: fundamentales (trimestrales), tasas (acumulación diaria),
+        # dividendos, flow y GIM (solo últimos ~12m de datos).
+        _SPARSE_COLS = (
+            FUNDAMENTAL_FEATURE_COLS
+            + list(RATES_FEATURE_COLS)
+            + list(DIVIDEND_FEATURE_COLS)
+            + list(FLOW_FEATURE_COLS)
+            + list(GIM_FEATURE_COLS)
+        )
         for name in list(frames.keys()):
             df = frames[name]
-            for col in FUNDAMENTAL_FEATURE_COLS:
-                if col in df.columns:
+            for col in _SPARSE_COLS:
+                if col in df.columns and df[col].isna().any():
                     med = df[col].median()
                     frames[name][col] = df[col].fillna(med if pd.notna(med) else 0.0)
 

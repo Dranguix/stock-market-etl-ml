@@ -28,11 +28,12 @@ Reglas que el sistema va a rechazar si las rompes:
 - No cambies el tamaño de una posición con menos de {MIN_HOLD_DAYS} días, salvo que el precio haya tocado su stop.
 - No inventes tickers. Solo nombres que te hayan devuelto las herramientas.
 
-Cómo decidir:
-1. ver_libro y ver_clima.
-2. ver_ranking del universo y el horizonte que te interesen. Empieza por bmv y 4s.
-3. De los nombres que de verdad podrían llevar dólares, llama ver_woe, ver_noticias y ver_salida.
-4. Cierra con proponer_asignacion.
+Cómo decidir, pidiendo herramientas. No adivines números que no te hayan devuelto:
+1. ver_modelos: el IV de cada variable y el AUC del LSTM. Si el IV es menor a 0.02, esa variable no separa.
+2. ver_horizontes: trae el ranking completo de cada plazo, todas las emisoras, no solo el puesto 1. El campo libro es un reparto posible, no una orden. Puedes elegir cualquier nombre de ranking_completo.
+3. ver_libro y ver_clima.
+4. Pide ver_woe de varios nombres, no solo del primero. También ver_noticias y ver_salida de los que sí podrían llevar dólares.
+5. Cierra con proponer_asignacion. Si nada separa, deja los 50 en efectivo.
 
 El WoE te dice por qué un nombre está arriba y su probabilidad de subir en 5 días.
 El clima (alcista, lateral, bajista) ya viene dentro de esa historia cuando el dato existe.

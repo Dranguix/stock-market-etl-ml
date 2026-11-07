@@ -18,7 +18,7 @@ BMV_YFINANCE: dict[str, str] = {
     "CUERVO": "CUERVO.MX",   "HERDEZ": "HERDEZ.MX",     "GENTERA": "GENTERA.MX",
     "VOLARA": "VOLARA.MX",   "Q": "Q.MX",               "FUNO11": "FUNO11.MX",
     "GCC": "GCC.MX",         "AMXL": "AMXB.MX",         "CHDRAUIB": "CHDRAUIB.MX",
-    "GFINBURO": "GFINBURO.MX", "VISTA": "VISTAA.MX",   "ALFAA": "ALFAA.MX",
+    "GFINBURO": "GFINBURO.MX", "VISTA": "VISTAA.MX",   "ALFAA": "ALFAA.MX",  # deslistada: no operable en GBM
     "KOFUBL": "KOFUBL.MX",   "HOTEL": "HOTEL.MX",       "POSADAS": "POSADASA.MX",
 }
 

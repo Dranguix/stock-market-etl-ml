@@ -1,0 +1,149 @@
+{
+  "label": "[monthly cost=0.0055]",
+  "freq": "monthly",
+  "cost_rate": 0.0055,
+  "anti_churn": false,
+  "start": "2026-09-09",
+  "end": "2026-10-09",
+  "final_equity": 52.35,
+  "retorno_pct": 4.7,
+  "turnover_usd_total": 50.0,
+  "costo_usd_total": 0.27,
+  "log": [
+    {
+      "day": "2026-09-09",
+      "rebalanceo": true,
+      "equity_before": 50.0,
+      "equity_next": 48.93,
+      "cash": -0.27,
+      "turnover_usd": 50.0,
+      "costo_usd": 0.275,
+      "allocations": {
+        "GMEXICOB": 15.0,
+        "PINFRA": 17.0,
+        "FUNO11": 18.0
+      },
+      "motivo": "Régimen bull (100% invertido). Ancla principal: momentum 12-1, el único factor con ganancia pre-costos. GMEXICOB tiene el mejor año (+71.2%) con ventas +48.6%, utilidad +199.5% y márgenes 56/55/43%; s"
+    },
+    {
+      "day": "2026-09-10",
+      "rebalanceo": false,
+      "equity_before": 48.93,
+      "equity_next": 48.87
+    },
+    {
+      "day": "2026-09-11",
+      "rebalanceo": false,
+      "equity_before": 48.87,
+      "equity_next": 48.61
+    },
+    {
+      "day": "2026-09-14",
+      "rebalanceo": false,
+      "equity_before": 48.61,
+      "equity_next": 48.01
+    },
+    {
+      "day": "2026-09-15",
+      "rebalanceo": false,
+      "equity_before": 48.01,
+      "equity_next": 48.42
+    },
+    {
+      "day": "2026-09-17",
+      "rebalanceo": false,
+      "equity_before": 48.42,
+      "equity_next": 47.76
+    },
+    {
+      "day": "2026-09-18",
+      "rebalanceo": false,
+      "equity_before": 47.76,
+      "equity_next": 48.27
+    },
+    {
+      "day": "2026-09-21",
+      "rebalanceo": false,
+      "equity_before": 48.27,
+      "equity_next": 48.88
+    },
+    {
+      "day": "2026-09-22",
+      "rebalanceo": false,
+      "equity_before": 48.88,
+      "equity_next": 48.63
+    },
+    {
+      "day": "2026-09-23",
+      "rebalanceo": false,
+      "equity_before": 48.63,
+      "equity_next": 48.87
+    },
+    {
+      "day": "2026-09-24",
+      "rebalanceo": false,
+      "equity_before": 48.87,
+      "equity_next": 49.37
+    },
+    {
+      "day": "2026-09-25",
+      "rebalanceo": false,
+      "equity_before": 49.37,
+      "equity_next": 49.42
+    },
+    {
+      "day": "2026-09-28",
+      "rebalanceo": false,
+      "equity_before": 49.42,
+      "equity_next": 49.45
+    },
+    {
+      "day": "2026-09-29",
+      "rebalanceo": false,
+      "equity_before": 49.45,
+      "equity_next": 49.22
+    },
+    {
+      "day": "2026-09-30",
+      "rebalanceo": false,
+      "equity_before": 49.22,
+      "equity_next": 49.57
+    },
+    {
+      "day": "2026-10-01",
+      "rebalanceo": false,
+      "equity_before": 49.57,
+      "equity_next": 50.31
+    },
+    {
+      "day": "2026-10-02",
+      "rebalanceo": false,
+      "equity_before": 50.31,
+      "equity_next": 50.54
+    },
+    {
+      "day": "2026-10-05",
+      "rebalanceo": false,
+      "equity_before": 50.54,
+      "equity_next": 50.84
+    },
+    {
+      "day": "2026-10-06",
+      "rebalanceo": false,
+      "equity_before": 50.84,
+      "equity_next": 50.28
+    },
+    {
+      "day": "2026-10-07",
+      "rebalanceo": false,
+      "equity_before": 50.28,
+      "equity_next": 50.69
+    },
+    {
+      "day": "2026-10-08",
+      "rebalanceo": false,
+      "equity_before": 50.69,
+      "equity_next": 52.35
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "capital_mxn": 1000.0,
+  "min_orden_mxn": 100.0,
+  "fx_mxn_por_usd": 18.8521,
+  "paso1_lote_minimo": [
+    {
+      "ticker": "CEMEXCPO",
+      "peso_objetivo_pct": 25.0,
+      "objetivo_mxn": 250.0,
+      "precio_mxn": 20.22,
+      "moneda_origen": "MXN",
+      "acciones_enteras_comprables": 12,
+      "gastado_mxn": 242.64,
+      "comprable": true
+    },
+    {
+      "ticker": "AAPL",
+      "peso_objetivo_pct": 25.0,
+      "objetivo_mxn": 250.0,
+      "precio_mxn": 6497.0,
+      "moneda_origen": "USD",
+      "acciones_enteras_comprables": 0,
+      "gastado_mxn": 0.0,
+      "comprable": false
+    },
+    {
+      "ticker": "JNJ",
+      "peso_objetivo_pct": 25.0,
+      "objetivo_mxn": 250.0,
+      "precio_mxn": 5150.39,
+      "moneda_origen": "USD",
+      "acciones_enteras_comprables": 0,
+      "gastado_mxn": 0.0,
+      "comprable": false
+    },
+    {
+      "ticker": "WALMEX",
+      "peso_objetivo_pct": 24.15,
+      "objetivo_mxn": 241.5,
+      "precio_mxn": 50.39,
+      "moneda_origen": "MXN",
+      "acciones_enteras_comprables": 4,
+      "gastado_mxn": 201.56,
+      "comprable": true
+    },
+    {
+      "ticker": "GFNORTEO",
+      "peso_objetivo_pct": 0.85,
+      "objetivo_mxn": 8.5,
+      "precio_mxn": 209.04,
+      "moneda_origen": "MXN",
+      "acciones_enteras_comprables": 0,
+      "gastado_mxn": 0.0,
+      "comprable": false
+    }
+  ],
+  "paso2_backtest": {
+    "pesos_usados_pct": {
+      "CEMEXCPO": 54.6,
+      "WALMEX": 45.4
+    },
+    "cortes": [
+      {
+        "fecha": "2022-09-14",
+        "ret_bruto_pct": -7.339,
+        "costo_pct": 0.55,
+        "ret_neto_pct": -7.889
+      },
+      {
+        "fecha": "2022-12-13",
+        "ret_bruto_pct": 7.779,
+        "costo_pct": 0.55,
+        "ret_neto_pct": 7.229
+      },
+      {
+        "fecha": "2023-03-08",
+        "ret_bruto_pct": -1.082,
+        "costo_pct": 0.55,
+        "ret_neto_pct": -1.632
+      },
+      {
+        "fecha": "2023-06-06",
+        "ret_bruto_pct": 0.471,
+        "costo_pct": 0.55,
+        "ret_neto_pct": -0.079
+      },
+      {
+        "fecha": "2023-08-29",
+        "ret_bruto_pct": -5.622,
+        "costo_pct": 0.55,
+        "ret_neto_pct": -6.172
+      }
+    ]
+  },
+  "nota_honestidad": "Costo BMV (0.55% round-trip) viene de bmv_market_rules.yaml (KB-003, 'validar con broker real'). Costo USA/FX (1.0% round-trip) es un SUPUESTO no medido — falta dato real del broker (GBM SIC u otro) antes de confiar en este número. El lote mínimo (acciones enteras, ~100 MXN/orden) SÍ es una regla documentada del mercado, no un supuesto."
+}

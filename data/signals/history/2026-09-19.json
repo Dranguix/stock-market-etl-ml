@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-19",
+  "timestamp_utc": "2026-09-19T00:36:03.013757+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "FIBRAPL",
+      "conviction": 0.7831,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "META",
+      "conviction": 0.7775,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "FIBRAPL",
+      "conviction": 0.7831,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "META",
+      "conviction": 0.7775,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "INTC",
+      "conviction": 0.7756,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "QQQ",
+      "conviction": 0.766,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "MSFT",
+      "conviction": 0.7154,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "IWM",
+      "conviction": 0.7035,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "XLI",
+      "conviction": 0.6886,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "XLF",
+      "conviction": 0.6768,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "MARA",
+      "conviction": 0.665,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "CLSK",
+      "conviction": 0.6614,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "0d8c8e1f8c527084"
+}

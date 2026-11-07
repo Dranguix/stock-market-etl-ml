@@ -1,0 +1,340 @@
+{
+  "universe": "full",
+  "index": "SPY,NAFTRAC",
+  "start": "2024-10-04",
+  "end": "2026-10-09",
+  "final_equity": 52.85,
+  "retorno_total_pct": 5.71,
+  "benchmark": "SPY",
+  "benchmark_ret_pct": 35.88,
+  "stopped_out_count": 10,
+  "months": [
+    {
+      "decide_day": "2024-10-04",
+      "equity_before": 50.0,
+      "equity_after": 50.39,
+      "retorno_pct": 0.79,
+      "allocations": {
+        "SPY": 40.0,
+        "NVDA": 10.0
+      },
+      "stopped_out": [],
+      "motivo": "El índice es el núcleo porque en 24 meses de pruebas los picks individuales de la BMV perdieron contra el índice y el único factor con ganancia neta robusta es momentum 12-1, que se captura mejor con "
+    },
+    {
+      "decide_day": "2024-11-04",
+      "equity_before": 50.39,
+      "equity_after": 53.03,
+      "retorno_pct": 5.24,
+      "allocations": {
+        "NVDA": 12.09,
+        "PINFRA": 8.06,
+        "ASURB": 5.04,
+        "SPY": 25.2
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull al 99% y momentum 12-1 es el único factor con ganancia pre-costos. NVDA tiene el mejor perfil no especulativo del universo: score +1.22, +184% en el año, a solo -5% de su máximo de 52 sem"
+    },
+    {
+      "decide_day": "2024-12-04",
+      "equity_before": 53.03,
+      "equity_after": 51.45,
+      "retorno_pct": -2.98,
+      "allocations": {
+        "SPY": 26.52,
+        "NVDA": 8.49,
+        "META": 7.42,
+        "VISTA": 5.3,
+        "ASURB": 5.3
+      },
+      "stopped_out": [
+        "NVDA"
+      ],
+      "motivo": "Régimen bull (100%) y momentum 12-1 es el único factor con ganancia en backtest, así que sesgo a momentum. Mitad al índice (SPY, diversificación total) porque en BMV sola el costo y la selección de no"
+    },
+    {
+      "decide_day": "2025-01-07",
+      "equity_before": 51.45,
+      "equity_after": 52.83,
+      "retorno_pct": 2.68,
+      "allocations": {
+        "SPY": 46.31,
+        "NAFTRAC": 5.15
+      },
+      "stopped_out": [],
+      "motivo": "Sin convicción clara en nombres individuales. El único factor con ganancia en backtest es el momentum 12-1, y el universo amplio lo respalda, pero en BMV sola los costos se comen casi todo y el índice"
+    },
+    {
+      "decide_day": "2025-02-06",
+      "equity_before": 52.83,
+      "equity_after": 50.71,
+      "retorno_pct": -4.01,
+      "allocations": {
+        "SPY": 42.26,
+        "PINFRA": 10.57
+      },
+      "stopped_out": [],
+      "motivo": "No hay evidencia fuerte en nombres individuales: los factores técnicos no superaron IV 0.02 (máximo 0.0046), el LSTM está en azar (AUC ~0.50-0.54) y la única señal con respaldo, momentum 12-1, perdió "
+    },
+    {
+      "decide_day": "2025-03-07",
+      "equity_before": 50.71,
+      "equity_after": 44.89,
+      "retorno_pct": -11.47,
+      "allocations": {
+        "SPY": 40.57
+      },
+      "stopped_out": [],
+      "motivo": "No hay convicción fuerte en ningún nombre individual. El único factor con ganancia pre-costos es el momentum 12-1, y en BMV sola los costos se comen casi todo y el índice le ganó a las acciones indivi"
+    },
+    {
+      "decide_day": "2025-04-08",
+      "equity_before": 44.89,
+      "equity_after": 49.43,
+      "retorno_pct": 10.1,
+      "allocations": {
+        "NAFTRAC": 17.96,
+        "PINFRA": 8.98,
+        "GAPB": 7.18,
+        "GLD": 6.29,
+        "HERDEZ": 4.49
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bear al 100% y ninguna señal técnica propia supera el umbral, así que la base es el índice NAFTRAC ($20), que da diversificación total sin riesgo idiosincrático. Los cuatro nombres individuale"
+    },
+    {
+      "decide_day": "2025-05-12",
+      "equity_before": 49.43,
+      "equity_after": 50.86,
+      "retorno_pct": 2.9,
+      "allocations": {
+        "SPY": 49.43
+      },
+      "stopped_out": [],
+      "motivo": "Régimen HMM lateral al 99% y ningún factor técnico propio pasó Information Value >= 0.02, así que no hay señal de timing que justifique rotar. El único factor con ganancia pre-costos en backtest es mo"
+    },
+    {
+      "decide_day": "2025-06-10",
+      "equity_before": 50.86,
+      "equity_after": 50.98,
+      "retorno_pct": 0.24,
+      "allocations": {
+        "SPY": 30.52,
+        "NAFTRAC": 20.34
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull al 100% favorece estar invertido, y el índice captura el momentum amplio sin riesgo idiosincrático. Los modelos técnicos propios son ruido (IV máx 0.0046) y el LSTM está cerca del azar, a"
+    },
+    {
+      "decide_day": "2025-07-09",
+      "equity_before": 50.98,
+      "equity_after": 52.26,
+      "retorno_pct": 2.5,
+      "allocations": {
+        "SPY": 20.39,
+        "IBIT": 10.2,
+        "OMAB": 8.16,
+        "PINFRA": 7.14
+      },
+      "stopped_out": [
+        "OMAB"
+      ],
+      "motivo": "Régimen bull (100%) favorece exposición. SPY como núcleo (20 USD) por diversificación total, ya que en BMV sola el costo y la selección individual le han perdido al índice. IBIT (10 USD) es la única a"
+    },
+    {
+      "decide_day": "2025-08-07",
+      "equity_before": 52.26,
+      "equity_after": 53.43,
+      "retorno_pct": 2.25,
+      "allocations": {
+        "SPY": 36.58,
+        "NAFTRAC": 15.68
+      },
+      "stopped_out": [],
+      "motivo": "Sin convicción clara en nombres individuales: el único factor con ganancia en backtest (momentum 12-1) no da una señal fuerte en las emisoras de mayor score sin que el ruido y el costo de transacción "
+    },
+    {
+      "decide_day": "2025-09-05",
+      "equity_before": 53.43,
+      "equity_after": 53.19,
+      "retorno_pct": -0.45,
+      "allocations": {
+        "SPY": 21.37,
+        "NAFTRAC": 9.62,
+        "GENTERA": 6.41,
+        "BOLSAA": 5.34,
+        "PINFRA": 5.34,
+        "OMAB": 5.34
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull al 97% y momentum 12-1 es el único factor con ganancia en backtest, pero en BMV sola el costo y la selección de nombres le han perdido al índice, así que el núcleo va a SPY y NAFTRAC (29 "
+    },
+    {
+      "decide_day": "2025-10-07",
+      "equity_before": 53.19,
+      "equity_after": 54.59,
+      "retorno_pct": 2.63,
+      "allocations": {
+        "SPY": 21.28,
+        "NAFTRAC": 10.64,
+        "PINFRA": 8.51,
+        "FUNO11": 7.45,
+        "GENTERA": 5.32
+      },
+      "stopped_out": [],
+      "motivo": "La base es el índice (SPY 20 + NAFTRAC 10 = 30 USD, 60% del libro) porque la evidencia de que elegir pocas emisoras de la BMV le gane al índice es débil y la mayoría de los periodos de prueba lo perdi"
+    },
+    {
+      "decide_day": "2025-11-05",
+      "equity_before": 54.59,
+      "equity_after": 53.34,
+      "retorno_pct": -2.29,
+      "allocations": {
+        "NAFTRAC": 32.76,
+        "PINFRA": 8.73,
+        "FUNO11": 7.64,
+        "GENTERA": 5.46
+      },
+      "stopped_out": [
+        "FUNO11",
+        "GENTERA"
+      ],
+      "motivo": "El régimen es lateral (86%) y el mercado cerró la semana a la baja, así que no hay evidencia para apostar fuerte. El núcleo va al índice (NAFTRAC, 60% del libro), porque en pruebas de 24 meses los pic"
+    },
+    {
+      "decide_day": "2025-12-05",
+      "equity_before": 53.34,
+      "equity_after": 53.86,
+      "retorno_pct": 0.98,
+      "allocations": {
+        "SPY": 32.01,
+        "NAFTRAC": 21.34
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (100%) justifica estar invertido, pero la evidencia no respalda elegir nombres individuales. El momentum 12-1 solo mostró ganancia neta en el universo amplio; en BMV el costo de transacci"
+    },
+    {
+      "decide_day": "2026-01-08",
+      "equity_before": 53.86,
+      "equity_after": 56.16,
+      "retorno_pct": 4.26,
+      "allocations": {
+        "NAFTRAC": 26.93,
+        "SPY": 26.93
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (92%) y momentum 12-1 positivo en el universo, pero la evidencia de selección individual es débil: los modelos técnicos propios son ruido (IV máx. 0.0046), el LSTM está cerca del azar (AU"
+    },
+    {
+      "decide_day": "2026-02-09",
+      "equity_before": 56.16,
+      "equity_after": 52.11,
+      "retorno_pct": -7.21,
+      "allocations": {
+        "NAFTRAC": 28.08,
+        "PINFRA": 8.99,
+        "FUNO11": 6.74,
+        "GENTERA": 6.74,
+        "OMAB": 5.62
+      },
+      "stopped_out": [
+        "OMAB",
+        "GENTERA",
+        "PINFRA"
+      ],
+      "motivo": "Régimen lateral al 100% y los factores técnicos propios son ruido (IV máximo 0.0046, LSTM con AUC ~0.5). Lo único con señal en backtest es el momentum 12-1, y en BMV sola los costos se comen casi todo"
+    },
+    {
+      "decide_day": "2026-03-10",
+      "equity_before": 52.11,
+      "equity_after": 52.39,
+      "retorno_pct": 0.54,
+      "allocations": {
+        "SPY": 36.48
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bear con 69% de probabilidad, S&P500 -0.5% y IPC -1.6% en 5 días, USD/MXN +2.1% y WTI +11.9%: el entorno es de aversión al riesgo. Ningún factor técnico propio pasó IV>=0.02 (máximo 0.0046) y "
+    },
+    {
+      "decide_day": "2026-04-13",
+      "equity_before": 52.39,
+      "equity_after": 55.4,
+      "retorno_pct": 5.75,
+      "allocations": {
+        "SPY": 36.67,
+        "NAFTRAC": 10.48
+      },
+      "stopped_out": [],
+      "motivo": "Régimen 47% bear / 47% lateral / 6% bull, así que no hay evidencia de tendencia alcista limpia. Ningún factor técnico propio pasó IV>=0.02 y el LSTM anda en AUC ~0.50-0.54, o sea ruido. El único facto"
+    },
+    {
+      "decide_day": "2026-05-14",
+      "equity_before": 55.4,
+      "equity_after": 54.5,
+      "retorno_pct": -1.63,
+      "allocations": {
+        "SPY": 38.78,
+        "NAFTRAC": 16.62
+      },
+      "stopped_out": [],
+      "motivo": "El régimen es lateral (90%) y no hay convicción fuerte en nombres individuales. Los factores técnicos propios están en ruido (IV máximo 0.0046), el LSTM anda cerca de azar (AUC ~0.50-0.54) y, en BMV, "
+    },
+    {
+      "decide_day": "2026-06-12",
+      "equity_before": 54.5,
+      "equity_after": 54.24,
+      "retorno_pct": -0.48,
+      "allocations": {
+        "SPY": 38.15,
+        "NAFTRAC": 10.9
+      },
+      "stopped_out": [],
+      "motivo": "No hay convicción fuerte en nombres individuales. El score multifactor favorece a INTC y AMD, pero ambas están extendidas (+458% y +280% en el año, volatilidad realizada de 80-86%, a menos de 6% de su"
+    },
+    {
+      "decide_day": "2026-07-13",
+      "equity_before": 54.24,
+      "equity_after": 53.93,
+      "retorno_pct": -0.56,
+      "allocations": {
+        "SPY": 21.7,
+        "VESTA": 8.68,
+        "FUNO11": 8.68,
+        "GOOGL": 7.59,
+        "JNJ": 7.59
+      },
+      "stopped_out": [
+        "GOOGL"
+      ],
+      "motivo": "Régimen bull al 99% justifica estar invertido. El único factor con ganancia en backtest es el momentum 12-1, y en BMV sola el costo y el índice pesan más, así que el núcleo va en SPY (40%). Los cuatro"
+    },
+    {
+      "decide_day": "2026-08-11",
+      "equity_before": 53.93,
+      "equity_after": 53.24,
+      "retorno_pct": -1.29,
+      "allocations": {
+        "SPY": 43.15
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (100% exposición) con momentum 12-1 como único factor con ganancia en backtest. Pero en BMV las acciones individuales perdieron contra el índice y los candidatos fuertes no tienen convicc"
+    },
+    {
+      "decide_day": "2026-09-09",
+      "equity_before": 53.24,
+      "equity_after": 52.85,
+      "retorno_pct": -0.72,
+      "allocations": {
+        "SPY": 31.94,
+        "FUNO11": 8.52,
+        "GMEXICOB": 6.39,
+        "AMD": 6.39
+      },
+      "stopped_out": [
+        "AMD",
+        "GMEXICOB"
+      ],
+      "motivo": "Régimen bull al 100%, así que está justificado estar invertido. La mayor parte va a SPY porque la evidencia de que elegir acciones individuales le gane al índice es débil, y el único factor que mostró"
+    }
+  ]
+}

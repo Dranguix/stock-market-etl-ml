@@ -172,6 +172,47 @@ def ingest_audit() -> dict[str, Any]:
     }
 
 
+def ingest_tasas_hoy() -> dict[str, Any]:
+    """Guarda snapshot de tasas de mercado de dinero (TIIE, CETE, Tasa_Objetivo)."""
+    from src.ml.rates_features import fetch_tasas_snapshot
+    snap = fetch_tasas_snapshot(sleep=0)
+    if snap:
+        return {"ok": True, "n_tasas": len(snap), "tiie28": snap.get("tiie28"), "tasa_obj": snap.get("tasa_obj")}
+    return {"ok": False}
+
+
+def ingest_hechos_hoy() -> dict[str, Any]:
+    """Descarga los hechos (order flow) del día hábil anterior."""
+    import subprocess
+    from datetime import date, timedelta
+    ayer = date.today() - timedelta(days=1)
+    fecha = ayer.strftime("%Y-%m-%d")
+    r = subprocess.run(
+        [str(ROOT / "venv" / "bin" / "python"), "scripts/backfill_hechos.py",
+         "--fecha", fecha, "--sleep", "0"],
+        cwd=str(ROOT), capture_output=True, text=True,
+    )
+    return {"fecha": fecha, "ok": r.returncode == 0, "output": r.stdout.strip()[-200:]}
+
+
+def ingest_record_signals() -> dict[str, Any]:
+    """Corre SuperModel (--fast, sin Gemini) y guarda señales timestamped."""
+    import subprocess
+    r = subprocess.run(
+        [str(ROOT / "venv" / "bin" / "python"), "scripts/record_signals.py", "--no-gemini"],
+        cwd=str(ROOT), capture_output=True, text=True,
+    )
+    # Extraer n_bets del output
+    n_bets = 0
+    for line in r.stdout.splitlines():
+        if "Apuestas:" in line:
+            try:
+                n_bets = int(line.split(":")[-1].strip())
+            except ValueError:
+                pass
+    return {"ok": r.returncode == 0, "n_bets": n_bets, "output": r.stdout.strip()[-300:]}
+
+
 def run_ingests(
     *,
     ohlcv: bool = False,
@@ -180,6 +221,8 @@ def run_ingests(
     fundamentals: bool = False,
     sql: bool = False,
     audit: bool = True,
+    hechos: bool = True,
+    record_signals: bool = True,
     all_steps: bool = False,
     groups: tuple[str, ...] = DEFAULT_OHLCV_GROUPS,
     news_days: int = 7,
@@ -219,6 +262,11 @@ def run_ingests(
         ))
     if sql:
         steps.append(("sql_etl", ingest_sql_etl))
+    steps.append(("tasas_hoy", ingest_tasas_hoy))
+    if hechos:
+        steps.append(("hechos_hoy", ingest_hechos_hoy))
+    if record_signals:
+        steps.append(("record_signals", ingest_record_signals))
     if audit:
         steps.append(("audit", ingest_audit))
 
@@ -267,6 +315,8 @@ def main() -> None:
     parser.add_argument("--sql", action="store_true", help="ETL incremental → SQL Server")
     parser.add_argument("--skip-sql", action="store_true", help="Con --all: no ejecutar SQL ETL")
     parser.add_argument("--skip-audit", action="store_true", help="No correr auditoría al final")
+    parser.add_argument("--skip-hechos", action="store_true", help="No descargar hechos del día")
+    parser.add_argument("--skip-signals", action="store_true", help="No registrar señales del día")
     parser.add_argument(
         "--groups", nargs="+", default=list(DEFAULT_OHLCV_GROUPS),
         choices=list(DEFAULT_OHLCV_GROUPS),
@@ -287,6 +337,8 @@ def main() -> None:
         fundamentals=args.all or args.fundamentals,
         sql=args.sql or (args.all and not args.skip_sql),
         audit=not args.skip_audit,
+        hechos=not args.skip_hechos,
+        record_signals=not args.skip_signals,
         groups=tuple(args.groups),
         news_days=args.news_days,
         news_universe="bmv" if args.news_bmv_only else None,

@@ -1,0 +1,25 @@
+{
+  "horizon_days": 20,
+  "cutoff": "2021-06-03",
+  "n_train_rows": 354349,
+  "iv": [
+    {
+      "feature": "eps_surprise",
+      "iv": 0.0046,
+      "n_bins": 6,
+      "n_train_nonnull": 211697
+    },
+    {
+      "feature": "earnings_yield_ttm",
+      "iv": 0.00135,
+      "n_bins": 6,
+      "n_train_nonnull": 198656
+    },
+    {
+      "feature": "div_yield_ttm",
+      "iv": 0.0,
+      "n_bins": 0,
+      "n_train_nonnull": 109820
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-21",
+  "timestamp_utc": "2026-10-21T13:16:59.749083+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "MSFT",
+      "conviction": 0.7923,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "QQQ",
+      "conviction": 0.7812,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "MSFT",
+      "conviction": 0.7923,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "QQQ",
+      "conviction": 0.7812,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "XLK",
+      "conviction": 0.7278,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "AAPL",
+      "conviction": 0.668,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "MA",
+      "conviction": 0.6578,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "IWM",
+      "conviction": 0.6376,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "META",
+      "conviction": 0.6348,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "NVDA",
+      "conviction": 0.6255,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "FIBRAPL",
+      "conviction": 0.6204,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "BAC",
+      "conviction": 0.6172,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "7526a2fbd6271160"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "ticker": "WALMEX",
+    "precio0": 46.56999969482422,
+    "retorno_esperado_pct": 3.191232763626406,
+    "riesgo_pct": 18.465997276993505
+  },
+  {
+    "ticker": "FEMSAUBD",
+    "precio0": 210.6999969482422,
+    "retorno_esperado_pct": -1.2551272374936473,
+    "riesgo_pct": 25.852005526115573
+  },
+  {
+    "ticker": "GFNORTEO",
+    "precio0": 187.24000549316406,
+    "retorno_esperado_pct": 3.1328367422668313,
+    "riesgo_pct": 22.19787971455536
+  },
+  {
+    "ticker": "CEMEXCPO",
+    "precio0": 17.25,
+    "retorno_esperado_pct": 6.581735736155103,
+    "riesgo_pct": 25.252758739849945
+  },
+  {
+    "ticker": "AMXL",
+    "precio0": 18.979999542236328,
+    "retorno_esperado_pct": 1.136478100261562,
+    "riesgo_pct": 16.475174693698357
+  }
+]

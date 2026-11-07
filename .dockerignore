@@ -16,3 +16,12 @@ data/eval
 **/*.parquet
 *.pem
 credentials*.json
+!data/fundamentals.parquet
+
+# El MCP server (deploy/mcp/Dockerfile) sí necesita estos datos point-in-time
+# completos (data/market para precios OHLCV, data/eval para trial_log/forecast_demo,
+# data/lab para entry_plans) — el job diario (deploy/cloudrun/Dockerfile) no los
+# usa, así que esto no le afecta (solo copia lo que su propio Dockerfile pide).
+!data/market/**
+!data/eval/**
+!data/lab/**

@@ -1,0 +1,1227 @@
+{
+  "2025-06-30": {
+    "rows": 2347,
+    "status": "ok"
+  },
+  "2025-07-01": {
+    "rows": 2314,
+    "status": "ok"
+  },
+  "2025-07-02": {
+    "rows": 2321,
+    "status": "ok"
+  },
+  "2025-07-03": {
+    "rows": 2136,
+    "status": "ok"
+  },
+  "2025-07-04": {
+    "rows": 1646,
+    "status": "ok"
+  },
+  "2025-07-07": {
+    "rows": 2296,
+    "status": "ok"
+  },
+  "2025-07-08": {
+    "rows": 2255,
+    "status": "ok"
+  },
+  "2025-07-09": {
+    "rows": 2268,
+    "status": "ok"
+  },
+  "2025-07-10": {
+    "rows": 2248,
+    "status": "ok"
+  },
+  "2025-07-11": {
+    "rows": 2229,
+    "status": "ok"
+  },
+  "2025-07-14": {
+    "rows": 2234,
+    "status": "ok"
+  },
+  "2025-07-15": {
+    "rows": 2227,
+    "status": "ok"
+  },
+  "2025-07-16": {
+    "rows": 2299,
+    "status": "ok"
+  },
+  "2025-07-17": {
+    "rows": 2304,
+    "status": "ok"
+  },
+  "2025-07-18": {
+    "rows": 2160,
+    "status": "ok"
+  },
+  "2025-07-21": {
+    "rows": 2256,
+    "status": "ok"
+  },
+  "2025-07-22": {
+    "rows": 2237,
+    "status": "ok"
+  },
+  "2025-07-23": {
+    "rows": 2328,
+    "status": "ok"
+  },
+  "2025-07-24": {
+    "rows": 2299,
+    "status": "ok"
+  },
+  "2025-07-25": {
+    "rows": 2319,
+    "status": "ok"
+  },
+  "2025-07-28": {
+    "rows": 2279,
+    "status": "ok"
+  },
+  "2025-07-29": {
+    "rows": 2357,
+    "status": "ok"
+  },
+  "2025-07-30": {
+    "rows": 2361,
+    "status": "ok"
+  },
+  "2025-07-31": {
+    "rows": 2353,
+    "status": "ok"
+  },
+  "2025-08-01": {
+    "rows": 2267,
+    "status": "ok"
+  },
+  "2025-08-04": {
+    "rows": 2341,
+    "status": "ok"
+  },
+  "2025-08-05": {
+    "rows": 2330,
+    "status": "ok"
+  },
+  "2025-08-06": {
+    "rows": 2287,
+    "status": "ok"
+  },
+  "2025-08-07": {
+    "rows": 2270,
+    "status": "ok"
+  },
+  "2025-08-08": {
+    "rows": 2171,
+    "status": "ok"
+  },
+  "2025-08-11": {
+    "rows": 2239,
+    "status": "ok"
+  },
+  "2025-08-12": {
+    "rows": 2297,
+    "status": "ok"
+  },
+  "2025-08-13": {
+    "rows": 2366,
+    "status": "ok"
+  },
+  "2025-08-14": {
+    "rows": 2369,
+    "status": "ok"
+  },
+  "2025-08-15": {
+    "rows": 2233,
+    "status": "ok"
+  },
+  "2025-08-18": {
+    "rows": 2315,
+    "status": "ok"
+  },
+  "2025-08-19": {
+    "rows": 2201,
+    "status": "ok"
+  },
+  "2025-08-20": {
+    "rows": 2256,
+    "status": "ok"
+  },
+  "2025-08-21": {
+    "rows": 2219,
+    "status": "ok"
+  },
+  "2025-08-22": {
+    "rows": 2351,
+    "status": "ok"
+  },
+  "2025-08-25": {
+    "rows": 2193,
+    "status": "ok"
+  },
+  "2025-08-26": {
+    "rows": 2370,
+    "status": "ok"
+  },
+  "2025-08-27": {
+    "rows": 2377,
+    "status": "ok"
+  },
+  "2025-08-28": {
+    "rows": 2319,
+    "status": "ok"
+  },
+  "2025-08-29": {
+    "rows": 2311,
+    "status": "ok"
+  },
+  "2025-09-01": {
+    "rows": 1841,
+    "status": "ok"
+  },
+  "2025-09-02": {
+    "rows": 2367,
+    "status": "ok"
+  },
+  "2025-09-03": {
+    "rows": 2386,
+    "status": "ok"
+  },
+  "2025-09-04": {
+    "rows": 2284,
+    "status": "ok"
+  },
+  "2025-09-05": {
+    "rows": 2376,
+    "status": "ok"
+  },
+  "2025-09-08": {
+    "rows": 2265,
+    "status": "ok"
+  },
+  "2025-09-09": {
+    "rows": 2338,
+    "status": "ok"
+  },
+  "2025-09-10": {
+    "rows": 2333,
+    "status": "ok"
+  },
+  "2025-09-11": {
+    "rows": 2403,
+    "status": "ok"
+  },
+  "2025-09-12": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2025-09-15": {
+    "rows": 2241,
+    "status": "ok"
+  },
+  "2025-09-16": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2025-09-17": {
+    "rows": 2427,
+    "status": "ok"
+  },
+  "2025-09-18": {
+    "rows": 2406,
+    "status": "ok"
+  },
+  "2025-09-19": {
+    "rows": 2395,
+    "status": "ok"
+  },
+  "2025-09-22": {
+    "rows": 2407,
+    "status": "ok"
+  },
+  "2025-09-23": {
+    "rows": 2462,
+    "status": "ok"
+  },
+  "2025-09-24": {
+    "rows": 2530,
+    "status": "ok"
+  },
+  "2025-09-25": {
+    "rows": 2355,
+    "status": "ok"
+  },
+  "2025-09-26": {
+    "rows": 2296,
+    "status": "ok"
+  },
+  "2025-09-29": {
+    "rows": 2425,
+    "status": "ok"
+  },
+  "2025-09-30": {
+    "rows": 2472,
+    "status": "ok"
+  },
+  "2025-10-01": {
+    "rows": 2472,
+    "status": "ok"
+  },
+  "2025-10-02": {
+    "rows": 2467,
+    "status": "ok"
+  },
+  "2025-10-03": {
+    "rows": 2350,
+    "status": "ok"
+  },
+  "2025-10-06": {
+    "rows": 2426,
+    "status": "ok"
+  },
+  "2025-10-07": {
+    "rows": 2366,
+    "status": "ok"
+  },
+  "2025-10-08": {
+    "rows": 2403,
+    "status": "ok"
+  },
+  "2025-10-09": {
+    "rows": 2357,
+    "status": "ok"
+  },
+  "2025-10-10": {
+    "rows": 2387,
+    "status": "ok"
+  },
+  "2025-10-13": {
+    "rows": 2262,
+    "status": "ok"
+  },
+  "2025-10-14": {
+    "rows": 2417,
+    "status": "ok"
+  },
+  "2025-10-15": {
+    "rows": 2376,
+    "status": "ok"
+  },
+  "2025-10-16": {
+    "rows": 2432,
+    "status": "ok"
+  },
+  "2025-10-17": {
+    "rows": 2307,
+    "status": "ok"
+  },
+  "2025-10-20": {
+    "rows": 2211,
+    "status": "ok"
+  },
+  "2025-10-21": {
+    "rows": 2255,
+    "status": "ok"
+  },
+  "2025-10-22": {
+    "rows": 2294,
+    "status": "ok"
+  },
+  "2025-10-23": {
+    "rows": 2292,
+    "status": "ok"
+  },
+  "2025-10-24": {
+    "rows": 2249,
+    "status": "ok"
+  },
+  "2025-10-27": {
+    "rows": 2262,
+    "status": "ok"
+  },
+  "2025-10-28": {
+    "rows": 2377,
+    "status": "ok"
+  },
+  "2025-10-29": {
+    "rows": 2380,
+    "status": "ok"
+  },
+  "2025-10-30": {
+    "rows": 2377,
+    "status": "ok"
+  },
+  "2025-10-31": {
+    "rows": 2421,
+    "status": "ok"
+  },
+  "2025-11-03": {
+    "rows": 2365,
+    "status": "ok"
+  },
+  "2025-11-04": {
+    "rows": 2372,
+    "status": "ok"
+  },
+  "2025-11-05": {
+    "rows": 2356,
+    "status": "ok"
+  },
+  "2025-11-06": {
+    "rows": 2306,
+    "status": "ok"
+  },
+  "2025-11-07": {
+    "rows": 2382,
+    "status": "ok"
+  },
+  "2025-11-10": {
+    "rows": 2223,
+    "status": "ok"
+  },
+  "2025-11-11": {
+    "rows": 2259,
+    "status": "ok"
+  },
+  "2025-11-12": {
+    "rows": 2247,
+    "status": "ok"
+  },
+  "2025-11-13": {
+    "rows": 2400,
+    "status": "ok"
+  },
+  "2025-11-14": {
+    "rows": 2299,
+    "status": "ok"
+  },
+  "2025-11-17": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2025-11-18": {
+    "rows": 2370,
+    "status": "ok"
+  },
+  "2025-11-19": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2025-11-20": {
+    "rows": 2325,
+    "status": "ok"
+  },
+  "2025-11-21": {
+    "rows": 2244,
+    "status": "ok"
+  },
+  "2025-11-24": {
+    "rows": 2301,
+    "status": "ok"
+  },
+  "2025-11-25": {
+    "rows": 2280,
+    "status": "ok"
+  },
+  "2025-11-26": {
+    "rows": 2327,
+    "status": "ok"
+  },
+  "2025-11-27": {
+    "rows": 1742,
+    "status": "ok"
+  },
+  "2025-11-28": {
+    "rows": 2321,
+    "status": "ok"
+  },
+  "2025-12-01": {
+    "rows": 2379,
+    "status": "ok"
+  },
+  "2025-12-02": {
+    "rows": 2303,
+    "status": "ok"
+  },
+  "2025-12-03": {
+    "rows": 2278,
+    "status": "ok"
+  },
+  "2025-12-04": {
+    "rows": 2282,
+    "status": "ok"
+  },
+  "2025-12-05": {
+    "rows": 2245,
+    "status": "ok"
+  },
+  "2025-12-08": {
+    "rows": 2325,
+    "status": "ok"
+  },
+  "2025-12-09": {
+    "rows": 2316,
+    "status": "ok"
+  },
+  "2025-12-10": {
+    "rows": 2342,
+    "status": "ok"
+  },
+  "2025-12-11": {
+    "rows": 2292,
+    "status": "ok"
+  },
+  "2025-12-12": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2025-12-15": {
+    "rows": 2425,
+    "status": "ok"
+  },
+  "2025-12-16": {
+    "rows": 2321,
+    "status": "ok"
+  },
+  "2025-12-17": {
+    "rows": 2290,
+    "status": "ok"
+  },
+  "2025-12-18": {
+    "rows": 2340,
+    "status": "ok"
+  },
+  "2025-12-19": {
+    "rows": 2366,
+    "status": "ok"
+  },
+  "2025-12-22": {
+    "rows": 2275,
+    "status": "ok"
+  },
+  "2025-12-23": {
+    "rows": 2317,
+    "status": "ok"
+  },
+  "2025-12-24": {
+    "rows": 1767,
+    "status": "ok"
+  },
+  "2025-12-25": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2025-12-26": {
+    "rows": 2021,
+    "status": "ok"
+  },
+  "2025-12-29": {
+    "rows": 2240,
+    "status": "ok"
+  },
+  "2025-12-30": {
+    "rows": 2163,
+    "status": "ok"
+  },
+  "2025-12-31": {
+    "rows": 1976,
+    "status": "ok"
+  },
+  "2026-01-01": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-01-02": {
+    "rows": 2116,
+    "status": "ok"
+  },
+  "2026-01-05": {
+    "rows": 2363,
+    "status": "ok"
+  },
+  "2026-01-06": {
+    "rows": 2378,
+    "status": "ok"
+  },
+  "2026-01-07": {
+    "rows": 2383,
+    "status": "ok"
+  },
+  "2026-01-08": {
+    "rows": 2309,
+    "status": "ok"
+  },
+  "2026-01-09": {
+    "rows": 2342,
+    "status": "ok"
+  },
+  "2026-01-12": {
+    "rows": 2336,
+    "status": "ok"
+  },
+  "2026-01-13": {
+    "rows": 2388,
+    "status": "ok"
+  },
+  "2026-01-14": {
+    "rows": 2503,
+    "status": "ok"
+  },
+  "2026-01-15": {
+    "rows": 1663,
+    "status": "ok"
+  },
+  "2026-01-16": {
+    "rows": 2347,
+    "status": "ok"
+  },
+  "2026-01-19": {
+    "rows": 1859,
+    "status": "ok"
+  },
+  "2026-01-20": {
+    "rows": 2506,
+    "status": "ok"
+  },
+  "2026-01-21": {
+    "rows": 2458,
+    "status": "ok"
+  },
+  "2026-01-22": {
+    "rows": 2375,
+    "status": "ok"
+  },
+  "2026-01-23": {
+    "rows": 2476,
+    "status": "ok"
+  },
+  "2026-01-26": {
+    "rows": 2398,
+    "status": "ok"
+  },
+  "2026-01-27": {
+    "rows": 2442,
+    "status": "ok"
+  },
+  "2026-01-28": {
+    "rows": 2402,
+    "status": "ok"
+  },
+  "2026-01-29": {
+    "rows": 2432,
+    "status": "ok"
+  },
+  "2026-01-30": {
+    "rows": 2428,
+    "status": "ok"
+  },
+  "2026-02-02": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-02-03": {
+    "rows": 2517,
+    "status": "ok"
+  },
+  "2026-02-04": {
+    "rows": 2520,
+    "status": "ok"
+  },
+  "2026-02-05": {
+    "rows": 2496,
+    "status": "ok"
+  },
+  "2026-02-06": {
+    "rows": 2453,
+    "status": "ok"
+  },
+  "2026-02-09": {
+    "rows": 2378,
+    "status": "ok"
+  },
+  "2026-02-10": {
+    "rows": 2497,
+    "status": "ok"
+  },
+  "2026-02-11": {
+    "rows": 2407,
+    "status": "ok"
+  },
+  "2026-02-12": {
+    "rows": 2503,
+    "status": "ok"
+  },
+  "2026-02-13": {
+    "rows": 2366,
+    "status": "ok"
+  },
+  "2026-02-16": {
+    "rows": 1810,
+    "status": "ok"
+  },
+  "2026-02-17": {
+    "rows": 2423,
+    "status": "ok"
+  },
+  "2026-02-18": {
+    "rows": 2455,
+    "status": "ok"
+  },
+  "2026-02-19": {
+    "rows": 2350,
+    "status": "ok"
+  },
+  "2026-02-20": {
+    "rows": 2382,
+    "status": "ok"
+  },
+  "2026-02-23": {
+    "rows": 2344,
+    "status": "ok"
+  },
+  "2026-02-24": {
+    "rows": 2322,
+    "status": "ok"
+  },
+  "2026-02-25": {
+    "rows": 2393,
+    "status": "ok"
+  },
+  "2026-02-26": {
+    "rows": 2392,
+    "status": "ok"
+  },
+  "2026-02-27": {
+    "rows": 2474,
+    "status": "ok"
+  },
+  "2026-03-02": {
+    "rows": 2421,
+    "status": "ok"
+  },
+  "2026-03-03": {
+    "rows": 2522,
+    "status": "ok"
+  },
+  "2026-03-04": {
+    "rows": 2475,
+    "status": "ok"
+  },
+  "2026-03-05": {
+    "rows": 2356,
+    "status": "ok"
+  },
+  "2026-03-06": {
+    "rows": 2361,
+    "status": "ok"
+  },
+  "2026-03-09": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-03-10": {
+    "rows": 2405,
+    "status": "ok"
+  },
+  "2026-03-11": {
+    "rows": 2314,
+    "status": "ok"
+  },
+  "2026-03-12": {
+    "rows": 2415,
+    "status": "ok"
+  },
+  "2026-03-13": {
+    "rows": 2366,
+    "status": "ok"
+  },
+  "2026-03-16": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-03-17": {
+    "rows": 2426,
+    "status": "ok"
+  },
+  "2026-03-18": {
+    "rows": 2375,
+    "status": "ok"
+  },
+  "2026-03-19": {
+    "rows": 2343,
+    "status": "ok"
+  },
+  "2026-03-20": {
+    "rows": 2484,
+    "status": "ok"
+  },
+  "2026-03-23": {
+    "rows": 2321,
+    "status": "ok"
+  },
+  "2026-03-24": {
+    "rows": 2377,
+    "status": "ok"
+  },
+  "2026-03-25": {
+    "rows": 2412,
+    "status": "ok"
+  },
+  "2026-03-26": {
+    "rows": 2351,
+    "status": "ok"
+  },
+  "2026-03-27": {
+    "rows": 2404,
+    "status": "ok"
+  },
+  "2026-03-30": {
+    "rows": 2361,
+    "status": "ok"
+  },
+  "2026-03-31": {
+    "rows": 2335,
+    "status": "ok"
+  },
+  "2026-04-01": {
+    "rows": 2318,
+    "status": "ok"
+  },
+  "2026-04-02": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-04-03": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-04-06": {
+    "rows": 2229,
+    "status": "ok"
+  },
+  "2026-04-07": {
+    "rows": 2335,
+    "status": "ok"
+  },
+  "2026-04-08": {
+    "rows": 2462,
+    "status": "ok"
+  },
+  "2026-04-09": {
+    "rows": 2377,
+    "status": "ok"
+  },
+  "2026-04-10": {
+    "rows": 2269,
+    "status": "ok"
+  },
+  "2026-04-13": {
+    "rows": 2270,
+    "status": "ok"
+  },
+  "2026-04-14": {
+    "rows": 2313,
+    "status": "ok"
+  },
+  "2026-04-15": {
+    "rows": 2415,
+    "status": "ok"
+  },
+  "2026-04-16": {
+    "rows": 2302,
+    "status": "ok"
+  },
+  "2026-04-17": {
+    "rows": 2477,
+    "status": "ok"
+  },
+  "2026-04-20": {
+    "rows": 2370,
+    "status": "ok"
+  },
+  "2026-04-21": {
+    "rows": 2444,
+    "status": "ok"
+  },
+  "2026-04-22": {
+    "rows": 2371,
+    "status": "ok"
+  },
+  "2026-04-23": {
+    "rows": 2341,
+    "status": "ok"
+  },
+  "2026-04-24": {
+    "status": "no_credits"
+  },
+  "2026-04-27": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-04-28": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-04-29": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-04-30": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-01": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-04": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-05": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-06": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-07": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-08": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-11": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-12": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-13": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-14": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-15": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-18": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-19": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-20": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-21": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-22": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-25": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-26": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-27": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-28": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-05-29": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-01": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-02": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-03": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-04": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-05": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-08": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-09": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-10": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-11": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-12": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-15": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-16": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-17": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-18": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-19": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-22": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-23": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-24": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-25": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-26": {
+    "rows": 2382,
+    "status": "ok"
+  },
+  "2026-06-29": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-06-30": {
+    "rows": 0,
+    "status": "no_credits"
+  },
+  "2026-07-02": {
+    "status": "no_credits"
+  },
+  "2026-07-09": {
+    "status": "no_credits"
+  },
+  "2026-07-12": {
+    "status": "no_credits"
+  },
+  "2026-07-16": {
+    "status": "no_credits"
+  },
+  "2026-07-26": {
+    "status": "no_credits"
+  },
+  "2026-07-30": {
+    "status": "no_credits"
+  },
+  "2026-08-01": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-08-03": {
+    "rows": 2334,
+    "status": "ok"
+  },
+  "2026-08-05": {
+    "rows": 2364,
+    "status": "ok"
+  },
+  "2026-08-10": {
+    "rows": 2394,
+    "status": "ok"
+  },
+  "2026-08-11": {
+    "rows": 2348,
+    "status": "ok"
+  },
+  "2026-08-13": {
+    "rows": 2482,
+    "status": "ok"
+  },
+  "2026-08-15": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-08-16": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-08-18": {
+    "error": "HTTPSConnectionPool(host='api.databursatil.com', port=443): Max retries exceeded with url: /v2/descargas?token=763d9cdce4895c32fcb2f63358c6de&archivo=hechos&fecha=2026-08-18 (Caused by NameResolutionE",
+    "status": "error"
+  },
+  "2026-08-19": {
+    "rows": 2390,
+    "status": "ok"
+  },
+  "2026-08-20": {
+    "rows": 2399,
+    "status": "ok"
+  },
+  "2026-08-26": {
+    "rows": 2331,
+    "status": "ok"
+  },
+  "2026-08-30": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-09-02": {
+    "rows": 2343,
+    "status": "ok"
+  },
+  "2026-09-05": {
+    "error": "HTTPSConnectionPool(host='api.databursatil.com', port=443): Max retries exceeded with url: /v2/descargas?token=763d9cdce4895c32fcb2f63358c6de&archivo=hechos&fecha=2026-09-05 (Caused by NameResolutionE",
+    "status": "error"
+  },
+  "2026-09-08": {
+    "error": "HTTPSConnectionPool(host='api.databursatil.com', port=443): Read timed out.",
+    "status": "error"
+  },
+  "2026-09-09": {
+    "rows": 2372,
+    "status": "ok"
+  },
+  "2026-09-10": {
+    "rows": 2375,
+    "status": "ok"
+  },
+  "2026-09-12": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-09-14": {
+    "rows": 2297,
+    "status": "ok"
+  },
+  "2026-09-15": {
+    "rows": 2373,
+    "status": "ok"
+  },
+  "2026-09-17": {
+    "rows": 2392,
+    "status": "ok"
+  },
+  "2026-09-19": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-09-20": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-09-24": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-09-28": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-10-01": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-10-06": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-10-07": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-10-08": {
+    "error": "HTTPSConnectionPool(host='api.databursatil.com', port=443): Max retries exceeded with url: /v2/descargas?token=763d9cdce4895c32fcb2f63358c6de&archivo=hechos&fecha=2026-10-08 (Caused by NameResolutionE",
+    "status": "error"
+  },
+  "2026-10-13": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-10-14": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-10-20": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-10-21": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-10-24": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-10-25": {
+    "rows": 0,
+    "status": "no_file"
+  },
+  "2026-10-26": {
+    "error": "HTTPSConnectionPool(host='api.databursatil.com', port=443): Read timed out.",
+    "status": "error"
+  },
+  "2026-10-27": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-10-28": {
+    "rows": 2420,
+    "status": "ok"
+  },
+  "2026-10-29": {
+    "rows": 2420,
+    "status": "ok"
+  }
+}

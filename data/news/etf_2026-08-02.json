@@ -1,0 +1,289 @@
+[
+  {
+    "ticker": "NAFTRAC",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.84,
+    "news_sent_delta": 0.4211,
+    "news_sent_vol": 0.4937,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": 0.0,
+    "n_articles": 6,
+    "sources": [
+      "databursatil"
+    ]
+  },
+  {
+    "ticker": "FIBRAPL",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.8404,
+    "news_sent_delta": 0.4211,
+    "news_sent_vol": 0.4937,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": 0.0,
+    "n_articles": 6,
+    "sources": [
+      "databursatil"
+    ]
+  },
+  {
+    "ticker": "SPY",
+    "news_sent_score": 0.5,
+    "news_count_7d": 0.981,
+    "news_sent_delta": 0.102,
+    "news_sent_vol": 0.491,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 4,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "QQQ",
+    "news_sent_score": -0.5,
+    "news_count_7d": 1.1493,
+    "news_sent_delta": 0.2546,
+    "news_sent_vol": 0.4357,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 4,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "IWM",
+    "news_sent_score": -0.5,
+    "news_count_7d": 1.5039,
+    "news_sent_delta": -0.0713,
+    "news_sent_vol": 0.2573,
+    "news_relevance_avg": 0.946,
+    "news_esg_score": 0.0,
+    "n_articles": 17,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "VTI",
+    "news_sent_score": 0.0,
+    "news_count_7d": 1.2835,
+    "news_sent_delta": 0.1167,
+    "news_sent_vol": 0.3391,
+    "news_relevance_avg": 0.8928,
+    "news_esg_score": 0.0,
+    "n_articles": 9,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "VOO",
+    "news_sent_score": 0.5,
+    "news_count_7d": 1.654,
+    "news_sent_delta": 0.2226,
+    "news_sent_vol": 0.5894,
+    "news_relevance_avg": 0.9072,
+    "news_esg_score": 0.0,
+    "n_articles": 13,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLK",
+    "news_sent_score": -0.2,
+    "news_count_7d": 0.9301,
+    "news_sent_delta": 0.1124,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.6075,
+    "news_esg_score": 0.0,
+    "n_articles": 8,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLF",
+    "news_sent_score": 0.7,
+    "news_count_7d": 0.524,
+    "news_sent_delta": 0.2491,
+    "news_sent_vol": 0.4995,
+    "news_relevance_avg": 0.15,
+    "news_esg_score": 0.0,
+    "n_articles": 6,
+    "sources": [
+      "google_news",
+      "gdelt"
+    ]
+  },
+  {
+    "ticker": "XLE",
+    "news_sent_score": 0.3,
+    "news_count_7d": 0.7846,
+    "news_sent_delta": -0.2182,
+    "news_sent_vol": 0.264,
+    "news_relevance_avg": 0.3402,
+    "news_esg_score": 0.0,
+    "n_articles": 9,
+    "sources": [
+      "google_news",
+      "gdelt"
+    ]
+  },
+  {
+    "ticker": "XLV",
+    "news_sent_score": -0.2,
+    "news_count_7d": 1.7876,
+    "news_sent_delta": 0.3589,
+    "news_sent_vol": 0.4797,
+    "news_relevance_avg": 0.8184,
+    "news_esg_score": 0.0,
+    "n_articles": 23,
+    "sources": [
+      "google_news",
+      "gdelt"
+    ]
+  },
+  {
+    "ticker": "XLI",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.8344,
+    "news_sent_delta": -0.0455,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.9589,
+    "news_esg_score": 0.0,
+    "n_articles": 7,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLY",
+    "news_sent_score": 0.6,
+    "news_count_7d": 0.8054,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 4,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "XLP",
+    "news_sent_score": 0.1,
+    "news_count_7d": 1.0092,
+    "news_sent_delta": 0.3043,
+    "news_sent_vol": 0.4601,
+    "news_relevance_avg": 0.8791,
+    "news_esg_score": 0.0,
+    "n_articles": 7,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "EEM",
+    "news_sent_score": -0.3,
+    "news_count_7d": 1.1916,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.9504,
+    "news_esg_score": 0.0,
+    "n_articles": 6,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "EWZ",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "FXI",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.0,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.0,
+    "news_esg_score": 0.0,
+    "n_articles": 0,
+    "sources": []
+  },
+  {
+    "ticker": "GLD",
+    "news_sent_score": -0.3,
+    "news_count_7d": 0.2004,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 1,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "SLV",
+    "news_sent_score": 0.0,
+    "news_count_7d": 0.5308,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 1.0,
+    "news_esg_score": 0.0,
+    "n_articles": 1,
+    "sources": [
+      "gdelt"
+    ]
+  },
+  {
+    "ticker": "USO",
+    "news_sent_score": 0.3,
+    "news_count_7d": 1.4755,
+    "news_sent_delta": -0.1238,
+    "news_sent_vol": 0.4534,
+    "news_relevance_avg": 0.9663,
+    "news_esg_score": 0.0,
+    "n_articles": 13,
+    "sources": [
+      "google_news",
+      "gdelt"
+    ]
+  },
+  {
+    "ticker": "TLT",
+    "news_sent_score": -0.4,
+    "news_count_7d": 0.6669,
+    "news_sent_delta": 0.0,
+    "news_sent_vol": 0.0,
+    "news_relevance_avg": 0.9304,
+    "news_esg_score": 0.0,
+    "n_articles": 4,
+    "sources": [
+      "google_news"
+    ]
+  },
+  {
+    "ticker": "HYG",
+    "news_sent_score": -0.2,
+    "news_count_7d": 1.1999,
+    "news_sent_delta": 0.3091,
+    "news_sent_vol": 0.5014,
+    "news_relevance_avg": 0.8757,
+    "news_esg_score": 0.0,
+    "n_articles": 9,
+    "sources": [
+      "google_news",
+      "gdelt"
+    ]
+  }
+]

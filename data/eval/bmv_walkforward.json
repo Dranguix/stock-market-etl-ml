@@ -1,0 +1,196 @@
+{
+  "start": "2025-10-07",
+  "end": "2026-10-09",
+  "final_equity": 42.64,
+  "retorno_total_pct": -14.72,
+  "naftrac_ret_pct": 7.66,
+  "stopped_out_count": 20,
+  "months": [
+    {
+      "decide_day": "2025-10-07",
+      "equity_before": 50.0,
+      "equity_after": 49.8,
+      "retorno_pct": -0.39,
+      "allocations": {
+        "PINFRA": 20.0,
+        "OMAB": 15.0,
+        "FUNO11": 15.0
+      },
+      "stopped_out": [
+        "FUNO11",
+        "OMAB"
+      ],
+      "motivo": "Régimen bull (81%) y el único factor validado en backtest es momentum 12-1. Entre las emisoras con mayor retorno de 12 meses sin el último mes, filtré por fundamentales, volatilidad y noticias. PINFRA"
+    },
+    {
+      "decide_day": "2025-11-05",
+      "equity_before": 49.8,
+      "equity_after": 47.42,
+      "retorno_pct": -4.8,
+      "allocations": {
+        "PINFRA": 24.9,
+        "GFNORTEO": 14.94,
+        "BOLSAA": 9.96
+      },
+      "stopped_out": [
+        "BOLSAA",
+        "PINFRA"
+      ],
+      "motivo": "Régimen lateral (86%), así que la exposición es moderada y con stops. PINFRA: momentum 12-1 de +36.9%, precio cerca del máximo de 52 semanas, margen operativo de 59%, earnings yield 15.9%, sentimiento"
+    },
+    {
+      "decide_day": "2025-12-05",
+      "equity_before": 47.42,
+      "equity_after": 48.62,
+      "retorno_pct": 2.55,
+      "allocations": {
+        "PINFRA": 16.12,
+        "FUNO11": 16.12,
+        "GMEXICOB": 15.17
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (100%) y momentum 12-1 como único factor con señal. PINFRA: año +33.5%, earnYield 15.9%, margen operativo 59.3% y neto 50.9%, ventas +14.1%, noticias positivas (sent +0.21), 45% del rango"
+    },
+    {
+      "decide_day": "2026-01-08",
+      "equity_before": 48.62,
+      "equity_after": 56.09,
+      "retorno_pct": 15.35,
+      "allocations": {
+        "PINFRA": 24.31,
+        "GENTERA": 14.59,
+        "MEGACPO": 9.72
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull al 92%, así que se asume el sesgo de momentum. PINFRA combina el mejor perfil: momentum 12-1 de +44.7%, earnings yield de 15.3%, margen neto de 50.9%, sentimiento de noticias +0.21 y solo"
+    },
+    {
+      "decide_day": "2026-02-09",
+      "equity_before": 56.09,
+      "equity_after": 52.58,
+      "retorno_pct": -6.26,
+      "allocations": {
+        "PINFRA": 22.43,
+        "GENTERA": 16.83,
+        "FUNO11": 16.83
+      },
+      "stopped_out": [
+        "PINFRA",
+        "GENTERA",
+        "FUNO11"
+      ],
+      "motivo": "Régimen lateral al 100%, así que no hay sesgo de tendencia y el tamaño se mantiene moderado. El único factor con ganancia en backtest es el momentum 12-1, así que la selección parte de 'año'. PINFRA: "
+    },
+    {
+      "decide_day": "2026-03-10",
+      "equity_before": 52.58,
+      "equity_after": 50.74,
+      "retorno_pct": -3.49,
+      "allocations": {
+        "GMEXICOB": 15.77,
+        "GENTERA": 15.77,
+        "PINFRA": 15.77
+      },
+      "stopped_out": [
+        "GENTERA",
+        "GMEXICOB"
+      ],
+      "motivo": "Único factor con ganancia pre-costos en backtest: momentum 12-1. Elegí los tres nombres con mayor retorno de 12 meses sin el último mes que además tienen fundamentales defendibles: GMEXICOB (+104.1% a"
+    },
+    {
+      "decide_day": "2026-04-13",
+      "equity_before": 50.74,
+      "equity_after": 49.7,
+      "retorno_pct": -2.06,
+      "allocations": {
+        "AMXL": 17.25,
+        "PINFRA": 17.25,
+        "GFNORTEO": 16.24
+      },
+      "stopped_out": [
+        "GFNORTEO"
+      ],
+      "motivo": "Único factor con ganancia pre-costos en backtest: momentum 12-1, así que la asignación parte de ahí. AMXL tiene el mejor momentum de los nombres con fundamentales sanos (+47% año, ventas +13.8%, marge"
+    },
+    {
+      "decide_day": "2026-05-14",
+      "equity_before": 49.7,
+      "equity_after": 47.0,
+      "retorno_pct": -5.42,
+      "allocations": {
+        "AMXL": 19.88,
+        "PINFRA": 19.88,
+        "GMEXICOB": 9.94
+      },
+      "stopped_out": [
+        "GMEXICOB",
+        "AMXL",
+        "PINFRA"
+      ],
+      "motivo": "Régimen lateral (90%), así que se favorece momentum 12-1 con control de riesgo y no se apuesta fuerte. AMXL: año +35.4%, a 1.1% de su máximo de 52 semanas, vol20 22%, earnYield 6.2%, margen operativo "
+    },
+    {
+      "decide_day": "2026-06-12",
+      "equity_before": 47.0,
+      "equity_after": 44.36,
+      "retorno_pct": -5.62,
+      "allocations": {
+        "GMEXICOB": 18.8,
+        "AMXL": 14.1,
+        "PINFRA": 14.1
+      },
+      "stopped_out": [
+        "AMXL",
+        "PINFRA",
+        "GMEXICOB"
+      ],
+      "motivo": "Se priorizó el momentum 12-1 (columna año), que es el único factor con ganancia pre-costos en el backtest. GMEXICOB tiene +89% en el año, cerca de su máximo de 52 semanas, con ventas +34.9% YoY, utili"
+    },
+    {
+      "decide_day": "2026-07-13",
+      "equity_before": 44.36,
+      "equity_after": 44.77,
+      "retorno_pct": 0.91,
+      "allocations": {
+        "AMXL": 17.75,
+        "GMEXICOB": 13.31,
+        "PINFRA": 13.31
+      },
+      "stopped_out": [
+        "AMXL"
+      ],
+      "motivo": "Régimen bull al 99%, así que se toma exposición. El factor que sí mostró ganancia en backtest es momentum 12-1, y estos tres lo tienen fuerte: AMXL +42.7%, GMEXICOB +85.8% y PINFRA +20.8%. AMXL combin"
+    },
+    {
+      "decide_day": "2026-08-11",
+      "equity_before": 44.77,
+      "equity_after": 43.72,
+      "retorno_pct": -2.35,
+      "allocations": {
+        "PINFRA": 17.91,
+        "GMEXICOB": 13.43,
+        "VESTA": 13.43
+      },
+      "stopped_out": [
+        "PINFRA"
+      ],
+      "motivo": "Régimen bull al 100%, así que el sesgo es estar invertido. El único factor con ganancia pre-costos es momentum 12-1, y los técnicos y el LSTM se tratan como ruido. Elegí nombres que combinan momentum "
+    },
+    {
+      "decide_day": "2026-09-09",
+      "equity_before": 43.72,
+      "equity_after": 42.64,
+      "retorno_pct": -2.46,
+      "allocations": {
+        "GMEXICOB": 21.86,
+        "VISTA": 13.11,
+        "FEMSAUBD": 8.74
+      },
+      "stopped_out": [
+        "GMEXICOB",
+        "VISTA"
+      ],
+      "motivo": "Régimen bull (100% invertido). El único factor con ganancia pre-costos es el momentum 12-1, así que la selección parte de él: GMEXICOB (+71.2%), VISTA (+71.8%) y FEMSAUBD (+23.5%) tienen los retornos "
+    }
+  ]
+}

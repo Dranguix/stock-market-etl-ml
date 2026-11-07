@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-17",
+  "timestamp_utc": "2026-09-17T00:36:27.875718+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "WALMEX",
+      "conviction": 0.5998,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 1,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "INTC",
+      "conviction": 0.7538,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "META",
+      "conviction": 0.7262,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "FIBRAPL",
+      "conviction": 0.6913,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "XLI",
+      "conviction": 0.6685,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "XLY",
+      "conviction": 0.6592,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "IWM",
+      "conviction": 0.659,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "MA",
+      "conviction": 0.6494,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "MARA",
+      "conviction": 0.6465,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "QQQ",
+      "conviction": 0.645,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "VOO",
+      "conviction": 0.6242,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "bf299bd0e1460f02"
+}

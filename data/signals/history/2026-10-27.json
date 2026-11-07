@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-27",
+  "timestamp_utc": "2026-10-27T04:50:46.339172+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "POSADAS",
+      "conviction": 0.6311,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "GCC",
+      "conviction": 0.5812,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "QQQ",
+      "conviction": 0.8008,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "FIBRAPL",
+      "conviction": 0.7615,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "XLK",
+      "conviction": 0.7372,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "EEM",
+      "conviction": 0.7186,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "AAPL",
+      "conviction": 0.7074,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "FUNO11",
+      "conviction": 0.6634,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "XLY",
+      "conviction": 0.6627,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "FINN13",
+      "conviction": 0.6605,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "MSFT",
+      "conviction": 0.6593,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "NVDA",
+      "conviction": 0.6461,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "f40012f55aa70c6e"
+}

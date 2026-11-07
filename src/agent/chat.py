@@ -124,7 +124,7 @@ def chat_with_tools(messages: list[dict], tools: list[dict], model: str | None =
         },
         json={
             "model": model,
-            "max_tokens": 1200,
+            "max_tokens": 2500,
             "system": system,
             "tools": [_anthropic_tool(tool) for tool in tools],
             "messages": converted,

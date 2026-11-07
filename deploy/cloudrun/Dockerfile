@@ -18,5 +18,9 @@ COPY src ./src
 COPY scripts ./scripts
 COPY sql ./sql
 COPY data/signals ./data/signals
+# Factores point-in-time del satélite (src/agent/core_satellite.py).
+COPY data/fundamentals.parquet ./data/fundamentals.parquet
+COPY data/eps ./data/eps
+COPY data/dividends ./data/dividends
 
 CMD ["python", "scripts/gcp_daily_job.py", "--mode", "ingest"]

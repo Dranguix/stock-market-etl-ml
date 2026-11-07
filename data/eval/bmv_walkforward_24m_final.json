@@ -1,0 +1,329 @@
+{
+  "start": "2024-10-04",
+  "end": "2026-10-09",
+  "final_equity": 45.79,
+  "retorno_total_pct": -8.42,
+  "naftrac_ret_pct": 23.18,
+  "stopped_out_count": 9,
+  "months": [
+    {
+      "decide_day": "2024-10-04",
+      "equity_before": 50.0,
+      "equity_after": 48.16,
+      "retorno_pct": -3.68,
+      "allocations": {
+        "NAFTRAC": 40.0,
+        "PINFRA": 10.0
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (91%) y macro sin señal de estrés, pero ningún factor técnico propio pasó IV>=0.02 (máximo 0.0046) y el LSTM está en AUC~0.50-0.54, así que no hay convicción fuerte en ningún nombre. La ú"
+    },
+    {
+      "decide_day": "2024-11-04",
+      "equity_before": 48.16,
+      "equity_after": 48.3,
+      "retorno_pct": 0.29,
+      "allocations": {
+        "NAFTRAC": 48.16
+      },
+      "stopped_out": [],
+      "motivo": "No veo convicción fuerte en un nombre individual. El score multifactor es alto en GAPB, VISTA, LABB y ASURB, pero el dato no lo sostiene: los modelos técnicos propios no superan IV 0.02 (máximo 0.0046"
+    },
+    {
+      "decide_day": "2024-12-04",
+      "equity_before": 48.3,
+      "equity_after": 46.95,
+      "retorno_pct": -2.8,
+      "allocations": {
+        "ASURB": 9.66,
+        "GMEXICOB": 7.73,
+        "LABB": 6.76,
+        "GAPB": 4.83,
+        "NAFTRAC": 19.32
+      },
+      "stopped_out": [
+        "LABB"
+      ],
+      "motivo": "Régimen bull al 100% y momentum 12-1 es el único factor con ganancia pre-costos, así que tiene sentido sesgar hacia nombres con momentum y score alto. ASURB tiene el mejor perfil combinado: score +1.0"
+    },
+    {
+      "decide_day": "2025-01-07",
+      "equity_before": 46.95,
+      "equity_after": 48.03,
+      "retorno_pct": 2.29,
+      "allocations": {
+        "NAFTRAC": 23.47,
+        "VISTA": 7.51,
+        "PINFRA": 6.57,
+        "GMEXICOB": 4.69,
+        "GAPB": 4.69
+      },
+      "stopped_out": [
+        "VISTA"
+      ],
+      "motivo": "Régimen bull (57%) y el único factor con ganancia en backtest es momentum 12-1, así que sesgo el libro hacia momentum, pero sin apostar fuerte a un solo nombre. NAFTRAC toma la mitad (25 USD) como núc"
+    },
+    {
+      "decide_day": "2025-02-06",
+      "equity_before": 48.03,
+      "equity_after": 47.03,
+      "retorno_pct": -2.08,
+      "allocations": {
+        "NAFTRAC": 38.42,
+        "LABB": 9.61
+      },
+      "stopped_out": [
+        "LABB"
+      ],
+      "motivo": "El régimen es bull (99%) y el único factor con ganancia pre-costos en backtest es momentum 12-1, que es justo el componente dominante del score. Pero los historiales muestran que elegir 2-7 acciones i"
+    },
+    {
+      "decide_day": "2025-03-07",
+      "equity_before": 47.03,
+      "equity_after": 44.54,
+      "retorno_pct": -5.3,
+      "allocations": {
+        "NAFTRAC": 37.62,
+        "GAPB": 9.41
+      },
+      "stopped_out": [],
+      "motivo": "El régimen es lateral (84%) y ningún factor técnico propio pasó IV>=0.02 (máximo 0.0046), el LSTM anda cerca de azar (AUC ~0.50-0.54), así que no hay señal fuerte de timing. El único factor con eviden"
+    },
+    {
+      "decide_day": "2025-04-08",
+      "equity_before": 44.54,
+      "equity_after": 44.54,
+      "retorno_pct": 0.0,
+      "allocations": {},
+      "stopped_out": [],
+      "motivo": "Régimen HMM en bear al 100% y macro negativo (S&P500 -11.5% y IPC -5.7% en 5 días). Los factores técnicos propios no pasan IV >= 0.02 (máximo 0.0046) y el LSTM está en AUC ~0.50-0.54, así que no hay s"
+    },
+    {
+      "decide_day": "2025-05-12",
+      "equity_before": 44.54,
+      "equity_after": 45.2,
+      "retorno_pct": 1.49,
+      "allocations": {
+        "NAFTRAC": 35.63,
+        "PINFRA": 8.91
+      },
+      "stopped_out": [],
+      "motivo": "Régimen lateral al 99% y los factores técnicos y el LSTM son ruido, así que la base es NAFTRAC por diversificación total. PINFRA es la única emisora con convicción clara: score +1.10 (el más alto), mo"
+    },
+    {
+      "decide_day": "2025-06-10",
+      "equity_before": 45.2,
+      "equity_after": 43.08,
+      "retorno_pct": -4.7,
+      "allocations": {
+        "NAFTRAC": 27.12,
+        "OMAB": 4.52,
+        "GAPB": 4.52,
+        "PINFRA": 4.52,
+        "GFNORTEO": 4.52
+      },
+      "stopped_out": [
+        "OMAB",
+        "GAPB"
+      ],
+      "motivo": "Régimen bull al 100%, así que el libro va invertido. Solo momentum 12-1 mostró ganancia en backtest; técnicos, order-flow y LSTM son ruido, así que no los uso. La mayor parte (30 USD) va a NAFTRAC por"
+    },
+    {
+      "decide_day": "2025-07-09",
+      "equity_before": 43.08,
+      "equity_after": 43.54,
+      "retorno_pct": 1.08,
+      "allocations": {
+        "NAFTRAC": 25.85,
+        "PINFRA": 4.31,
+        "BOLSAA": 4.31,
+        "FUNO11": 4.31,
+        "GENTERA": 4.31
+      },
+      "stopped_out": [
+        "GENTERA",
+        "BOLSAA"
+      ],
+      "motivo": "Régimen bull (100%), así que el sesgo es comprado, pero la evidencia para elegir nombres individuales es débil: los factores técnicos y el LSTM son ruido (IV máx 0.0046, AUC ~0.5) y el único factor co"
+    },
+    {
+      "decide_day": "2025-08-07",
+      "equity_before": 43.54,
+      "equity_after": 44.5,
+      "retorno_pct": 2.19,
+      "allocations": {
+        "NAFTRAC": 30.48,
+        "OMAB": 6.97,
+        "GAPB": 6.1
+      },
+      "stopped_out": [],
+      "motivo": "Régimen lateral al 98% y ningún factor técnico propio con evidencia (IV máx. 0.0046, LSTM ~azar), así que la convicción en nombres individuales es baja. Por eso el núcleo va a NAFTRAC (70% del libro),"
+    },
+    {
+      "decide_day": "2025-09-05",
+      "equity_before": 44.5,
+      "equity_after": 44.19,
+      "retorno_pct": -0.69,
+      "allocations": {
+        "NAFTRAC": 26.7,
+        "BOLSAA": 4.45,
+        "PINFRA": 4.45,
+        "GFNORTEO": 4.45,
+        "GMEXICOB": 4.45
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (97%) y momentum 12-1 positivo en la mayoría de la lista justifican estar invertido. La evidencia de alfa individual es débil: los factores técnicos no superan IV 0.02 y el LSTM está cerc"
+    },
+    {
+      "decide_day": "2025-10-07",
+      "equity_before": 44.19,
+      "equity_after": 46.24,
+      "retorno_pct": 4.64,
+      "allocations": {
+        "NAFTRAC": 44.19
+      },
+      "stopped_out": [],
+      "motivo": "Ningún nombre individual muestra convicción suficiente para justificar una posición. Los factores técnicos y el LSTM están en nivel de ruido (IV máximo 0.0046, AUC ~0.50-0.54), así que la evidencia a "
+    },
+    {
+      "decide_day": "2025-11-05",
+      "equity_before": 46.24,
+      "equity_after": 46.08,
+      "retorno_pct": -0.34,
+      "allocations": {
+        "NAFTRAC": 46.24
+      },
+      "stopped_out": [],
+      "motivo": "Régimen lateral con 86% de probabilidad y solo 14% bull, así que no hay tendencia alcista confirmada. Los factores técnicos propios no tienen señal (IV máximo 0.0046 frente al umbral de 0.02) y el LST"
+    },
+    {
+      "decide_day": "2025-12-05",
+      "equity_before": 46.08,
+      "equity_after": 47.2,
+      "retorno_pct": 2.43,
+      "allocations": {
+        "NAFTRAC": 46.08
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (100%), así que el libro va invertido. Ningún factor técnico pasó IV≥0.02 (máximo 0.0046), el LSTM anda en AUC ~0.50-0.54 y momentum 12-1 es el único factor con ganancia pre-costos. Los m"
+    },
+    {
+      "decide_day": "2026-01-08",
+      "equity_before": 47.2,
+      "equity_after": 52.06,
+      "retorno_pct": 10.29,
+      "allocations": {
+        "NAFTRAC": 33.04,
+        "PINFRA": 14.16
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull al 92% y macro alcista (S&P500 +1.1%, IPC +1.7% en 5 días), así que no hay razón para quedarse en cash. Como los factores técnicos y el LSTM no tienen poder predictivo, la base es el mome"
+    },
+    {
+      "decide_day": "2026-02-09",
+      "equity_before": 52.06,
+      "equity_after": 48.45,
+      "retorno_pct": -6.94,
+      "allocations": {
+        "NAFTRAC": 41.65,
+        "PINFRA": 10.41
+      },
+      "stopped_out": [
+        "PINFRA"
+      ],
+      "motivo": "El régimen HMM está 100% lateral, los factores técnicos propios no alcanzan IV>=0.02, el LSTM está cerca de azar (AUC ~0.50-0.54) y el único factor con ganancia pre-costos es momentum 12-1. Con esa ev"
+    },
+    {
+      "decide_day": "2026-03-10",
+      "equity_before": 48.45,
+      "equity_after": 50.04,
+      "retorno_pct": 3.29,
+      "allocations": {
+        "NAFTRAC": 29.07,
+        "GFNORTEO": 9.69,
+        "FUNO11": 9.69
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bear con 69% de probabilidad, USD/MXN +2.1% en 5 días e IPC -1.6%, así que no hay convicción fuerte para apostar a un solo nombre. El único factor con evidencia pre-costos es momentum 12-1, y "
+    },
+    {
+      "decide_day": "2026-04-13",
+      "equity_before": 50.04,
+      "equity_after": 49.0,
+      "retorno_pct": -2.09,
+      "allocations": {
+        "NAFTRAC": 32.03,
+        "VESTA": 7.01,
+        "FUNO11": 6.0,
+        "PINFRA": 5.0
+      },
+      "stopped_out": [
+        "VESTA"
+      ],
+      "motivo": "Régimen bear 47% / lateral 47%, y ningún factor técnico ni el LSTM muestran señal útil, así que la base es NAFTRAC (64% del libro) por diversificación y porque en backtest los picks individuales han p"
+    },
+    {
+      "decide_day": "2026-05-14",
+      "equity_before": 49.0,
+      "equity_after": 47.98,
+      "retorno_pct": -2.07,
+      "allocations": {
+        "NAFTRAC": 39.2,
+        "FUNO11": 9.8
+      },
+      "stopped_out": [],
+      "motivo": "Régimen lateral (90%) y factores técnicos sin señal (IV máx 0.0046, LSTM ~0.50-0.54), así que la base es NAFTRAC: diversificación total y evidencia de que elegir pocas acciones le ha perdido al índice"
+    },
+    {
+      "decide_day": "2026-06-12",
+      "equity_before": 47.98,
+      "equity_after": 46.91,
+      "retorno_pct": -2.23,
+      "allocations": {
+        "NAFTRAC": 28.79,
+        "VESTA": 6.72,
+        "PINFRA": 5.76,
+        "FUNO11": 6.72
+      },
+      "stopped_out": [],
+      "motivo": "El núcleo va a NAFTRAC (60%) porque no hay convicción fuerte en nombres individuales: el backtest no respalda elegir 2-7 acciones contra el índice y los modelos técnicos propios son ruido. Los tres sa"
+    },
+    {
+      "decide_day": "2026-07-13",
+      "equity_before": 46.91,
+      "equity_after": 46.38,
+      "retorno_pct": -1.14,
+      "allocations": {
+        "NAFTRAC": 46.91
+      },
+      "stopped_out": [],
+      "motivo": "Ningún nombre individual muestra convicción suficiente para justificar riesgo idiosincrático. El régimen es bull (99%) y el momentum 12-1 es el único factor con ganancia pre-costos, pero los factores "
+    },
+    {
+      "decide_day": "2026-08-11",
+      "equity_before": 46.38,
+      "equity_after": 45.91,
+      "retorno_pct": -1.01,
+      "allocations": {
+        "NAFTRAC": 18.55,
+        "GMEXICOB": 9.28,
+        "PINFRA": 7.42,
+        "VESTA": 5.57,
+        "FUNO11": 5.57
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull (100%), así que hay sesgo a estar invertido. El único factor con ventaja pre-costos es el momentum 12-1, y los cinco nombres de arriba lo tienen: GMEXICOB +61.8%, PINFRA +19.9%, FUNO11 +1"
+    },
+    {
+      "decide_day": "2026-09-09",
+      "equity_before": 45.91,
+      "equity_after": 45.79,
+      "retorno_pct": -0.26,
+      "allocations": {
+        "NAFTRAC": 45.91
+      },
+      "stopped_out": [],
+      "motivo": "Régimen bull al 100% favorece estar invertido, así que no conviene quedarse en cash. La única señal con ganancia pre-costos en backtest es momentum 12-1, y ese factor no es lo bastante fuerte ni limpi"
+    }
+  ]
+}

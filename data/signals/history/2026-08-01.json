@@ -1,0 +1,95 @@
+{
+  "date": "2026-08-01",
+  "timestamp_utc": "2026-08-01T00:35:31.765557+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "FUNO11",
+      "conviction": 0.8124,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "PINFRA",
+      "conviction": 0.7514,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "FUNO11",
+      "conviction": 0.8124,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "FIBRAPL",
+      "conviction": 0.7557,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "PINFRA",
+      "conviction": 0.7514,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "XLK",
+      "conviction": 0.7261,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "HERDEZ",
+      "conviction": 0.7098,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "POSADAS",
+      "conviction": 0.6926,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "FUNO11",
+      "conviction": 0.6669,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "VESTA",
+      "conviction": 0.6575,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "MEGACPO",
+      "conviction": 0.6574,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "XLY",
+      "conviction": 0.6554,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "fdc486fceb7b499b"
+}

@@ -1,0 +1,327 @@
+{
+  "label": "[daily +anti-churn cost=0.0055]",
+  "freq": "daily",
+  "cost_rate": 0.0055,
+  "anti_churn": true,
+  "start": "2026-09-09",
+  "end": "2026-10-09",
+  "final_equity": 50.23,
+  "retorno_pct": 0.47,
+  "turnover_usd_total": 207.0,
+  "costo_usd_total": 1.14,
+  "log": [
+    {
+      "day": "2026-09-09",
+      "rebalanceo": true,
+      "equity_before": 50.0,
+      "equity_next": 48.53,
+      "cash": -0.27,
+      "turnover_usd": 50.0,
+      "costo_usd": 0.275,
+      "allocations": {
+        "GMEXICOB": 25.0,
+        "FEMSAUBD": 25.0
+      },
+      "motivo": "Régimen bull (100%) y macro sin señales negativas (IPC +0.6%, S&P500 +0.1%, USD/MXN -0.5%). El único factor con ganancia pre-costos es el momentum 12-1, y aquí se combina con fundamentales. GMEXICOB: "
+    },
+    {
+      "day": "2026-09-10",
+      "rebalanceo": true,
+      "equity_before": 48.53,
+      "equity_next": 48.43,
+      "cash": 0.37,
+      "turnover_usd": 0.65,
+      "costo_usd": 0.0036,
+      "allocations": {
+        "GMEXICOB": 24.264721277429125,
+        "FEMSAUBD": 24.264721277429125
+      },
+      "motivo": "Mantengo ambas posiciones sin rotar, porque la evidencia que las justificó sigue vigente y mantenerlas no tiene costo. GMEXICOB tiene el mejor momentum 12-1 del universo (+66.7%) y fundamentales sólid"
+    },
+    {
+      "day": "2026-09-11",
+      "rebalanceo": true,
+      "equity_before": 48.43,
+      "equity_next": 48.8,
+      "cash": 4.71,
+      "turnover_usd": 23.84,
+      "costo_usd": 0.1311,
+      "allocations": {
+        "GMEXICOB": 19.372959118127426,
+        "FEMSAUBD": 14.52971933859557,
+        "VISTA": 9.686479559063713
+      },
+      "motivo": "GMEXICOB se mantiene: momentum 12-1 de +62.4% es el más fuerte del universo, con márgenes altos (operativo 55%), ventas +48.6% y utilidad +199.5% YoY, a -8.2% de su máximo de 52 semanas y con el stop "
+    },
+    {
+      "day": "2026-09-14",
+      "rebalanceo": true,
+      "equity_before": 48.8,
+      "equity_next": 48.98,
+      "cash": -0.03,
+      "turnover_usd": 5.94,
+      "costo_usd": 0.0327,
+      "allocations": {
+        "GMEXICOB": 19.518644827745742,
+        "FEMSAUBD": 14.638983620809308,
+        "VISTA": 14.638983620809308
+      },
+      "motivo": "Régimen bull (100% invertido). Mantengo las tres posiciones abiertas porque su evidencia sigue vigente y mantenerlas no tiene costo, mientras que rotar sí. Ninguna ha tocado stop: GMEXICOB 214.00 vs 2"
+    },
+    {
+      "day": "2026-09-15",
+      "rebalanceo": true,
+      "equity_before": 48.98,
+      "equity_next": 49.13,
+      "cash": -0.03,
+      "turnover_usd": 5.55,
+      "costo_usd": 0.0305,
+      "allocations": {
+        "VISTA": 16.652492322751193,
+        "GMEXICOB": 16.652492322751193,
+        "FEMSAUBD": 15.672933950824651
+      },
+      "motivo": "Mantengo las tres posiciones abiertas porque su evidencia sigue vigente y cambiarlas costaría ~0.55% sin ganancia clara. VISTA tiene el mejor momentum 12-1 del universo (+80.1%), crecimiento de ventas"
+    },
+    {
+      "day": "2026-09-17",
+      "rebalanceo": true,
+      "equity_before": 49.13,
+      "equity_next": 47.36,
+      "cash": -0.05,
+      "turnover_usd": 8.21,
+      "costo_usd": 0.0452,
+      "allocations": {
+        "FEMSAUBD": 19.652425104020963,
+        "GMEXICOB": 14.739318828015723,
+        "VISTA": 14.739318828015723
+      },
+      "motivo": "Régimen bull al 100%, así que se invierte el capital completo. Se mantienen las tres posiciones abiertas porque su evidencia sigue vigente y cambiarlas costaría ~0.55%. VISTA tiene el mejor momentum 1"
+    },
+    {
+      "day": "2026-09-18",
+      "rebalanceo": true,
+      "equity_before": 47.36,
+      "equity_next": 47.35,
+      "cash": -0.06,
+      "turnover_usd": 10.21,
+      "costo_usd": 0.0562,
+      "allocations": {
+        "GMEXICOB": 18.942385694880713,
+        "FEMSAUBD": 14.206789271160535,
+        "VISTA": 14.206789271160535
+      },
+      "motivo": "Régimen bull al 99% y momentum 12-1 como único factor con ganancia pre-costos. Mantengo las tres posiciones abiertas porque la evidencia que las justificó sigue vigente y ningún stop se ha tocado, así"
+    },
+    {
+      "day": "2026-09-21",
+      "rebalanceo": true,
+      "equity_before": 47.35,
+      "equity_next": 48.14,
+      "cash": -0.03,
+      "turnover_usd": 6.09,
+      "costo_usd": 0.0335,
+      "allocations": {
+        "GMEXICOB": 16.100656238860704,
+        "FEMSAUBD": 16.100656238860704,
+        "VISTA": 15.15355881304537
+      },
+      "motivo": "Régimen bull al 97% y el único factor con ganancia pre-costos es el momentum 12-1, así que la selección se ordena por ese criterio. Los tres nombres con mayor año después de excluir HOTEL (con márgene"
+    },
+    {
+      "day": "2026-09-22",
+      "rebalanceo": true,
+      "equity_before": 48.14,
+      "equity_next": 48.06,
+      "cash": -0.08,
+      "turnover_usd": 14.81,
+      "costo_usd": 0.0815,
+      "allocations": {
+        "GMEXICOB": 24.06826646769063,
+        "FEMSAUBD": 14.440959880614377,
+        "VISTA": 9.627306587076252
+      },
+      "motivo": "Régimen bull (100%), así que se mantiene exposición completa. Las tres posiciones abiertas siguen con la evidencia que las justificó y ningún stop tocado (GMEXICOB 222.16 vs stop 212.08; FEMSAUBD 210."
+    },
+    {
+      "day": "2026-09-23",
+      "rebalanceo": true,
+      "equity_before": 48.06,
+      "equity_next": 47.74,
+      "cash": -0.08,
+      "turnover_usd": 15.05,
+      "costo_usd": 0.0827,
+      "allocations": {
+        "GMEXICOB": 16.340338497095065,
+        "FEMSAUBD": 16.340338497095065,
+        "VISTA": 15.379142114913003
+      },
+      "motivo": "Régimen bull al 100%, así que se invierte. Mantengo las tres posiciones abiertas porque su evidencia sigue intacta y rotar cuesta ~0.55%. GMEXICOB: momentum 12-1 de +74%, ingresos +48.6% y utilidad +1"
+    },
+    {
+      "day": "2026-09-24",
+      "rebalanceo": true,
+      "equity_before": 47.74,
+      "equity_next": 48.04,
+      "cash": -0.06,
+      "turnover_usd": 11.2,
+      "costo_usd": 0.0616,
+      "allocations": {
+        "GMEXICOB": 21.004608532806316,
+        "FEMSAUBD": 17.185588799568805,
+        "VISTA": 9.54754933309378
+      },
+      "motivo": "Mantengo las tres posiciones abiertas porque ninguna ha tocado stop (GMEXICOB 220.65 vs 211.22, FEMSAUBD 208.90 vs 201.99, VISTA 1217.62 vs 1177.56) y su evidencia sigue vigente: son de los pocos nomb"
+    },
+    {
+      "day": "2026-09-25",
+      "rebalanceo": true,
+      "equity_before": 48.04,
+      "equity_next": 48.23,
+      "cash": -0.06,
+      "turnover_usd": 10.16,
+      "costo_usd": 0.0559,
+      "allocations": {
+        "GMEXICOB": 19.215303329253878,
+        "VISTA": 14.411477496940407,
+        "FEMSAUBD": 14.411477496940407
+      },
+      "motivo": "Régimen bull (89%) y momentum 12-1 como único factor con ganancia en backtest. Mantengo las tres posiciones abiertas porque su evidencia sigue vigente y rotar cuesta ~0.55%. GMEXICOB (+56.8% año, vent"
+    },
+    {
+      "day": "2026-09-28",
+      "rebalanceo": true,
+      "equity_before": 48.23,
+      "equity_next": 48.68,
+      "cash": -0.05,
+      "turnover_usd": 5.81,
+      "costo_usd": 0.0319,
+      "allocations": {
+        "VISTA": 17.364423402675282,
+        "GMEXICOB": 16.399733213637766,
+        "FEMSAUBD": 14.470352835562734
+      },
+      "motivo": "Régimen bull (100%). Mantengo las tres posiciones abiertas porque su evidencia sigue vigente y mantenerlas no tiene costo: VISTA (momentum 12-1 +75.8%, ventas +162% YoY, precio 1200 sobre stop 1158.71"
+    },
+    {
+      "day": "2026-09-29",
+      "rebalanceo": true,
+      "equity_before": 48.68,
+      "equity_next": 48.0,
+      "cash": 0.08,
+      "turnover_usd": 1.77,
+      "costo_usd": 0.0098,
+      "allocations": {
+        "GMEXICOB": 16.55092400936994,
+        "VISTA": 16.55092400936994,
+        "FEMSAUBD": 15.577340244112884
+      },
+      "motivo": "Régimen bull (100%) y el único factor con ganancia pre-costos en backtest es momentum 12-1. Los tres nombres con mayor momentum 12-1 con evidencia de soporte son GMEXICOB (+47.9% año, ventas +48.6%, u"
+    },
+    {
+      "day": "2026-09-30",
+      "rebalanceo": true,
+      "equity_before": 48.0,
+      "equity_next": 47.73,
+      "cash": -0.03,
+      "turnover_usd": 5.47,
+      "costo_usd": 0.0301,
+      "allocations": {
+        "GMEXICOB": 19.200005805931724,
+        "VISTA": 14.400004354448795,
+        "FEMSAUBD": 14.400004354448795
+      },
+      "motivo": "Mantengo las tres posiciones abiertas porque ninguna tocó stop (GMEXICOB 225.65 vs 216.09, FEMSAUBD 213.23 vs 205.76, VISTA 1181.74 vs 1136.90) y la evidencia que las justificó sigue vigente. El único"
+    },
+    {
+      "day": "2026-10-01",
+      "rebalanceo": true,
+      "equity_before": 47.73,
+      "equity_next": 48.17,
+      "cash": -0.03,
+      "turnover_usd": 0.0,
+      "costo_usd": 0.0,
+      "allocations": {
+        "GMEXICOB": 19.093762964851074,
+        "FEMSAUBD": 14.320322223638305,
+        "VISTA": 14.320322223638305
+      },
+      "motivo": "Régimen bull (60%) y momentum 12-1 como única señal con ganancia en backtest. Mantengo las tres posiciones abiertas porque su evidencia sigue vigente y mantenerlas no tiene costo. GMEXICOB tiene el me"
+    },
+    {
+      "day": "2026-10-02",
+      "rebalanceo": true,
+      "equity_before": 48.17,
+      "equity_next": 48.88,
+      "cash": 0.47,
+      "turnover_usd": 0.51,
+      "costo_usd": 0.0028,
+      "allocations": {
+        "GMEXICOB": 19.267813384953467,
+        "VISTA": 14.450860038715101,
+        "FEMSAUBD": 14.450860038715101
+      },
+      "motivo": "Régimen bull (100% invertido permitido) y el factor que sí mostró ganancia es momentum 12-1, así que la selección se apoya en eso. GMEXICOB: año +42.4%, máximo de 52s a -2.3%, ventas +48.6%, UPA +199."
+    },
+    {
+      "day": "2026-10-05",
+      "rebalanceo": true,
+      "equity_before": 48.88,
+      "equity_next": 48.47,
+      "cash": 0.47,
+      "turnover_usd": 0.0,
+      "costo_usd": 0.0,
+      "allocations": {
+        "GMEXICOB": 19.553650764604637,
+        "VISTA": 14.665238073453478,
+        "FEMSAUBD": 14.665238073453478
+      },
+      "motivo": "Mantengo las tres posiciones abiertas porque su evidencia sigue vigente y ninguna tocó stop, así que no pago costo de rotación (0.55%). GMEXICOB (20 USD): momentum 12-1 de +39.5%, a 1% de su máximo de"
+    },
+    {
+      "day": "2026-10-06",
+      "rebalanceo": true,
+      "equity_before": 48.47,
+      "equity_next": 48.07,
+      "cash": -0.03,
+      "turnover_usd": 6.13,
+      "costo_usd": 0.0337,
+      "allocations": {
+        "VISTA": 15.509473388030651,
+        "GMEXICOB": 16.478815474782568,
+        "FEMSAUBD": 16.478815474782568
+      },
+      "motivo": "Régimen bull (100% invertido) y macro favorable (S&P500 +1.9%, USD/MXN +0.5%). Mantengo las tres posiciones abiertas porque la evidencia que las justificó sigue vigente y rotar cuesta ~0.55%. VISTA ti"
+    },
+    {
+      "day": "2026-10-07",
+      "rebalanceo": true,
+      "equity_before": 48.07,
+      "equity_next": 48.92,
+      "cash": -0.09,
+      "turnover_usd": 15.47,
+      "costo_usd": 0.0851,
+      "allocations": {
+        "GMEXICOB": 24.037262747559026,
+        "VISTA": 14.422357648535415,
+        "FEMSAUBD": 9.614905099023611
+      },
+      "motivo": "Mantengo las tres posiciones abiertas porque ninguna tocó stop (GMEXICOB 230.65 vs 220.50, VISTA 1169.63 vs 1117.82, FEMSAUBD 210.93 vs 203.68) y la evidencia que las justificó sigue vigente. El facto"
+    },
+    {
+      "day": "2026-10-08",
+      "rebalanceo": true,
+      "equity_before": 48.92,
+      "equity_next": 50.23,
+      "cash": 0.38,
+      "turnover_usd": 10.12,
+      "costo_usd": 0.0557,
+      "allocations": {
+        "GMEXICOB": 24.45911399185216,
+        "FEMSAUBD": 14.675468395111297,
+        "VISTA": 9.783645596740865
+      },
+      "motivo": "Mantengo las tres posiciones abiertas porque ninguna tocó stop (GMEXICOB 230.51 vs 220.93, FEMSAUBD 216.65 vs 209.00, VISTA 1224.99 vs 1172.08) y siguen teniendo la misma evidencia: momentum 12-1 fuer"
+    }
+  ]
+}

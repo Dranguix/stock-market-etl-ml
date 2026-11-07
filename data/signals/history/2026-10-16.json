@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-16",
+  "timestamp_utc": "2026-10-16T00:38:45.399072+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "GCC",
+      "conviction": 0.6111,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "GENTERA",
+      "conviction": 0.6085,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "QQQ",
+      "conviction": 0.8145,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "META",
+      "conviction": 0.6986,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "SLV",
+      "conviction": 0.6842,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "AAPL",
+      "conviction": 0.6789,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "FMX",
+      "conviction": 0.6533,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "MARA",
+      "conviction": 0.6406,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "MSTR",
+      "conviction": 0.631,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "FIBRAPL",
+      "conviction": 0.6237,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "XLK",
+      "conviction": 0.6225,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "GCC",
+      "conviction": 0.6111,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "db717c3d9f41532c"
+}

@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-07-01T22:12:24.480230+00:00",
+  "horizon": 20,
+  "test_start": "2023-06-01",
+  "flow_data_start": "2025-06-30",
+  "promotion_rule": "delta_auc > 0.015 y delta_sharpe > 0 vs A_baseline",
+  "arms": {
+    "A_baseline": {
+      "auc": 0.5248,
+      "auc_ci90": [
+        0.5191,
+        0.5305
+      ],
+      "n_preds": 24635,
+      "sharpe_net": -0.027,
+      "hit_top2": 0.4211,
+      "n_periods": 38,
+      "avg_ret_pct": -0.0556,
+      "flow_window": {
+        "auc": 0.5283,
+        "sharpe_net": 0.04,
+        "hit_top2": 0.4167,
+        "n_periods": 12,
+        "avg_ret_pct": 0.0769
+      }
+    },
+    "B_gim": {
+      "auc": 0.5268,
+      "auc_ci90": [
+        0.5213,
+        0.5325
+      ],
+      "n_preds": 24635,
+      "sharpe_net": 0.538,
+      "hit_top2": 0.4737,
+      "n_periods": 38,
+      "avg_ret_pct": 1.04,
+      "flow_window": {
+        "auc": 0.5355,
+        "sharpe_net": 0.423,
+        "hit_top2": 0.5,
+        "n_periods": 12,
+        "avg_ret_pct": 0.6987
+      }
+    },
+    "C_flow": {
+      "auc": 0.5256,
+      "auc_ci90": [
+        0.5198,
+        0.5315
+      ],
+      "n_preds": 24635,
+      "sharpe_net": -0.243,
+      "hit_top2": 0.4079,
+      "n_periods": 38,
+      "avg_ret_pct": -0.4955,
+      "flow_window": {
+        "auc": 0.5311,
+        "sharpe_net": -0.072,
+        "hit_top2": 0.4583,
+        "n_periods": 12,
+        "avg_ret_pct": -0.1501
+      }
+    },
+    "D_gim_flow": {
+      "auc": 0.5271,
+      "auc_ci90": [
+        0.5218,
+        0.5327
+      ],
+      "n_preds": 24635,
+      "sharpe_net": 0.685,
+      "hit_top2": 0.5,
+      "n_periods": 38,
+      "avg_ret_pct": 1.2712,
+      "flow_window": {
+        "auc": 0.5362,
+        "sharpe_net": 0.714,
+        "hit_top2": 0.5417,
+        "n_periods": 12,
+        "avg_ret_pct": 1.3371
+      }
+    }
+  },
+  "verdicts": {
+    "B_gim": {
+      "delta_auc": 0.002,
+      "delta_sharpe": 0.565,
+      "promote": false
+    },
+    "C_flow": {
+      "delta_auc": 0.0008,
+      "delta_sharpe": -0.216,
+      "promote": false
+    },
+    "D_gim_flow": {
+      "delta_auc": 0.0023,
+      "delta_sharpe": 0.712,
+      "promote": false
+    }
+  }
+}

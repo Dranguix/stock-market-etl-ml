@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-28",
+  "timestamp_utc": "2026-07-28T00:48:32.186085+00:00",
+  "model_version": "supermodel_v3_gim",
+  "universe": "bmv",
+  "regime": "?",
+  "bets": [
+    {
+      "ticker": "FUNO11",
+      "conviction": 0.8396,
+      "direction": "LONG",
+      "horizon_days": 20
+    },
+    {
+      "ticker": "HERDEZ",
+      "conviction": 0.7299,
+      "direction": "LONG",
+      "horizon_days": 20
+    }
+  ],
+  "n_bets": 2,
+  "top10_ranking": [
+    {
+      "rank": 1,
+      "ticker": "FUNO11",
+      "conviction": 0.8396,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 2,
+      "ticker": "QQQ",
+      "conviction": 0.8375,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 3,
+      "ticker": "META",
+      "conviction": 0.7508,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 4,
+      "ticker": "HERDEZ",
+      "conviction": 0.7299,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 5,
+      "ticker": "VOLARA",
+      "conviction": 0.7212,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 6,
+      "ticker": "GRUMAB",
+      "conviction": 0.6869,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 7,
+      "ticker": "POSADAS",
+      "conviction": 0.6837,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 8,
+      "ticker": "FUNO11",
+      "conviction": 0.6733,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 9,
+      "ticker": "PINFRA",
+      "conviction": 0.6643,
+      "veredicto": "—",
+      "apostaria": "—"
+    },
+    {
+      "rank": 10,
+      "ticker": "MARA",
+      "conviction": 0.6582,
+      "veredicto": "—",
+      "apostaria": "—"
+    }
+  ],
+  "hash": "a5346f3d481c2020"
+}
