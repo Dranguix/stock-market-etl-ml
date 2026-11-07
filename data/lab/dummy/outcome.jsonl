@@ -1,0 +1,12 @@
+{"id": 1, "entry_plan_id": 1, "scored_at": "2026-08-31T20:00:00-06:00", "realized_return": -0.003318, "hit_stop": false, "note": "entrada=642.7948 close=640.662 stop=None pnl_usd=-0.083 exit_on=2026-08-31"}
+{"id": 2, "entry_plan_id": 2, "scored_at": "2026-08-31T20:00:00-06:00", "realized_return": -0.027075, "hit_stop": false, "note": "entrada=3.2945 close=3.2053 stop=None pnl_usd=-0.3384 exit_on=2026-08-31"}
+{"id": 3, "entry_plan_id": 3, "scored_at": "2026-08-31T20:00:00-06:00", "realized_return": -0.000304, "hit_stop": false, "note": "entrada=2.6317 close=2.6309 stop=2.2668 pnl_usd=-0.0019 exit_on=2026-08-31"}
+{"id": 4, "entry_plan_id": 4, "scored_at": "2026-08-31T20:00:00-06:00", "realized_return": 0.080202, "hit_stop": false, "note": "entrada=1.7406 close=1.8802 stop=1.4825 pnl_usd=0.5013 exit_on=2026-08-31"}
+{"id": 5, "entry_plan_id": 5, "scored_at": "2026-09-29T20:00:00-06:00", "realized_return": -0.023342, "hit_stop": false, "note": "entrada=651.0486 close=635.8521 stop=None pnl_usd=-0.5835 exit_on=2026-09-29"}
+{"id": 6, "entry_plan_id": 6, "scored_at": "2026-09-29T20:00:00-06:00", "realized_return": -0.00512, "hit_stop": false, "note": "entrada=3.203 close=3.1866 stop=None pnl_usd=-0.032 exit_on=2026-09-29"}
+{"id": 7, "entry_plan_id": 7, "scored_at": "2026-09-29T20:00:00-06:00", "realized_return": -0.082908, "hit_stop": false, "note": "entrada=2.6439 close=2.4247 stop=2.2363 pnl_usd=-0.5182 exit_on=2026-09-29"}
+{"id": 8, "entry_plan_id": 8, "scored_at": "2026-09-29T20:00:00-06:00", "realized_return": -0.148036, "hit_stop": true, "note": "entrada=1.8759 close=1.5226 stop=1.5982 pnl_usd=-0.9252 exit_on=2026-09-29"}
+{"id": 9, "entry_plan_id": 9, "scored_at": "2026-10-29T20:00:00-06:00", "realized_return": -0.006817, "hit_stop": false, "note": "entrada=638.134 close=633.7838 stop=None pnl_usd=-0.1704 exit_on=2026-10-29"}
+{"id": 10, "entry_plan_id": 10, "scored_at": "2026-10-29T20:00:00-06:00", "realized_return": -0.063364, "hit_stop": false, "note": "entrada=3.1469 close=2.9475 stop=None pnl_usd=-0.792 exit_on=2026-10-29"}
+{"id": 11, "entry_plan_id": 11, "scored_at": "2026-10-29T20:00:00-06:00", "realized_return": 0.063052, "hit_stop": false, "note": "entrada=2.4551 close=2.6099 stop=2.0394 pnl_usd=0.3941 exit_on=2026-10-29"}
+{"id": 12, "entry_plan_id": 12, "scored_at": "2026-10-29T20:00:00-06:00", "realized_return": -0.02148, "hit_stop": false, "note": "entrada=5.3863 close=5.2706 stop=4.5557 pnl_usd=-0.1343 exit_on=2026-10-29"}
