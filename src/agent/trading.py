@@ -109,7 +109,7 @@ def _append_to_lab_dummy(validada: dict, resultado: dict, carpeta: Path, hoy: da
             "decision_id": dec_id,
             "ticker": str(alloc["ticker"]),
             "usd": usd,
-            "horizon": str(alloc.get("horizon") or ""),
+            "horizon": str(alloc.get("horizon") or "20d"),
             "stop_usd": None,  # Trading no calcula stops
             "p_sube": None,    # No inventar probabilidades
             "enter_on": hoy.isoformat(),
@@ -166,8 +166,9 @@ Reglas que el sistema va a rechazar si las rompes:
 - Cada nombre lleva 0, o entre {MIN_TICKET:.0f} y {MAX_TICKET:.0f} dólares.
 - La suma de los dólares de los nombres más el efectivo es exactamente {BUDGET_USD:.0f}.
 - No cambies el tamaño de una posición con menos de {MIN_HOLD_DAYS} días.
-- Solo compras nombres del top de un ranking de esta conversación. Un ticker que
-  solo pasó por otro agente no se puede comprar, y uno de la lista evitar tampoco.
+- Solo compras nombres declarados en comprables de un ranking de esta conversación.
+  Un ticker que solo esté en el top informativo, que solo pasó por otro agente o que
+  esté en la lista evitar no se puede comprar.
 - La señal no puede tener más de {MAX_DIAS_SENAL} días hábiles. Compara fecha_senal con
   la fecha de hoy: si es más vieja, no compres.
 - Lo que ya está en el libro se puede mantener o reducir.
@@ -206,7 +207,10 @@ Cómo decidir:
         if ticker in self.evitados:
             return f"{ticker} está en la lista evitar. No se puede comprar."
         if ticker not in self.vistos:
-            return f"{ticker} no salió del top de un ranking de Features/ML. Solo puedes comprar esos nombres."
+            return (
+                f"{ticker} no está en comprables de un ranking de Features/ML "
+                f"(solo se autorizan apuestas LONG activas del top). No se puede comprar."
+            )
         fecha = self.vistos[ticker]
         edad = dias_habiles(fecha, self.hoy) if fecha else None
         if edad is None or edad < 0:

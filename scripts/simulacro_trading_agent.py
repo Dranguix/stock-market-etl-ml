@@ -2,12 +2,12 @@
 """Simulacro del agente de trading: ciclo completo con datos reales, sin gastar créditos.
 
 Un Claude de guion sustituye a la API. Intenta romper las reglas a propósito
-y al final propone un reparto con los dos primeros del ranking. Si la señal es
+y al final propone un reparto con los nombres comprables del ranking. Si la señal es
 vieja, el guard lo rechaza y el guion se queda en efectivo.
 El libro vive en memoria: no escribe data/agent.
 
     python -X utf8 scripts/simulacro_trading_agent.py
-    python -X utf8 scripts/simulacro_trading_agent.py --hoy 2026-06-29  # como si la señal fuera reciente
+    python -X utf8 scripts/simulacro_trading_agent.py --hoy 2026-11-02  # como si la señal fuera reciente
 """
 from __future__ import annotations
 
@@ -62,25 +62,37 @@ class ClaudeDeGuion:
 
     def _siguiente(self, tools: list[dict]) -> list[dict]:
         top = [p["ticker"] for p in self.ranking.get("top") or []]
+        comprables = self.ranking.get("comprables") or top
+        no_comprables = [t for t in top if t not in comprables]
         evitar = self.ranking.get("evitar") or []
+        bloqueado = evitar[0] if evitar else (no_comprables[0] if no_comprables else "MEGACPO")
         p = self.paso
         if p == 1:
             return [_call(p, "ver_libro", {}), _call(p + 10, "ver_noticias", {"ticker": "WALMEX"})]
         if p == 2:
             return [_call(p, "ver_ranking", {"universo": "bmv", "horizonte": "4s"})]
-        if p == 3 and top:
-            return [_call(p, "ver_woe", {"ticker": top[0]})]
-        if p == 4 and evitar:
-            return [_call(p, "ver_woe", {"ticker": evitar[0]})]
-        if p == 5 and evitar:
-            return [_call(p, "proponer_asignacion", {"allocations": [{"ticker": evitar[0], "usd": 20}], "cash_usd": 30, "motivo": "nombre de la lista evitar"})]
-        if p == 6 and len(top) >= 3:
-            return [_call(p, "proponer_asignacion", {"allocations": [{"ticker": t, "usd": 25} for t in top[:3]], "motivo": "me paso de 50"})]
-        if p == 7 and len(top) >= 2:
+        if p == 3 and comprables:
+            return [_call(p, "ver_woe", {"ticker": comprables[0]})]
+        if p == 4:
+            return [_call(p, "ver_woe", {"ticker": bloqueado})]
+        if p == 5:
+            return [_call(p, "proponer_asignacion", {"allocations": [{"ticker": bloqueado, "usd": 20}], "cash_usd": 30, "motivo": "nombre no autorizado por comprables"})]
+        if p == 6 and top:
+            exceso = top[:3] if len(top) >= 3 else top[:2]
+            return [_call(p, "proponer_asignacion", {"allocations": [{"ticker": t, "usd": 30} for t in exceso], "motivo": "me paso de 50"})]
+        if p == 7 and comprables:
+            if len(comprables) >= 2:
+                allocs = [{"ticker": comprables[0], "usd": 20}, {"ticker": comprables[1], "usd": 15}]
+                cash = 15
+                motivo = f"{comprables[0]} y {comprables[1]} están en comprables de ver_ranking bmv 4s; ver_woe de {comprables[0]}."
+            else:
+                allocs = [{"ticker": comprables[0], "usd": 20}]
+                cash = 30
+                motivo = f"{comprables[0]} está en comprables de ver_ranking bmv 4s; ver_woe de {comprables[0]}."
             return [_call(p, "proponer_asignacion", {
-                "allocations": [{"ticker": top[0], "usd": 20}, {"ticker": top[1], "usd": 15}],
-                "cash_usd": 15,
-                "motivo": f"{top[0]} y {top[1]} son 1 y 2 en ver_ranking bmv 4s; ver_woe de {top[0]}.",
+                "allocations": allocs,
+                "cash_usd": cash,
+                "motivo": motivo,
             })]
         if p == 8:
             return [_call(p, "proponer_asignacion", {"allocations": [], "cash_usd": 50, "motivo": "señal vieja: efectivo"})]

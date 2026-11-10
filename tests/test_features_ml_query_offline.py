@@ -97,3 +97,46 @@ def test_consulta_senales_locales(tmp_path, monkeypatch):
     assert "2026-10-31" in texto
     assert "POSADAS" in texto
     assert "1 snapshots" in texto
+
+
+def test_consulta_archivos_faltantes_no_falla(tmp_path, monkeypatch):
+    monkeypatch.setattr(modulo, "AGENT_SCORECARD_PATH", tmp_path / "no_existe_scorecard.md")
+    monkeypatch.setattr(modulo, "TRIAL_LOG_PATH", tmp_path / "no_existe_trial.jsonl")
+    monkeypatch.setattr(modulo, "SIGNALS_HISTORY_DIR", tmp_path / "no_existe_history")
+    monkeypatch.setattr(modulo, "HORIZONS_PATH", tmp_path / "no_existe_horizons.json")
+
+    texto = consultar("Resumen general")
+
+    assert "Scorecard no generado todavía" in texto
+    assert "No se encontró bitácora" in texto
+
+
+def test_bitacora_ignora_lineas_json_corruptas(tmp_path, monkeypatch):
+    archivo = tmp_path / "trial_log.jsonl"
+    registro_valido = {
+        "ts": "2026-10-12T10:00:00",
+        "family": "modelo_valido",
+        "hash": "def456",
+        "result": {"usd": {"libro": {"retorno_pct": 2.5, "sharpe": 1.1}}},
+    }
+    archivo.write_text(
+        "{linea_corrupta\n" + json.dumps(registro_valido) + "\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(modulo, "TRIAL_LOG_PATH", archivo)
+
+    texto = consultar("Muestra la bitacora")
+
+    assert "2 corridas registradas" in texto
+    assert "modelo_valido" in texto
+    assert "def456" in texto
+
+
+def test_recomendar_portafolio_sin_archivo_avisa_como_generarlo(tmp_path, monkeypatch):
+    monkeypatch.setattr(modulo, "PORTFOLIO_COV_PATH", tmp_path / "no_existe_cov.json")
+
+    resultado = asyncio.run(modulo.recomendar_portafolio.handler({}))
+    texto = resultado["content"][0]["text"]
+
+    assert "portfolio_optimizer_cov.py" in texto
+
